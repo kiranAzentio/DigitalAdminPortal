@@ -1,0 +1,24 @@
+{
+    "controls": [
+        {
+            "name": "firstName",
+            "label": "First name:",
+            "value": "",
+            "type": "text",
+            "validators": {
+                "required": true
+            },
+            "identifierComponent": "input"
+        },
+        {
+            "name": "amountcurrency",
+            "label": "enter currency:",
+            "value": "",
+            "type": "text",
+            "validators": {
+                "required": true
+            },
+            "identifierComponent": "currency"
+        }
+    ]
+}

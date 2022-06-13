@@ -1,0 +1,237 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "userId",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "FirstName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "activeFromDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "roles",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field": "userId",
+                "header": "User Id"
+            },
+            {
+                "field": "FirstName",
+                "header": "Name"
+            },
+            {
+                "field": "activeFromDate",
+                "header": "Active From Date"
+            },
+            {
+                "field": "roles",
+                "header": "Roles"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "userId",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "FirstName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "userId",
+                "title": "User Id",
+                "placeholder": "Enter User Id"
+            },
+            {
+                "tableMetaDataField": "FirstName",
+                "title": " Name",
+                "placeholder": "Enter Name"
+            },         
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - ALL Users",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEdit": false,
+            "showDelete": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 25,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 26,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "77",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "78",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "79",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "125",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "CifId": "",
+                "FirstName": "CBG",
+                "MiddleName": "",
+                "LastName": "Test",
+                "FamilyName": "",
+                "status": "Active",
+                "statusId": "1",
+                "activeFromDate": "2021-09-27"
+            },
+            {
+                "CifId": "",
+                "FirstName": "Smit",
+                "MiddleName": "",
+                "LastName": "Cons",
+                "FamilyName": "",
+                "status": "Active",
+                "statusId": "1",
+                "activeFromDate": "2021-09-27"
+            },
+            {
+                "CifId": "",
+                "FirstName": "Smit",
+                "MiddleName": "",
+                "LastName": "Jass",
+                "FamilyName": "",
+                "status": "Active",
+                "statusId": "1",
+                "activeFromDate": "2021-09-27"
+            },
+            {
+                "CifId": "",
+                "FirstName": "System",
+                "MiddleName": "",
+                "LastName": "Administrator",
+                "FamilyName": "",
+                "status": "Active",
+                "statusId": "1",
+                "activeFromDate": "2021-09-27"
+            }
+        ]
+    }
+]

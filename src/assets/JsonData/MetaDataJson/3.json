@@ -1,0 +1,94 @@
+[
+    {
+        "tableMetaData":[
+            { "field": "applRefId", "header": "", "headerType": "text", "bodyType": "textLink" },
+            { "field": "customerName", "header": "", "headerType": "text", "bodyType": "text" },
+            { "field": "requestedAmt", "header": "", "headerType": "text", "bodyType": "currencyText" },
+            { "field": "applDate", "header": "", "headerType": "date", "bodyType": "dateText" },
+            { "field": "status", "header": "", "headerType": "dropdown", "bodyType": "statusText"  }
+        ],
+        "tableMetaDataFieldNameLang":[
+            {"field":"applRefId","header1":"Application No","arabic_lang":"رقم الطلب","header":"आवेदन संख्या"},
+            {"field":"customerName","header1":"Customer Name","arabic_lang":"اسم الزبون","header":"ग्राहक का नाम"},
+            {"field":"requestedAmt","header1":"Requested Amount","arabic_lang":"الكمية المطلوبة","header":"अनुरोध राशि"},
+            {"field":"applDate","header1":"Application Date","arabic_lang":"تاريخ تقديم الطلب","header":"आवेदन तिथि"},
+            {"field":"status","header1":"Status","arabic_lang":"حالة","header":"स्थिति"}
+        ],
+        "filterData":[
+            {"title": "","placeholder":"","type": "number","value": null,"tableMetaDataField": "applRefId","maxLength":"100"},
+            {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "customerName","maxLength":"100"},
+            {"title": "","placeholder":"","type": "date","value": null,"tableMetaDataField": "applDate","minDate":"","maxDate":""},
+            {"title": "","placeholder":"","type": "currency","value": null,"tableMetaDataField": "requestedAmt","maxLength":"100"},
+            {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "status","maxLength":"100"}
+        ],
+        "filterDataFieldNameLang":[
+            {"tableMetaDataField":"applRefId","title1":"Application No","arabic_lang":"رقم الطلب","title":"आवेदन संख्या",
+                "placeholder2":"Enter Application No","arabic_lang_placeholder":"أدخل رقم الطلب","placeholder":"आवेदन संख्या दर्ज करें"},
+            {"tableMetaDataField":"customerName","title1":"Customer Name","arabic_lang":"اسم الزبون","title":"ग्राहक का नाम",
+                "placeholder2":"Enter Customer Name","arabic_lang_placeholder":"أدخل اسم العميل","placeholder":"ग्राहक का नाम दर्ज करें"},
+            {"tableMetaDataField":"applDate","title1":"Application Date","arabic_lang":"تاريخ تقديم الطلب","title":"आवेदन तिथि",
+                "placeholder1":"Select Application Date","arabic_lang_placeholder":"حدد تاريخ التطبيق","placeholder":"आवेदन तिथि का चयन करें"},
+            {"tableMetaDataField":"requestedAmt","title1":"Requested Amount","arabic_lang":"تاريخ تقديم الطلب","title":"आवेदन तिथि",
+                "placeholder1":"Enter Requested Amount","arabic_lang_placeholder":"حدد تاريخ التطبيق","placeholder":"आवेदन तिथि का चयन करें"},
+            {"tableMetaDataField":"status","title1":"Status","arabic_lang":"تاريخ تقديم الطلب","title":"स्थिति",
+                "placeholder1":"Enter Status","arabic_lang_placeholder":"حدد تاريخ التطبيق","placeholder":"स्थिति दर्ज करें"}
+            ],
+            "tableConfigurationData":{
+                "tableTitle": "डेटा ग्रिड 2",
+                "searchPlaceholder":"वैश्विक खोज",
+                "showDownLoadFlag":true,
+                "showDownLoadPdf":true,
+                "showDownLoadExcel":true,
+                "showDownLoadCsv":true,
+                "showSearchBar":true,
+                "showCustomFilter":true,
+                "showSerialNumber":true,
+                "showPaginator":true,
+                "showSortIcon":true,
+                "showActionsAdd":true,
+                "showEdit":true,
+                "showDelete":true,
+                "showActions":false,
+                "downloadData":[],
+                "filteredTableData":[],
+                "rowsPerPageOptions":[10, 25, 50],
+                "rows":"10",
+                "dataKey":"applRefId",
+                "apiUrlAdd":"language-screen-hindi",
+                "apiUrlEdit":"language-screen-hindi",
+                "apiSaveDataUrl":"SAVE_URL_COMES_HERE",
+        "apiUpdateDataUrl":"UPDATE_URL_COMES_HERE",
+        "apiDeleteDataUrl":"DELETE_URL_COMES_HERE"
+            },
+        "jsonTableData":
+        [
+            {
+                "applRefId": "1",
+                "customerName": "John Doe1",
+                "customerName1": "जॉन डो 3",
+                "productName": "Personal Loan1",
+                "applDate":"2021-10-20",
+                "requestedAmt": "700000",
+                "status":"Active"
+            },
+            {
+                "applRefId": "2",
+                "customerName": "John Doe2",
+                "customerName1": "जॉन डो 4",
+                "productName": "Personal Loan2",
+                "applDate":"2021-10-20",
+                "requestedAmt": "700000",
+                "status":"Inactive"
+            },
+            {
+                "applRefId": "3",
+                "customerName": "John Doe3",
+                "customerName1": "जॉन डो 3",
+                "productName": "Personal Loan2",
+                "applDate":"2021-10-20",
+                "requestedAmt": "700000",
+                "status":"Active"
+            }
+        ]
+    }
+]

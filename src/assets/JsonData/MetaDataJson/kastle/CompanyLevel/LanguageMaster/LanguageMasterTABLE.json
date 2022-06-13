@@ -1,0 +1,231 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "languageDescription",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "languageLocale",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "remarks",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "languageDescription",
+                "header": "Language Description"
+            },
+            {
+                "field": "languageLocale",
+                "header": "Language Locale"
+            },
+            {
+                "field": "remarks",
+                "header": "Remarks"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "id",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "languageDescription",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "languageLocale",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "remarks",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "id",
+                "title": "ID",
+                "placeholder": "Enter ID"
+            },
+            {
+                "tableMetaDataField": "languageDescription",
+                "title": "Language Description",
+                "placeholder": "Enter Language Description"
+            },
+            {
+                "tableMetaDataField": "languageLocale",
+                "title": "Language Locale",
+                "placeholder": "Enter Language Locale"
+            },
+            {
+                "tableMetaDataField": "remarks",
+                "title": "Remarks",
+                "placeholder": "Enter Remarks"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE -List of languages",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Language",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 12,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 13,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "39",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "40",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "41",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "123",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "languageDescription": "English",
+                "languageLocale": "en_US",
+                "remarks": "English language",
+                "createdDate": "2021-11-21",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "languageDescription": "Arabic",
+                "languageLocale": "ar_AE",
+                "remarks": "Arabic language ",
+                "createdDate": "2021-09-27",
+                "status": "Active",
+                "statusId": "1"
+            }
+        ]
+    }
+]

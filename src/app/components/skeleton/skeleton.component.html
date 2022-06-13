@@ -1,0 +1,21 @@
+<div class="whiteBackground">
+    <ion-item *ngFor="let it of [].constructor(10)" class="whiteBackground" lines="none">
+        <ion-thumbnail slot="start">
+            <ion-skeleton-text animated class="silverBackground"></ion-skeleton-text>
+        </ion-thumbnail>
+        <ion-label>
+            <h3>
+                <ion-skeleton-text animated style="width: 25%" class="silverBackground"></ion-skeleton-text>
+            </h3>
+            <p>
+                <ion-skeleton-text animated style="width: 50%" class="silverBackground"></ion-skeleton-text>
+            </p>
+            <p>
+                <ion-skeleton-text animated style="width: 75%" class="silverBackground"></ion-skeleton-text>
+            </p>
+            <p>
+                <ion-skeleton-text animated style="width: 100%" class="silverBackground"></ion-skeleton-text>
+            </p>
+        </ion-label>
+    </ion-item>
+</div>

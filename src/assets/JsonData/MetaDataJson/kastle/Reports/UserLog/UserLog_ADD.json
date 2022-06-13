@@ -1,0 +1,251 @@
+[
+  {
+    "tableMetaData": [
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "id",
+        "identifier": "textbox",
+        "fieldJsonMapping": "id",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "firstName",
+        "identifier": "textbox",
+        "fieldJsonMapping": "firstName",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "loginTime",
+        "identifier": "textbox",
+        "fieldJsonMapping": "loginTime",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "ipAddresslmeiNumber",
+        "identifier": "textbox",
+        "fieldJsonMapping": "ipAddresslmeiNumber",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "logoutTime",
+        "identifier": "textbox",
+        "fieldJsonMapping": "logoutTime",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "logoutReason",
+        "identifier": "textbox",
+        "fieldJsonMapping": "logoutReason",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "status",
+        "identifier": "toggle",
+        "fieldJsonMapping": "status",
+        "value": "A",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "A",
+        "uncheckedToogleId": "X",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      }
+    ],
+    "tableMetaDataFieldNameLang": [
+      {
+        "fieldJsonMapping": "id",
+        "label": "Id",
+        "placeholder": "Enter Id",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "firstName",
+        "label": "First Name",
+        "placeholder": "Enter First Name",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "loginTime",
+        "label": "Login Time",
+        "placeholder": "Enter Login Time",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "ipAddresslmeiNumber",
+        "label": "IP Address lmei Number",
+        "placeholder": "Enter IP Address lmei Number",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "logoutTime",
+        "label": "Logout Time",
+        "placeholder": "Enter Logout Time",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "status",
+        "label": "Status",
+        "placeholder": "Select Status",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "logoutReason",
+        "label": "Logout Reason",
+        "placeholder": "Enter Logout Reason",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      }
+    ]
+  }
+]

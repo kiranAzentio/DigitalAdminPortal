@@ -1,0 +1,438 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "radioBoxText",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "radioBoxText"
+            },
+            {
+                "field":"actions",
+                "header": "",
+                "headerType":"text",
+                "bodyType":"actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "companyCode",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "remarks",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "createdDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            },
+            {
+                "field": "companyid",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": " ID"
+            },
+            {
+                "field": "companyCode",
+                "header": "Company Code"
+            },
+            {
+                "field": "remarks",
+                "header": "Remarks"
+            },
+            {
+                "field": "createdDate",
+                "header": "Created Date"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            },
+            {
+                "field":"actions",
+                "header":"Actions"
+            },
+            {
+                "field":"companyid",
+                "header":"Company ID"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "id",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "companyCode",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "remarks",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "createdDate",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "companyid",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "id",
+                "title": "ID",
+                "placeholder": "Enter ID"
+            },
+            {
+                "tableMetaDataField": "companyCode",
+                "title": "CompanyCode",
+                "placeholder": "Enter Company Code"
+            },
+            {
+                "tableMetaDataField": "remarks",
+                "title": "Remarks",
+                "placeholder": "Enter Remarks"
+            },
+            {
+                "tableMetaDataField": "createdDate",
+                "title": "Created Date",
+                "placeholder": "Enter Created Date"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            },
+            {
+                "tableMetaDataField": "companyid",
+                "title": "Company Id",
+                "placeholder": "Enter Company ID"
+            }
+        ],
+        "tableTitle": "DATABASE - Company List",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd_DELETE_IT_LATER": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 51,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 53,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "166",
+                    "transactionId": "1234"
+                },
+                {
+                    "queryId": "160",
+                    "transactionId": "123456",
+                    "arrayName": "companyDetails"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save-update-preparedStm",
+            "apiSaveDataUrlReqData": {
+                "queryId": "161",
+                "queryId2": "162",
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-save-update-preparedStm",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "163",
+                "queryId2": "164",
+                "queryId3": "162",
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "165",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null,
+            "submitCustomValidation": true,
+            "submitCustomValidationMetaData": {
+                "singleLevel": [],
+                "arrayLevel": [
+                    {
+                        "duplicateCheck": true,
+                        "arrayFieldJsonMapping": "companyDetails",
+                        "fieldJsonMapping": "language"
+                    }
+                ]
+            },
+            "submitCustomDataManupulation":{
+                "singleLevel": [ 
+                    {
+                        "fieldName":"installedDate",
+                        "dateFormatConversion": "date"
+                    },
+                    {
+                        "fieldName":"currentDate",
+                        "dateFormatConversion": "date"
+                    },
+                    {
+                        "fieldName":"effectiveDate",
+                        "dateFormatConversion": "date"
+                    }
+                ],
+                "arrayLevel": []
+            }
+        },
+        "jsonTableData": [
+            {
+                "companyCode": "Consolidated Bank of Ghana",
+                "remarks": " ",
+                "createdDate": "2021-09-27",
+                "status": "Active",
+                "companyid": "1"
+            }
+        ]
+    },
+    {
+        "tableMetaData": [
+            {
+                "field": "companyDescription",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "language",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            
+            {
+                "field": "companyDescription",
+                "header": " Company Decription"
+            },
+            {
+                "field": "language",
+                "header": "Language"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "companyDescription",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "language",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "companyDescription",
+                "title": " Company Decription",
+                "placeholder": "Enter Company Decription"
+            },
+            {
+                "tableMetaDataField": "language",
+                "title": "Language",
+                "placeholder": "Enter Language"
+            }
+        ],
+        "tableTitle": "DATABASE - List of Company Description",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd_DELETE_IT_LATER": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "key-value-edit-screen-saved-data",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "not in use",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "SAVE_URL_COMES_HERE",
+            "apiSaveDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "UPDATE_URL_COMES_HERE",
+            "apiUpdateDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "DELETE_URL_COMES_HERE",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": true,
+            "dependantGridMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "dependantGridReqObj": {
+                "queryId": "158",
+                "transactionId": "1234"
+            },
+            "dependantGridUrl": "querydata-by-queryid-metadata",
+            "submitCustomValidation": false,
+            "submitCustomValidationMetaData": null
+        },
+        "jsonTableData": [
+            {
+                "companyDescription": "Consolidated Bank of Ghana",
+                "language": "English"
+            },
+            {
+                "companyDescription": "Consolidated Bank of Ghana, L2",
+                "language": "Arabic"
+            }
+        ]
+    }
+]

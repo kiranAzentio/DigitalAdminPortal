@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------------------------
+15-11-2021 - ADDED BY ROHIT
+--------------------------------------------------------------------------------------------------
+#MENU 
+GENRIC MASTER --> Key VALUE MASTER
+                (1) TABLE SCREEN  = REFER 5.json
+                (2) ADD SCREEN = REFER key-value-screen.json
+                (3) EDIT SCREEN = REFER key-value-edit-screen.json
+
+                Key VALUE MASTER TRANS 
+                (1) ADD SCREEN = REFER key-value-trans-screen.json (Not configurd in database)
+                (2) EDIT SCREEN = REFER key-value-trans-edit-screen.json
+
+
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+17-11-2021 ---
+
+
+1) Edit screen --> 
+1) parent level id type hidden
+2) array level id type hidden and arraycht aat madhe pan save karto
+3) "showDeleteNestedFormButton": false and "hideDeleteIconByArrayIndex": [],

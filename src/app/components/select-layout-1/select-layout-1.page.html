@@ -1,0 +1,95 @@
+<!-- MOBILE -->
+  <!-- SEARCHABLE DROPDOWN STARTS https://www.npmjs.com/package/ionic-selectable -->
+<!-- <div *ngIf="appConfig.getPlatformMobile()"> -->
+<div *ngIf="false">
+      <ion-label
+      [position]="appConfig.labelPosition"
+      style="margin-bottom:5px !important; font-size:13px">{{title | translate}} </ion-label>
+      <!-- <ion-item style="margin-bottom: 15px;"  class="transparent select-style" lines="none"  *ngIf="data != null"> -->
+        <!-- <ion-label *ngIf="show" 
+        [position]="appConfig.labelPosition"
+        style="margin-bottom:5px !important; font-size:13px" [ngClass]="{'whitelabel': whitelabelbool}" [ngClass]="{'f14': isDarkBg}" [ngClass]="{'selectLabel': !isDarkBg}" class="ion-text-uppercase font-regular ">{{title | translate}}</ion-label> -->
+    <!-- [formControl]="control" -->
+       
+        <ionic-selectable *ngIf="data != null"
+        #abc         
+        [(ngModel)]="selectedItem"
+        [items]="data"
+        [itemValueField]="valueId"
+        [itemTextField]="valueDesc"
+        [canSearch]="canSearch"
+        [canClear]="canClear"
+        [isMultiple]="isMultiple"
+        [readonly]="readonly"
+        [disableItems]="disableItemsArr"
+        [clearButtonText]=" 'CLEAR' | translate"
+        [modalCssClass]="modalCssClass"
+        [placeholder]="placeholder"
+        [searchFailText]=" 'NO_RECORDS' | translate"
+        [searchPlaceholder]= "'SEARCH_PLACEHOLDER' | translate"
+        [shouldFocusSearchbar]="true"
+        [shouldStoreItemValue]="true"
+        (onChange)="onChangeFunc($event)"
+      >
+      <!-- close button -->
+      <ng-template ionicSelectableCloseButtonTemplate>
+        <ion-icon name="close-circle" style="font-size: 24px;"></ion-icon>
+      </ng-template>
+      <!-- Title template -->
+      <ng-template ionicSelectableTitleTemplate>
+          {{title | translate}}
+      </ng-template> 
+
+      
+<!-- 
+      <ng-template ionicSelectableItemEndTemplate let-port="item" let-isPortSelected="isItemSelected">
+          <img class="country-flag" [src]="data.flagUrl" />
+        </ng-template> -->
+
+        <!--use placeholder if you want to do styling -->
+       <!-- <ng-template ionicSelectablePlaceholderTemplate>
+        {{placeholder | translate}}
+      </ng-template> 
+  
+        use search fail if you want to do styling -->
+        <!-- <ng-template ionicSelectableSearchFailTemplate>
+          <div padding>
+            {{'NO_RECORDS' | translate}}
+          </div> 
+        </ng-template>
+             
+  
+         (onClear)="onCancelFunc($event)"  -->
+  
+      </ionic-selectable>
+    <!-- </ion-item> -->
+  <!-- </ion-item> -->
+</div>
+    <!-- ENDS HERE -->
+  
+
+
+  <!-- DESKTOP -->
+  <!-- https://github.com/ng-select/ng-select -->
+
+<!-- <div *ngIf="!appConfig.getPlatformMobile()" class="blackColor"> -->
+<div  class="blackColor">
+    <!-- <ion-label
+    [position]="appConfig.labelPosition"
+ >{{title | translate}}</ion-label> -->
+ <!-- <h1>{{ConvertStringToInteger}} </h1> -->
+ <!-- style="border-radius: 5px;margin-bottom: 25px" -->
+    <ng-select  class="ion-no-padding transparent select-style custom"   *ngIf="data != null"   
+    [items]="data" 
+    [bindValue]="valueId"  
+    [bindLabel]="valueDesc" 
+    [(ngModel)]="selectedItem"
+    [readonly]="readonly"
+    [placeholder]="placeholder | translate"
+    [searchable]="canSearch"
+    (change)="onChangeFunc($event)"
+    >
+  </ng-select>
+</div>
+
+  <!-- DESKTOP ENDS HERE -->

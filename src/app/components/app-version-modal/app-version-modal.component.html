@@ -1,0 +1,43 @@
+<ion-grid class="ion-text-center">
+  <ion-row>
+    <ion-col size="12">
+      <img src="../assets/img/sfl/upgrade.svg" style="width: 75%; margin-top: 30px;" />
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12" class="ion-padding">
+      <p>
+        Dear User,<br />
+        The version you are using is too old.
+        <br />
+        You need to upgrade to the latest version.
+      </p>
+    </ion-col>
+  </ion-row>
+  <!-- <ion-row>
+    <ion-col size="12">
+      <ion-button (click)="dismissModal()">
+        Upgrade Now
+      </ion-button>
+    </ion-col>
+    <ion-col size="12">
+      <ion-button fill="clear" mode="ios" (click)="dismissModal()">
+        Upgrade later
+      </ion-button>
+    </ion-col>
+  </ion-row> -->
+  <ion-row>
+    <ion-col size="6">
+      <ion-button (click)="dismissModal()" class="secondary" expand="block" shape="square">
+        <!-- {{ 'NSR.NO' | translate }} -->
+        Upgrade later
+      </ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button (click)="openMarket()" expand="block" shape="square">
+        <!-- {{ 'NSR.YES' | translate }} -->
+        Upgrade Now
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>

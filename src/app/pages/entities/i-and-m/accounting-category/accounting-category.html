@@ -1,0 +1,61 @@
+
+<!-- todo: add elasticsearch support -->
+<ion-content>
+    <!-- <ion-refresher [disabled]="plt.is('desktop')" slot="fixed" (ionRefresh)="loadAll($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher> -->
+
+        <!-- <p-prime-table
+        *ngIf="showTable"
+        [tableData]="tableData"
+        [tableMetaData]="tableMetaData"
+        [tableGlobalFilterFields]="tableGlobalFilterFields"
+        [tableTitle]="tableTitle"
+        (onEdit)="onEdit($event)"
+        (onAdd)="onAdd()"
+        ></p-prime-table> -->
+
+        <digital-stepper-header></digital-stepper-header>
+
+           <digital-p-prime-table
+        *ngIf="showTable"
+        [showActionsAdd]="false"
+        [showSerialNumber]="true"
+        [showSearchBar]="true"
+        [tableData]="tableData"
+        [tableMetaData]="tableMetaData"
+        [tableGlobalFilterFields]="tableGlobalFilterFields"
+        [tableTitle]="tableTitle"
+        (onEdit)="onEdit($event)"
+        (onAdd)="onAdd()"
+        ></digital-p-prime-table>
+        <div style="float: right;">
+            <ion-button (click)="next()">
+                Next
+            </ion-button>
+        </div>
+
+        <!-- form -->
+        <!-- <div>
+            <form #editForm="ngForm">
+                <ion-input placeholder="enter" [(ngModel)]="username" name="username">
+
+                </ion-input>
+                <ion-input placeholder="enter" [(ngModel)]="email" name="email">
+                    
+                </ion-input>
+            </form>
+            <div style="display: inline-flex;">
+              
+                <div >
+                    <ion-button (click)="next()">
+                        NEXT
+                    </ion-button>
+                </div>
+            </div>
+           
+            
+        </div> -->
+       
+
+</ion-content>

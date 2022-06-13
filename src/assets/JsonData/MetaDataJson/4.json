@@ -1,0 +1,85 @@
+[{
+    "tableMetaData":[
+        { "field": "languageDescription", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "languageLocale", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "remarks", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "createdDate", "header": "", "headerType": "date", "bodyType": "dateText" },
+        { "field": "status", "header": "", "headerType": "text", "bodyType": "statusText"  },
+        { "field": "key", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "actions", "header": "", "headerType": "text", "bodyType": "actionsText"  }
+    ],
+    "tableMetaDataFieldNameLang":[
+        {"field":"languageDescription","header":"Language Description"},
+        {"field":"languageLocale","header":"Language Locale"},
+        {"field":"remarks","header":"Remarks"},
+        {"field":"createdDate","header":"Created Date"},
+        {"field":"status","header":"Status"},
+        {"field":"actions","header":"Actions"},
+        {"field":"key","header":"Key"}
+        
+    ],
+    "filterData":[
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "languageDescription","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "languageLocale","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "remarks","maxLength":"100"},
+        {"title": "","placeholder":"","type": "date","value": null,"tableMetaDataField": "createdDate","minDate":"","maxDate":""},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "status","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "key","maxLength":"100"}
+
+    ],
+    "filterDataFieldNameLang":[
+        {"tableMetaDataField":"languageDescription","title":"Language Description","placeholder":"Enter Language Description"},
+        {"tableMetaDataField":"languageLocale","title":"Language Locale","placeholder":"Enter Language Locale"},
+        {"tableMetaDataField":"remarks","title":"Remarks","placeholder":"Enter Remarks"},
+        {"tableMetaDataField":"createdDate","title":"Created Date","placeholder":"Select Created Date"},
+        {"tableMetaDataField":"status","title":"Status","placeholder":"Enter Status"},
+        {"tableMetaDataField":"key","title":"Key","placeholder":"Enter Key"}
+    ],
+    "tableConfigurationData":{
+        "tableTitle": "Language Master List",
+        "searchPlaceholder":"Global Search",
+        "showDownLoadFlag":true,
+        "showDownLoadPdf":true,
+        "showDownLoadExcel":true,
+        "showDownLoadCsv":true,
+        "showSearchBar":true,
+        "showCustomFilter":true,
+        "showSerialNumber":true,
+        "showPaginator":true,
+        "showSortIcon":true,
+        "showActionsAdd":true, 
+        "showEditNOTINUSE":true,
+        "showDeleteNOTINUSE":true,
+        "showActions":true,
+        "downloadData":[],
+        "filteredTableData":[],
+        "rowsPerPageOptions":[10, 25, 50],
+        "rows":"5",
+        "dataKey":"applRefId",
+        "apiUrlAdd":"language-screen",
+        "apiUrlEdit":"language-screen",
+        "apiSaveDataUrl":"SAVE_URL_COMES_HERE",
+        "apiUpdateDataUrl":"UPDATE_URL_COMES_HERE",
+        "apiDeleteDataUrl":"DELETE_URL_COMES_HERE"
+    },
+        "jsonTableData":
+    [
+        {
+            "languageDescription": "English",
+            "languageLocale": "en_US",
+            "remarks": "English language",
+            "createdDate":"2021-10-27",
+            "status":"Active",
+            "key":"demo 1"
+        },
+        {
+            "languageDescription": "हिंदी",
+            "languageLocale": "en_HI",
+            "remarks": "हिन्दी भाषा",
+            "createdDate":"2021-10-27",
+            "status":"Active",
+            "key":"demo 2"
+        }
+    ]
+}
+]

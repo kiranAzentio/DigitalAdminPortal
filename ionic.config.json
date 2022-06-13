@@ -1,0 +1,7 @@
+{
+  "name": "AdminClient",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

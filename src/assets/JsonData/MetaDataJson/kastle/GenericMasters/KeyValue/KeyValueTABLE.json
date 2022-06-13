@@ -1,0 +1,425 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "radioBoxText",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "radioBoxText"
+            },
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "key",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "keyDesc",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "parentKey",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "isSynchronise",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "syncParentKey",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field": "key",
+                "header": "Key"
+            },
+            {
+                "field": "keyDesc",
+                "header": "Key Description"
+            },
+            {
+                "field": "parentKey",
+                "header": "Parentkey"
+            },
+            {
+                "field": "isSynchronise",
+                "header": "Is Synchronise?"
+            },
+            {
+                "field": "syncParentKey",
+                "header": "Sync Parent Key"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "key",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "keyDesc",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "key",
+                "title": "Key",
+                "placeholder": "Enter Key"
+            },
+            {
+                "tableMetaDataField": "keyDesc",
+                "title": "Key Description",
+                "placeholder": "Enter Key Description"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - List of Key",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Key",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 4,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 5,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "16",
+                    "transactionId": "1234"
+                },
+                {
+                    "queryId": "17",
+                    "transactionId": "123456",
+                    "arrayName": "companyDetails"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "18",
+                "queryId2": "19",
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "20",
+                "queryId2": "21",
+                "queryId3": "19",
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "22",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "hideTransTable":true,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null,
+            "submitCustomValidation": true,
+            "submitCustomValidationMetaData": {
+                "singleLevel": [],
+                "arrayLevel": [
+                    {
+                        "duplicateCheck": true,
+                        "arrayFieldJsonMapping": "companyDetails",
+                        "fieldJsonMapping": "language"
+                    }
+                ]
+            }
+        },
+        "jsonTableData": [
+            {
+                "key": "PRODUCT",
+                "parentKey": "",
+                "isSynchronise": "False",
+                "remarks": "2",
+                "createdDate": "2021-09-27"
+            },
+            {
+                "key": "SUBPRODUCT",
+                "parentKey": "1",
+                "isSynchronise": "False",
+                "remarks": "2",
+                "createdDate": "2021-09-27"
+            },
+            {
+                "key": "EMPLOYMENTTYPE",
+                "parentKey": "",
+                "isSynchronise": "False",
+                "remarks": "2",
+                "createdDate": "2021-09-27"
+            },
+            {
+                "key": "STAGE",
+                "parentKey": "",
+                "isSynchronise": "False",
+                "remarks": "2",
+                "createdDate": "2021-09-27"
+            },
+            {
+                "key": "NATIONALITY",
+                "parentKey": "",
+                "isSynchronise": "True",
+                "remarks": "1",
+                "createdDate": "2021-09-27"
+            }
+        ]
+    },
+    {
+        "tableMetaData": [
+            {
+                "field": "keyDescription",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "language",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "keyDescription",
+                "header": " Key Decription"
+            },
+            {
+                "field": "language",
+                "header": "Language"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "keyDescription",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "language",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "keyDescription",
+                "title": "Key Description",
+                "placeholder": "Enter Key Description"
+            },
+            {
+                "tableMetaDataField": "language",
+                "title": "Language",
+                "placeholder": "Enter Language"
+            }
+        ],
+        "tableTitle": "DATABASE - List of Key Description",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd_DELETE_IT_LATER": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "key-value-edit-screen-saved-data",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "not in use",
+                    "transactionId": "1234"
+                },
+                {
+                    "queryId": "not in use",
+                    "transactionId": "123456"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "SAVE_URL_COMES_HERE",
+            "apiSaveDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "UPDATE_URL_COMES_HERE",
+            "apiUpdateDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "DELETE_URL_COMES_HERE",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": true,
+            "dependantGridMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "dependantGridReqObj": {
+                "queryId": "15",
+                "transactionId": "1234"
+            },
+            "dependantGridUrl": "querydata-by-queryid-metadata",
+            "submitCustomValidation": false,
+            "submitCustomValidationMetaData": null
+        },
+        "jsonTableData": [
+            {
+                "keyDescription": "Product",
+                "language": "English"
+            },
+            {
+                "keyDescription": "Product, L2",
+                "language": "Arabic"
+            }
+        ]
+    }
+]

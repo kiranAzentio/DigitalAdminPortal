@@ -1,0 +1,39 @@
+<ion-header *ngIf="data">
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="end" (click)="closePopUp()">
+      <ion-icon color="light" slot="icon-only" name="close"></ion-icon>
+    </ion-buttons>
+    <ion-title class="title" *ngIf="!changeModalTitle"> {{title | translate}}</ion-title>
+    <ion-title class="title" *ngIf="changeModalTitle"> {{modalTitle | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<digital-app-skeleton *ngIf="showSkeleton"></digital-app-skeleton>
+  <ion-content class="transparent whiteBackground ion-padding" *ngIf="data">
+    <digital-dynamic-form [dynamicForm]="dynamicForm" [parentThis]="parentThis" 
+    [fields]="fields" (onSubmitClk)="onSubmitClk($event)" [buttonName]="buttonName"
+    [buttonName2]="buttonName2"
+    (onCancelClk)="onCancelClk($event)" [screenType]="screenType"
+    > 
+    </digital-dynamic-form>
+
+  </ion-content>
+
+  <!-- <div style="text-align: center;margin-top: 20px;" *ngIf="!data.showImageViewer">
+    <ion-button type="submit" (click)="onSubmit()">
+      {{data.actionButtonText}}
+    </ion-button> -->
+
+    <div *ngIf="show" class="loaderMask" style="  height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(100, 100, 100, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: absolute;">
+      <!-- loading -->
+      <!-- <img src="../assets/img/products/kastle/loader.gif" style="width: 5%;"> -->
+      <img src="assets/img/products/kastle/loader.gif" style="width: 5%;">
+
+    </div>

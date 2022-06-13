@@ -1,0 +1,513 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "radioBoxText",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "radioBoxText"
+            },
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "jobId",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "jobName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "jobStatus",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            },
+            {
+                "field": "startDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "endDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field": "jobId",
+                "header": "Job Id"
+            },
+            {
+                "field": "jobName",
+                "header": "Job Name"
+            },
+            {
+                "field": "jobStatus",
+                "header": "Job Status"
+            },
+            {
+                "field": "startDate",
+                "header": "Start Date"
+            },
+            {
+                "field": "endDate",
+                "header": "End Date"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "jobName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "jobStatus",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "startDate",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "endDate",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "jobName",
+                "title": "Job Name",
+                "placeholder": "Enter Job Name"
+            },
+            {
+                "tableMetaDataField": "jobStatus",
+                "title": "Job Status",
+                "placeholder": "Job Status"
+            },
+            {
+                "tableMetaDataField": "startDate",
+                "title": "Start Date",
+                "placeholder": "Enter Start Date"
+            },
+            {
+                "tableMetaDataField": "endDate",
+                "title": "End Date",
+                "placeholder": "Enter End Date"
+            }
+        ],
+        "tableTitle": "DATABASE - Job Status List",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Job Status",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEdit": false,
+            "showDelete": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 31,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 32,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "90",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "93",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "95",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "97",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null,
+            "submitCustomDataManupulation":{
+                "singleLevel": [ 
+                    {
+                        "fieldName":"startDate",
+                        "dateFormatConversion": "date"
+                    },
+                    {
+                        "fieldName":"endDate",
+                        "dateFormatConversion": "date"
+                    }
+                ],
+                "arrayLevel": []
+            }
+        },
+        "jsonTableData": [
+            {
+                "jobId": "5",
+                "jobName": "COMPANY GENERIC",
+                "jobStatus": "COMPLETE",
+                "startDate": "2021-09-28",
+                "endDate": "2021-09-28"
+            },
+            {
+                "jobId": "3",
+                "jobName": "COMPANY GENERIC",
+                "jobStatus": "COMPLETE",
+                "startDate": "2021-09-27",
+                "endDate": "2021-09-27"
+            },
+            {
+                "jobId": "2",
+                "jobName": "COMPANY GENERIC",
+                "jobStatus": "COMPLETE",
+                "startDate": "2021-09-27",
+                "endDate": "2021-09-27"
+            },
+            {
+                "jobId": "1",
+                "jobName": "COMPANY GENERIC",
+                "jobStatus": "COMPLETE",
+                "startDate": "2021-09-27",
+                "endDate": "2021-09-27"
+            }
+        ]
+    },
+    {
+        "tableMetaData": [
+            {
+                "field": "jobName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "keyName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "startTime",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "endTime",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "jobName",
+                "header": "Job Name"
+            },
+            {
+                "field": "keyName",
+                "header": "key Name"
+            },
+            {
+                "field": "startTime",
+                "header": "start Time"
+            },
+            {
+                "field": "endTime",
+                "header": "end Time"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "jobName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "keyName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "startTime",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "endTime",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "jobName",
+                "title": "Job Name",
+                "placeholder": "Enter Job Name"
+            },
+            {
+                "tableMetaDataField": "keyName",
+                "title": "key Name",
+                "placeholder": "Enter key Name"
+            },
+            {
+                "tableMetaDataField": "startTime",
+                "title": "Start Time",
+                "placeholder": "Enter Start Time"
+            },
+            {
+                "tableMetaDataField": "endTime",
+                "title": "End Time",
+                "placeholder": "Enter End Time"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - Job Details",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd_DELETE_IT_LATER": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "91",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "SAVE_URL_COMES_HERE",
+            "apiSaveDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "UPDATE_URL_COMES_HERE",
+            "apiUpdateDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "DELETE_URL_COMES_HERE",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": true,
+            "dependantGridMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "dependantGridReqObj": {
+                "queryId": "89",
+                "transactionId": "1234"
+            },
+            "dependantGridUrl": "querydata-by-queryid-metadata",
+            "submitCustomValidation": false,
+            "submitCustomValidationMetaData": null
+        },
+        "jsonTableData": [
+            {
+                "jobName": "COMPANY GENERIC",
+                "keyName": "PRODUCT",
+                "startTime": "2021-09-28",
+                "endTime": "2021-09-28",
+                "status": "COMPLETE",
+                "statusId": "1"
+            },
+            {
+                "jobName": "COMPANY GENERIC",
+                "keyName": "SUBPRODUCT",
+                "startTime": "2021-09-28",
+                "endTime": "2021-09-28",
+                "status": "COMPLETE",
+                "statusId": "1"
+            },
+            {
+                "jobName": "COMPANY GENERIC",
+                "keyName": "NATIONALIITY",
+                "startTime": "2021-09-28",
+                "endTime": "2021-09-28",
+                "status": "COMPLETE",
+                "statusId": "1"
+            },
+            {
+                "jobName": "COMPANY GENERIC",
+                "keyName": "EVENT",
+                "startTime": "2021-09-28",
+                "endTime": "2021-09-28",
+                "status": "COMPLETE",
+                "statusId": "1"
+            },
+            {
+                "jobName": "COMPANY GENERIC",
+                "keyName": "NOTIFICATION TYPE",
+                "startTime": "2021-09-28",
+                "endTime": "2021-09-28",
+                "status": "COMPLETE",
+                "statusId": "1"
+            }
+        ]
+    }
+]

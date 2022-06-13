@@ -1,0 +1,1472 @@
+[
+  {
+    "tableMetaData": [
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "passwordCode",
+        "identifier": "textbox",
+        "fieldJsonMapping": "passwordCode",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 10,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "companyId",
+        "identifier": "dropdown",
+        "fieldJsonMapping": "companyId",
+        "value": "",
+        "onPageLoadGetData": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "onChangeMetaData": [],
+        "metdaDataReq": {
+          "queryId": "6",
+          "transactionId": "1234",
+          ":langId": null
+        },
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "changePasswordAfterDays",
+        "identifier": "textbox",
+        "fieldJsonMapping": "changePasswordAfterDays",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 3,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "numberOfPreviousPasswordsCantBeUsed",
+        "identifier": "textbox",
+        "fieldJsonMapping": "numberOfPreviousPasswordsCantBeUsed",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 3,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "maximumInvalidPasswordAttempts",
+        "identifier": "textbox",
+        "fieldJsonMapping": "maximumInvalidPasswordAttempts",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 3,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "minimumPasswordLength",
+        "identifier": "textbox",
+        "fieldJsonMapping": "minimumPasswordLength",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 2,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "minimumPasswordDuration",
+        "identifier": "textbox",
+        "fieldJsonMapping": "minimumPasswordDuration",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 5,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "minPwdChangeAccess",
+        "identifier": "textbox",
+        "fieldJsonMapping": "minPwdChangeAccess",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 5,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "passwordContainsUpperCaseCharacters",
+        "identifier": "toggle",
+        "fieldJsonMapping": "passwordContainsUpperCaseCharacters",
+        "value": "N",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "ManupulateManditoryFileds": [
+          {
+            "fieldJsonMapping": "minimumUpperCaseCharacters",
+            "name": "required",
+            "validator": "required"
+          }
+        ],
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "minimumUpperCaseCharacters",
+        "identifier": "textbox",
+        "fieldJsonMapping": "minimumUpperCaseCharacters",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 2,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "passwordContainsLowerCaseCharacters",
+        "identifier": "toggle",
+        "fieldJsonMapping": "passwordContainsLowerCaseCharacters",
+        "value": "N",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "ManupulateManditoryFileds": [
+          {
+            "fieldJsonMapping": "minimumLowerCaseCharacters",
+            "name": "required",
+            "validator": "required"
+          }
+        ],
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "minimumLowerCaseCharacters",
+        "identifier": "textbox",
+        "fieldJsonMapping": "minimumLowerCaseCharacters",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 2,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "passwordContainsSpecialCharacters",
+        "identifier": "toggle",
+        "fieldJsonMapping": "passwordContainsSpecialCharacters",
+        "value": "N",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "ManupulateManditoryFileds": [
+          {
+            "fieldJsonMapping": "specialCharacters",
+            "name": "required",
+            "validator": "required"
+          },
+          {
+            "fieldJsonMapping": "minimumSpecialCharacters",
+            "name": "required",
+            "validator": "required"
+          }
+        ],
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "specialCharacters",
+        "identifier": "textbox",
+        "fieldJsonMapping": "specialCharacters",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 20,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "minimumSpecialCharacters",
+        "identifier": "textbox",
+        "fieldJsonMapping": "minimumSpecialCharacters",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 2,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "passwordContainsDigits",
+        "identifier": "toggle",
+        "fieldJsonMapping": "passwordContainsDigits",
+        "value": "N",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "ManupulateManditoryFileds": [
+          {
+            "fieldJsonMapping": "minimumDigits",
+            "name": "required",
+            "validator": "required"
+          }
+        ],
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "minimumDigits",
+        "identifier": "textbox",
+        "fieldJsonMapping": "minimumDigits",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 2,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "pwdValExtra",
+        "identifier": "toggle",
+        "fieldJsonMapping": "pwdValExtra",
+        "value": "Y",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "pwdValExtraChars",
+        "identifier": "textbox",
+        "fieldJsonMapping": "pwdValExtraChars",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 20,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "pwdValExtraCnt",
+        "identifier": "textbox",
+        "fieldJsonMapping": "pwdValExtraCnt",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "pattern",
+            "validator": "^[0-9]+$",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 20,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "pwdValRegExp",
+        "identifier": "toggle",
+        "fieldJsonMapping": "pwdValRegExp",
+        "value": "Y",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "pwdRegExp",
+        "identifier": "textbox",
+        "fieldJsonMapping": "pwdRegExp",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 50,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "pwdRegExpDesc",
+        "identifier": "textbox",
+        "fieldJsonMapping": "pwdRegExpDesc",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 50,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "passwordShouldNotBeSameAsUsername",
+        "identifier": "toggle",
+        "fieldJsonMapping": "passwordShouldNotBeSameAsUsername",
+        "value": "Y",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "passwordShouldNotBeDirectoryName",
+        "identifier": "toggle",
+        "fieldJsonMapping": "passwordShouldNotBeDirectoryName",
+        "value": "Y",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "label": "",
+        "placeholder": "",
+        "inputType": "",
+        "name": "companyDetails",
+        "identifier": "array",
+        "fieldJsonMapping": "companyDetails",
+        "value": "",
+        "showAddNestedFormButton": "true",
+        "showAddNestedFormButtonLabel": "Add",
+        "showDeleteNestedFormButton": "true",
+        "formArrayTitle": "Add Mutiple Key Value Trans Descriptions",
+        "hideDeleteIconByArrayIndex": [
+          0
+        ],
+        "readOnlyByArrayIndex": [
+          {
+            "language": [
+              0
+            ]
+          }
+        ],
+        "fieldArrayNestedData": [
+          {
+            "type": "input",
+            "label": "",
+            "placeholder": "",
+            "inputType": "text",
+            "name": "id",
+            "identifier": "hidden",
+            "fieldJsonMapping": "id",
+            "value": "",
+            "showDelete": true,
+            "validations": [
+              {
+                "name": "not in use",
+                "validator": "not in use",
+                "message": ""
+              },
+              {
+                "name": "not in use",
+                "validator": "not in use",
+                "message": ""
+              }
+            ]
+          },
+          {
+            "type": "input",
+            "label": "",
+            "placeholder": "",
+            "inputType": "text",
+            "name": "passwordDescription",
+            "identifier": "textbox",
+            "fieldJsonMapping": "passwordDescription",
+            "value": "",
+            "showDelete": true,
+            "validations": [
+              {
+                "name": "required",
+                "validator": "required",
+                "message": ""
+              },
+              {
+                "name": "not in use",
+                "validator": "not in use",
+                "message": ""
+              }
+            ]
+          },
+          {
+            "type": "input",
+            "label": "",
+            "placeholder": "",
+            "inputType": "text",
+            "name": "language",
+            "identifier": "dropdown",
+            "fieldJsonMapping": "language",
+            "value": 1,
+            "onPageLoadGetData": true,
+            "apiUrl": "querydata-by-queryid-metadata",
+            "metdaDataReq": {
+              "queryId": "5",
+              "transactionId": "1234"
+            },
+            "onChangeMetaData": [],
+            "metdaData": [],
+            "idToShow": "id",
+            "descriptionToShow": "label",
+            "validations": [
+              {
+                "name": "required",
+                "validator": "required",
+                "message": ""
+              },
+              {
+                "name": "not in use",
+                "validator": "not in use",
+                "message": ""
+              }
+            ]
+          }
+        ],
+        "validations": []
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "invalidOtpCount",
+        "identifier": "textbox",
+        "fieldJsonMapping": "invalidOtpCount",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 3,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "polDefault",
+        "identifier": "toggle",
+        "fieldJsonMapping": "polDefault",
+        "value": "N",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "Y",
+        "uncheckedToogleId": "N",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "remarks",
+        "identifier": "textbox",
+        "fieldJsonMapping": "remarks",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "status",
+        "identifier": "toggle",
+        "fieldJsonMapping": "status",
+        "value": "A",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "A",
+        "uncheckedToogleId": "X",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      }
+    ],
+    "tableMetaDataFieldNameLang": [
+      {
+        "fieldJsonMapping": "passwordCode",
+        "label": "Password Code",
+        "placeholder": "Enter Password Code",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only alphabets are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 10 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "companyId",
+        "label": "Company Name",
+        "placeholder": "Select Company Name",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! "
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "changePasswordAfterDays",
+        "label": "Change Password After Days",
+        "placeholder": "Enter Change Password After Days",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 3 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "numberOfPreviousPasswordsCantBeUsed",
+        "label": "Number Of Previous Passwords Can't Be Used",
+        "placeholder": "Enter Number Of Previous Passwords Can't Be Used",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 3 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "maximumInvalidPasswordAttempts",
+        "label": "Maximum Invalid Password Attempts",
+        "placeholder": "Enter Maximum Invalid Password Attempts",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 3 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "minimumPasswordLength",
+        "label": "Minimum Password Length",
+        "placeholder": "Enter Minimum Password Length",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 2 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "minimumPasswordDuration",
+        "label": "Minimum Password Duration",
+        "placeholder": "Enter Minimum Password Duration",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 5 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "minPwdChangeAccess",
+        "label": "Minimum time after password change user can acess the application ",
+        "placeholder": "Enter Minimum Password Duration",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 5 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "passwordContainsUpperCaseCharacters",
+        "label": "Password Contains Upper Case Characters",
+        "placeholder": "Enter password Contains Upper Case Characters",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "minimumUpperCaseCharacters",
+        "label": "Minimum Upper Case Characters",
+        "placeholder": "Enter Minimum Contains Upper Case Characters",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 2 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "passwordContainsLowerCaseCharacters",
+        "label": "Password Contains Lower Case Characters",
+        "placeholder": "Enter Password Contains Lower Case Characters",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "minimumLowerCaseCharacters",
+        "label": "Minimum Lower Case Characters",
+        "placeholder": "Enter Minimum Lower Case Characters",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 2 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "passwordContainsSpecialCharacters",
+        "label": "Password Contains Special Characters",
+        "placeholder": "Enter Password Contains Special Characters",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "specialCharacters",
+        "label": "Allowed Special Characters",
+        "placeholder": "Enter Allowed Special Characters",
+        "validations": [
+          "This field is required",
+          "Patter is invalid",
+          "Please Enter Minimum 1 characters",
+          "maximum 20 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "minimumSpecialCharacters",
+        "label": "Minimum Special Characters",
+        "placeholder": "Enter Minimum Special Characters",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 2 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "passwordContainsDigits",
+        "label": "Password Contains Digits",
+        "placeholder": "Enter Password Contains Digits",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "minimumDigits",
+        "label": "Minimum Digits",
+        "placeholder": "Minimum Digits",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 2 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "pwdValExtra",
+        "label": "Password Should Contain Number",
+        "placeholder": "Enter Password Should Contain Number",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "pwdValExtraChars",
+        "label": "Allowed Characters",
+        "placeholder": "Enter Allowed Characters",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 20 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "pwdValExtraCnt",
+        "label": "How Many Minimum Extra Characters Password Should Contain",
+        "placeholder": "Enter How Many Minimum Extra Characters Password Should Contain",
+        "validations": [
+          "This field is required",
+          "Patter is invalid ! only number are allowed",
+          "Please Enter Minimum 1 characters",
+          "maximum 2 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "pwdValRegExp",
+        "label": "Password Should Check Regular Expression",
+        "placeholder": "Enter Password Should Check Regular Expression",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "pwdRegExp",
+        "label": "Regular Expression For Checking",
+        "placeholder": "Enter Regular Expression For Checking",
+        "validations": [
+          "This field is required",
+          "Patter is invalid !",
+          "Please Enter Minimum 1 characters",
+          "maximum 50 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "pwdRegExpDesc",
+        "label": "Description of Regular Expression For User Information",
+        "placeholder": "Enter Description of Regular Expression For User Information",
+        "validations": [
+          "This field is required",
+          "Patter is invalid !",
+          "Please Enter Minimum 1 characters",
+          "maximum 200 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "passwordShouldNotBeSameAsUsername",
+        "label": "Password Should Not Be Same As Username",
+        "placeholder": "Enter Password Should Not Be Same As Username",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "passwordShouldNotBeDirectoryName",
+        "label": "Password Should Not Be Directory Name",
+        "placeholder": "Enter Password Should Not Be Directory Name",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "invalidOtpCount",
+        "label": "Number Of Time Invalid OTP Was Entered ",
+        "placeholder": "Enter Number Of Time Invalid OTP Was Entered",
+        "validations": [
+          "This field is required",
+          "Patter is invalid !",
+          "Please Enter Minimum 1 characters",
+          "maximum 3 characters only"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "polDefault",
+        "label": "Default Policy",
+        "placeholder": "Enter Default Policy",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "remarks",
+        "label": "Remarks",
+        "placeholder": "Enter remarks",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "status",
+        "label": "Status",
+        "placeholder": "Select Status",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "companyDetails",
+        "label": "",
+        "placeholder": "",
+        "validations": [],
+        "fieldArrayNestedDataNameLang": [
+          {
+            "fieldJsonMapping": "id",
+            "label": "",
+            "placeholder": "",
+            "validations": [
+              "",
+              ""
+            ]
+          },
+          {
+            "fieldJsonMapping": "passwordDescription",
+            "label": "Password Description",
+            "placeholder": "Enter Password Description",
+            "validations": [
+              "This field is required",
+              "Patter is invalid 1"
+            ]
+          },
+          {
+            "fieldJsonMapping": "language",
+            "label": "Language",
+            "placeholder": "Select Language",
+            "validations": [
+              "This field is required",
+              "Patter is invalid 2"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,140 @@
+[
+  {
+    "tableMetaData": [
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "userName",
+        "identifier": "textbox",
+        "fieldJsonMapping": "userName",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "firstName",
+        "identifier": "textbox",
+        "fieldJsonMapping": "firstName",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "loginTime",
+        "identifier": "textbox",
+        "fieldJsonMapping": "loginTime",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "logoutTime",
+        "identifier": "textbox",
+        "fieldJsonMapping": "logoutTime",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      }
+    ],
+    "tableMetaDataFieldNameLang": [
+   
+      {
+        "fieldJsonMapping": "userName",
+        "label": "User Name",
+        "placeholder": "Enter User Name",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      }, {
+        "fieldJsonMapping": "firstName",
+        "label": "First Name",
+        "placeholder": "Enter First Name",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "loginTime",
+        "label": "login Time",
+        "placeholder": "Enter login Time",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "logoutTime",
+        "label": "Logout Time",
+        "placeholder": "Enter Logout Time",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      }
+    ]
+  }
+]

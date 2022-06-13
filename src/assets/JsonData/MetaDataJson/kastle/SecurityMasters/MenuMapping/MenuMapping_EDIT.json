@@ -1,0 +1,680 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": ":productIdkeyid",
+                "identifier": "hidden",
+                "fieldJsonMapping": ":productIdkeyid",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": ":roleIdkeyid",
+                "identifier": "hidden",
+                "fieldJsonMapping": ":roleIdkeyid",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": ":menuParentIdkeyid",
+                "identifier": "hidden",
+                "fieldJsonMapping": ":menuParentIdkeyid",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "id",
+                "identifier": "hidden",
+                "fieldJsonMapping": "id",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "menuConId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "menuConId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [
+                ],
+                "metdaDataReq": {
+                    "queryId": "203",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 10,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "companyId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "companyId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [
+                    {
+                        "clear": true,
+                        "fieldJsonMapping": "productId",
+                        "additionalData": true,
+                        "additionalDataLableArr": [
+                            "productIdkeyid"
+                        ],
+                        "attachToFieldJsonMapping": "productId"
+                    }
+                ],
+                "metdaDataReq": {
+                    "queryId": "182",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "productId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "productId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [
+                    {
+                        "clear": true,
+                        "fieldJsonMapping": "menuParentId",
+                        "additionalData": true,
+                        "additionalDataLableArr": [
+                            "menuParentIdkeyid"
+                        ],
+                        "attachToFieldJsonMapping": "menuParentId"
+                    }
+                ],
+                "metdaDataReq": {
+                    "queryId": "189",
+                    "transactionId": "1234"
+                },
+                "createMataDataReqOnCondition": [
+                    "productIdkeyid"
+                ],
+                "metdaData": [":productIdkeyid"],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "ConvertStringToInteger": true,
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validat+or": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "roleId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "roleId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [
+                    {
+                        "clear": true,
+                        "fieldJsonMapping": "menuParentId",
+                        "additionalData": true,
+                        "additionalDataLableArr": [
+                            "menuParentIdkeyid"
+                        ],
+                        "attachToFieldJsonMapping": "menuParentId"
+                    }
+                ],
+                "metdaDataReq": {
+                    "queryId": "196",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "createMataDataReqOnCondition": [
+                    "roleIdkeyid"
+                ],
+                "metdaData": [":roleIdkeyid"],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "menuPosition",
+                "identifier": "toggle",
+                "fieldJsonMapping": "menuPosition",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": false,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "not in use",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "menuSequence",
+                "identifier": "textbox",
+                "fieldJsonMapping": "menuSequence",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 3,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "menuLevel",
+                "identifier": "toggle",
+                "fieldJsonMapping": "menuLevel",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": false,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "not in use",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "menuParentId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "menuParentId",
+                "value": null,
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "197",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "createMataDataReqOnCondition": ["productIdkeyid","roleIdkeyid"],
+                "onChangeMetaData": [],
+                "metdaData": [
+                    "productId","roleId"
+                ],
+                "idToShow": "label",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 10,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "UrlParam",
+                "identifier": "textbox",
+                "fieldJsonMapping": "UrlParam",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "remarks",
+                "identifier": "textbox",
+                "fieldJsonMapping": "remarks",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "status",
+                "identifier": "toggle",
+                "fieldJsonMapping": "status",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+           
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": ":productIdkeyid",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": ":roleIdkeyid",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": ":menuParentIdkeyid",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "id",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "menuConId",
+                "label": "Menu Configration ID",
+                "placeholder": "Enter Menu Configration ID",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 10 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "companyId",
+                "label": "Company ID",
+                "placeholder": "Select Company ID",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "productId",
+                "label": "Product",
+                "placeholder": "Select Product",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "roleId",
+                "label": "Role",
+                "placeholder": "Select Role",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "menuPosition",
+                "label": "Position of Menu",
+                "placeholder": "select Position of Menu",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "menuLevel",
+                "label": "Level of Menus",
+                "placeholder": "Select Level of Menus",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "menuSequence",
+                "label": "Menu Sequence",
+                "placeholder": "Enter Menu Sequence",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 3 characters only"
+                ]
+            },
+            {
+                "fieldJsonMapping": "menuParentId",
+                "label": "Menu Parent Id",
+                "placeholder": "Enter Menu Parent Id",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 10 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+           
+            {
+                "fieldJsonMapping": "UrlParam",
+                "label": "Url Parameter",
+                "placeholder": "Enter Url Parameter",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ]
+            },
+            {
+                "fieldJsonMapping": "remarks",
+                "label": "Remarks",
+                "placeholder": "Enter remarks",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+           
+            {
+                "fieldJsonMapping": "status",
+                "label": "Status",
+                "placeholder": "Select Status",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            }
+           
+           
+        ]
+    }
+]

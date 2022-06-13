@@ -1,0 +1,229 @@
+[{
+    "tableMetaData":[
+        { "field": "applRefId", "header": "", "headerType": "text", "bodyType": "textLink" },
+        { "field": "customerName", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "requestedAmt", "header": "", "headerType": "text", "bodyType": "currencyText" },
+        { "field": "applDate", "header": "", "headerType": "date", "bodyType": "dateText" },
+        { "field": "status", "header": "", "headerType": "text", "bodyType": "statusText"  }
+    ],
+    "tableMetaDataFieldNameLang":[
+        {"field":"applRefId","header":"Application No"},
+        {"field":"customerName","header":"Customer Name"},
+        {"field":"requestedAmt","header":"Requested Amount"},
+        {"field":"applDate","header":"Application Date"},
+        {"field":"status","header":"Status"}
+    ],
+    "filterData":[
+        {"title": "","placeholder":"","type": "number","value": null,"tableMetaDataField": "applRefId","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "customerName","maxLength":"100"},
+        {"title": "","placeholder":"","type": "date","value": null,"tableMetaDataField": "applDate","minDate":"","maxDate":""},
+        {"title": "","placeholder":"","type": "currency","value": null,"tableMetaDataField": "requestedAmt","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "status","maxLength":"100"}
+    ],
+    "filterDataFieldNameLang":[
+        {"tableMetaDataField":"applRefId","title":"Application No","placeholder":"Enter Application No"},
+        {"tableMetaDataField":"customerName","title":"Customer Name","placeholder":"Enter Customer Name"},
+        {"tableMetaDataField":"applDate","title":"Application Date","placeholder":"Select Application Date"},
+        {"tableMetaDataField":"requestedAmt","title":"Requested Amount","placeholder":"Enter Requested Amount"},
+        {"tableMetaDataField":"status","title":"Status","placeholder":"Enter Status"}
+    ],
+    "tableConfigurationData":{
+        "tableTitle": "DATA GRID 1",
+        "searchPlaceholder":"Global Search",
+        "showDownLoadFlag":true,
+        "showDownLoadPdf":true,
+        "showDownLoadExcel":true,
+        "showDownLoadCsv":true,
+        "showSearchBar":true,
+        "showCustomFilter":true,
+        "showSerialNumber":true,
+        "showPaginator":true,
+        "showSortIcon":true,
+        "showActionsAdd":true,
+        "showEdit":true,
+        "showDelete":true,
+        "showActions":false,
+        "downloadData":[],
+        "filteredTableData":[],
+        "rowsPerPageOptions":[10, 25, 50],
+        "rows":"5",
+        "dataKey":"applRefId",
+        "apiUrlAdd":"language-screen",
+        "apiUrlEdit":"language-screen",
+        "apiSaveDataUrl":"SAVE_URL_COMES_HERE",
+        "apiUpdateDataUrl":"UPDATE_URL_COMES_HERE",
+        "apiDeleteDataUrl":"DELETE_URL_COMES_HERE" 
+    },
+        "jsonTableData":
+    [
+        {
+            "applRefId": "1",
+            "customerName": "John Doe1",
+            "productName": "Personal Loan1",
+            "applDate":"2021-10-20",
+            "requestedAmt": "200000",
+            "currencyLabel":"AED",
+            "status":"Active"
+        },
+        {
+            "applRefId": "2",
+            "customerName": "John Doe2",
+            "productName": "Personal Loan2",
+            "applDate":"2021-11-20",
+            "requestedAmt": "300000",
+            "currencyLabel":"AED",
+            "status":"Inactive"
+        },
+        {
+            "applRefId": "3",
+            "customerName": "John Doe3",
+            "productName": "Personal Loan3",
+            "applDate":"2021-10-21",
+            "requestedAmt": "400000",
+            "currencyLabel":"USD",
+            "status":"Active"
+        },
+        {
+            "applRefId": "4",
+            "customerName": "John Doe4",
+            "productName": "Personal Loan4",
+            "applDate":"2021-11-21",
+            "requestedAmt": "500000",
+            "currencyLabel":"USD",
+            "status":"Active"
+        },
+        {
+            "applRefId": "5",
+            "customerName": "John Doe5",
+            "productName": "Personal Loan5",
+            "applDate":"2021-10-22",
+            "requestedAmt": "600000",
+            "currencyLabel":"INR",
+            "status":"Inactive"
+        },
+        {
+            "applRefId": "6",
+            "customerName": "John Doe6",
+            "productName": "Personal Loan6",
+            "applDate":"2021-10-23",
+            "requestedAmt": "700000",
+            "currencyLabel":"USD",
+            "status":"Active"
+        }
+    ]
+},
+{
+    "tableMetaData":[
+        { "field": "applRefId", "header": "", "headerType": "text", "bodyType": "textLink" },
+        { "field": "customerName", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "requestedAmt", "header": "", "headerType": "text", "bodyType": "currencyText" },
+        { "field": "applDate", "header": "", "headerType": "date", "bodyType": "dateText" },
+        { "field": "status", "header": "", "headerType": "text", "bodyType": "statusText"  }
+    ],
+    "tableMetaDataFieldNameLang":[
+        {"field":"applRefId","header":"Application No"},
+        {"field":"customerName","header":"Customer Name"},
+        {"field":"requestedAmt","header":"Requested Amount"},
+        {"field":"applDate","header":"Application Date"},
+        {"field":"status","header":"Status"}
+    ],
+    "filterData":[
+        {"title": "","placeholder":"","type": "number","value": null,"tableMetaDataField": "applRefId","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "customerName","maxLength":"100"},
+        {"title": "","placeholder":"","type": "date","value": null,"tableMetaDataField": "applDate","minDate":"","maxDate":""},
+        {"title": "","placeholder":"","type": "currency","value": null,"tableMetaDataField": "requestedAmt","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "status","maxLength":"100"}
+    ],
+    "filterDataFieldNameLang":[
+        {"tableMetaDataField":"applRefId","title":"Application No","placeholder":"Enter Application No"},
+        {"tableMetaDataField":"customerName","title":"Customer Name","placeholder":"Enter Customer Name"},
+        {"tableMetaDataField":"applDate","title":"Application Date","placeholder":"Select Application Date"},
+        {"tableMetaDataField":"requestedAmt","title":"Requested Amount","placeholder":"Enter Requested Amount"},
+        {"tableMetaDataField":"status","title":"Status","placeholder":"Enter Status"}
+    ],
+    "tableConfigurationData":{
+        "tableTitle": "DATA GRID 2",
+        "searchPlaceholder":"Global Search",
+        "showDownLoadFlag":true,
+        "showDownLoadPdf":true,
+        "showDownLoadExcel":true,
+        "showDownLoadCsv":true,
+        "showSearchBar":true,
+        "showCustomFilter":true,
+        "showSerialNumber":true,
+        "showPaginator":true,
+        "showSortIcon":true,
+        "showActionsAdd":true,
+        "showEdit":true,
+        "showDelete":true,
+        "showActions":false,
+        "downloadData":[],
+        "filteredTableData":[],
+        "rowsPerPageOptions":[10, 25, 50],
+        "rows":"5",
+        "dataKey":"applRefId",
+        "apiUrlAdd":"language-screen",
+        "apiUrlEdit":"language-screen",
+        "apiSaveDataUrl":"SAVE_URL_COMES_HERE",
+        "apiUpdateDataUrl":"UPDATE_URL_COMES_HERE",
+        "apiDeleteDataUrl":"DELETE_URL_COMES_HERE"  
+    },
+        "jsonTableData":
+    [
+        {
+            "applRefId": "1",
+            "customerName": "John Doe1",
+            "productName": "Personal Loan1",
+            "applDate":"2021-10-20",
+            "requestedAmt": "200000",
+            "currencyLabel":"AED",
+            "status":"Active"
+        },
+        {
+            "applRefId": "2",
+            "customerName": "John Doe2",
+            "productName": "Personal Loan2",
+            "applDate":"2021-11-20",
+            "requestedAmt": "300000",
+            "currencyLabel":"AED",
+            "status":"Inactive"
+        },
+        {
+            "applRefId": "3",
+            "customerName": "John Doe3",
+            "productName": "Personal Loan3",
+            "applDate":"2021-10-21",
+            "requestedAmt": "400000",
+            "currencyLabel":"USD",
+            "status":"Active"
+        },
+        {
+            "applRefId": "4",
+            "customerName": "John Doe4",
+            "productName": "Personal Loan4",
+            "applDate":"2021-11-21",
+            "requestedAmt": "500000",
+            "currencyLabel":"USD",
+            "status":"Active"
+        },
+        {
+            "applRefId": "5",
+            "customerName": "John Doe5",
+            "productName": "Personal Loan5",
+            "applDate":"2021-10-22",
+            "requestedAmt": "600000",
+            "currencyLabel":"INR",
+            "status":"Inactive"
+        },
+        {
+            "applRefId": "6",
+            "customerName": "John Doe6",
+            "productName": "Personal Loan6",
+            "applDate":"2021-10-23",
+            "requestedAmt": "700000",
+            "currencyLabel":"USD",
+            "status":"Active"
+        }
+    ]
+}
+]

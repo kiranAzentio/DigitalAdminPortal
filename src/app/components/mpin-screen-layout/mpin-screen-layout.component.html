@@ -1,0 +1,59 @@
+<ion-page class="ion-page ">
+<ion-content class="transparent">
+    <div class="sfl-background">
+        <ion-grid size="12" class="ion-no-padding whiteBg">
+            <ion-row>
+
+                <ion-col size="12">
+                    <div class="ion-text-center">
+                        <!-- <img [src]="appConfigService.logo" class="sfl-logo"> -->
+                        <h1>MPIN</h1>
+                        <h5 class="ion-text-center" style="margin-bottom:20px !important">Please enter the 6 digit MPIN</h5>
+
+                    </div>
+                </ion-col>
+
+                <ion-col class="ion-padding-horizontal" size="12">
+
+                    <form class="ion-margin-top" #editForm="ngForm">
+
+                        <ion-grid  class="ion-no-padding">
+                            <ion-row>
+                                <ion-col size="12" >
+                                        <ion-item class="ion-no-padding transparent" input lines="none" style="margin-bottom:15px;">
+                                                <ion-input class="" #mpin="ngModel" name="mpin" required type="password" maxlength="6" placeholder="Enter your 6 digit mpin"
+                                                    [(ngModel)]="data.mpin"></ion-input>
+                                                <div *ngIf="mpin?.dirty && mpin?.invalid" class="ion-no-padding transparent" lines="none">
+                                                    <div class="errorMsg" *ngIf="mpin?.errors.required">{{'FORM_ERROR.PASSWORDREQUIRED' | translate}}</div>
+                                                </div>
+                                            </ion-item>
+                                        <!-- <ion-item lines=none>
+                                                <ion-label position="floating">Enter Your MPIN</ion-label>               
+                                                <ion-input class="" #mpin="ngModel" name="mpin" required type="password" maxlength="6"
+                                                [(ngModel)]="data.mpin"></ion-input>
+                                        </ion-item> -->
+                                   
+                                </ion-col>
+
+
+                            </ion-row>
+                           
+                            <ion-row>
+                                <ion-col size="12" class="ion-text-center">
+
+
+                                    <ion-button [disabled]="!editForm.valid" expand="default" (click)="onValidateFunc()" style="margin-top:20px;">{{'OTP_PAGE.VERIFY_BUTTON' | translate}} </ion-button>
+                                   
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+
+
+
+                    </form>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+</ion-content>
+</ion-page>

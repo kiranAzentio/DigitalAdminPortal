@@ -1,0 +1,103 @@
+/* SETTINGS RTL STYLE
+=======================================================
+=======================================================*/
+html[dir=rtl] {
+  ion-reorder {
+    border-right: 1px solid var(--cs-background-border);
+    border-left: none !important;
+  }
+  /* SETTINGS INPUT FIELD
+      =======================================================*/
+  [input] {
+    ion-icon {
+      left: 5px !important;
+      right: unset !important;
+    }
+  }
+  /* SETTINGS COMMENTS WITH TIMELINE
+      =======================================================*/
+  cs-comment-layout-2 {
+    ion-item {
+      &:before {
+        left: unset;
+        right: 50px;
+      }
+    }
+  }
+  /* SETTINGS TIMELINE
+    =======================================================*/
+  cs-timeline-layout-1,
+  cs-timeline-layout-3 {
+    ion-card {
+      &:after {
+        right: -30px;
+        left: unset;
+      }
+
+      &:before {
+        right: -36px;
+        left: unset;
+      }
+    }
+  }
+
+  cs-timeline-layout-2 {
+    .item-thumbnail {
+      &:after {
+        right: -30px;
+        left: unset;
+      }
+
+      &:before {
+        right: -36px;
+        left: unset;
+      }
+    }
+  }
+  /* SETTINGS ALERT
+    =======================================================*/
+  .alert-button-group {
+    padding: 8px 8px 8px 0 !important;
+  }
+
+  .border-radius-left {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-right-radius: 8px !important;
+    border-bottom-right-radius: 8px !important;
+  }
+
+  /* SETTINGS SCROLLL SEGMENT
+  =======================================================
+  =======================================================*/
+  cs-scroll-segment-layout-3 {
+    .page3 {
+      ion-card {
+        margin: 0 16px 0 0 !important;
+        padding: 8px 0 8px 8px !important;
+      }
+    }
+  }
+
+  cs-scroll-segment-layout-4 {
+    .page1 {
+      .background-size {
+        margin-left: 8px !important;
+        margin-right: 0 !important;
+      }
+
+      .small-image {
+        .background-size {
+          margin-right: 8px !important;
+          margin-left: 0 !important;
+        }
+      }
+    }
+    .page3 {
+      ion-card {
+        margin: 0 16px 0 0 !important;
+        padding: 8px 0 8px 8px !important;
+      }
+    }
+  }
+}

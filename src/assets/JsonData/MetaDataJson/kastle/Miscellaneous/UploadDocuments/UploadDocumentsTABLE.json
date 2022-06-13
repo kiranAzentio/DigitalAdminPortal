@@ -1,0 +1,201 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            { "field": "companyId", "header": "", "headerType": "text", "bodyType": "text"},
+            {
+                "field": "S",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "documentCode",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "documentTitle",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "dropdown",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "id",
+                "header": "ID"
+            },
+            { "field": "companyId", "header":"Company Name"},
+            {
+                "field": "language",
+                "header": "Language"
+            },
+            {
+                "field": "documentCode",
+                "header": "Document Code"
+            },
+            {
+                "field": "documentTitle",
+                "header": "Document Title"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "documentCode",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "documentTitle",
+                "minDate": "",
+                "maxDate": ""
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "documentCode",
+                "title": "Document Code",
+                "placeholder": "Enter Document Code"
+            },
+            {
+                "tableMetaDataField": "documentTitle",
+                "title": "Document Title",
+                "placeholder": "Enter Document Title"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - Document List",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Document",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 39,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 40,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "119",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save-update-preparedStm",
+            "apiSaveDataUrlReqData": {
+                "queryId": "120",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-save-update-preparedStm",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "121",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "id": "test",
+                "documentCode": "test",
+                "documentTitle": "test",
+                "document": "test",
+                "extra1": "test",
+                "status": "Inactive",
+                "statusId": "2"
+            }
+        ]
+    }
+]

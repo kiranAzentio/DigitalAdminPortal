@@ -1,0 +1,21 @@
+ion-tab-bar{
+    background-color: #006174;
+    width:100%;
+
+    span{
+        width:33.3% !important;
+        border-right:solid 1px #003c48;
+    }
+    span:last-child{
+        border-right:solid 0px #003c48;
+    }
+    ion-label{
+        color: #fff;
+       
+    }
+   
+}
+.bottomButton{
+    width: 25%;
+    display: contents;
+}

@@ -1,0 +1,1247 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": ":productIdkeyid",
+                "identifier": "hidden",
+                "fieldJsonMapping": ":productIdkeyid",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": ":subprodIdkeyid",
+                "identifier": "hidden",
+                "fieldJsonMapping": ":subprodIdkeyid",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "id",
+                "identifier": "hidden",
+                "fieldJsonMapping": "id",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "companyId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "companyId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [
+                    {
+                        "clear": true,
+                        "fieldJsonMapping": "productId",
+                        "additionalData": true,
+                        "additionalDataLableArr": [
+                            "productIdkeyid"
+                        ],
+                        "attachToFieldJsonMapping": "productId"
+                    }
+                ],
+                "metdaDataReq": {
+                    "queryId": "182",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "productId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "productId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [
+                    {
+                        "clear": true,
+                        "fieldJsonMapping": "subprodId",
+                        "additionalData": true,
+                        "additionalDataLableArr": [
+                            "subprodIdkeyid"
+                        ],
+                        "attachToFieldJsonMapping": "subprodId"
+                    }
+                ],
+                "metdaDataReq": {
+                    "queryId": "189",
+                    "transactionId": "1234"
+                },
+                "createMataDataReqOnCondition": [
+                    "productIdkeyid"
+                ],
+                "metdaData": [":productIdkeyid"],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "ConvertStringToInteger": false,
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "subprodId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "subprodId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [],
+                "metdaDataReq": {
+                    "queryId": "181",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "createMataDataReqOnCondition": [
+                    "subprodIdkeyid"
+                ],
+                "metdaData": [":subprodIdkeyid"],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "language",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "language",
+                "value": 1,
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [],
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "shorDesc1",
+                "identifier": "textbox",
+                "fieldJsonMapping": "shorDesc1",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "shorDesc2",
+                "identifier": "textbox",
+                "fieldJsonMapping": "shorDesc2",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "shorDesc3",
+                "identifier": "textbox",
+                "fieldJsonMapping": "shorDesc3",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "shorDesc4",
+                "identifier": "textbox",
+                "fieldJsonMapping": "shorDesc4",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "shorDesc5",
+                "identifier": "textbox",
+                "fieldJsonMapping": "shorDesc5",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "shorDesc6",
+                "identifier": "textbox",
+                "fieldJsonMapping": "shorDesc6",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc1",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc1",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc2",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc2",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc3",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc3",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc4",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc4",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc5",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc5",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc6",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc6",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc7",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc7",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc8",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc8",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc9",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc9",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "longDesc10",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longDesc10",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 4000,
+                        "message": ""
+                    }
+                ]
+            },
+           
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra1",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra1",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra2",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra2",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra3",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra3",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra4",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra4",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "status",
+                "identifier": "toggle",
+                "fieldJsonMapping": "status",
+                "value": " ",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": "Name Required"
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": ":productIdkeyid",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": ":subprodIdkeyid",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "id",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "companyId",
+                "label": "Company ID",
+                "placeholder": "Select Company ID",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "productId",
+                "label": "Product",
+                "placeholder": "Select Product",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "subprodId",
+                "label": "Sub Product",
+                "placeholder": "Select sub product",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "language",
+                "label": "Language",
+                "placeholder": "Enter Language",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "shorDesc1",
+                "label": "Product Title /Product Name",
+                "placeholder": "Enter product Title /product name",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "shorDesc2",
+                "label": "Image Path",
+                "placeholder": "Enter Image Path",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "shorDesc3",
+                "label": "Interest Rate (%)",
+                "placeholder": "Enter Interest Rate (%)",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "shorDesc4",
+                "label": "Short Description 4",
+                "placeholder": "Enter Short Description 4",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "shorDesc5",
+                "label": "Short Description 5",
+                "placeholder": "Enter Short Description 5",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "shorDesc6",
+                "label": "Short Description 6",
+                "placeholder": "Enter Short Description 6",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc1",
+                "label": "Long Description 1",
+                "placeholder": "Enter Long Description 1",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc2",
+                "label": "Long Description 2",
+                "placeholder": "Enter Long Description 2",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc3",
+                "label": "Long Description 3",
+                "placeholder": "Enter Long Description 3",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc4",
+                "label": "Long Description 4",
+                "placeholder": "Enter Long Description 4",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc5",
+                "label": "Long Description 5",
+                "placeholder": "Enter Long Description 5",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc6",
+                "label": "Long Description 6",
+                "placeholder": "Enter Long Description 6",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc7",
+                "label": "Long Description 7",
+                "placeholder": "Enter Long Description 7",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc8",
+                "label": "Long Description 8",
+                "placeholder": "Enter Long Description 8",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc9",
+                "label": "Long Description 9",
+                "placeholder": "Enter Long Description 9",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longDesc10",
+                "label": "Long Description 10",
+                "placeholder": "Enter Long Description 10",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 4000 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+           
+            {
+                "fieldJsonMapping": "extra1",
+                "label": "Extra 1",
+                "placeholder": "Enter Extra 1",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra2",
+                "label": "Extra 2",
+                "placeholder": "Enter Extra 2",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra3",
+                "label": "Extra 3",
+                "placeholder": "Enter Extra 3",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra4",
+                "label": "Extra 4",
+                "placeholder": "Enter Extra 4",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "status",
+                "label": "Status",
+                "placeholder": "Select Status",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            }
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+<ion-content>
+    <ion-grid size="12" class="ion-padding" *ngIf="showData != null">
+        <ion-row>
+            <ion-col size="12" class="ion-no-padding">
+                <!-- search box -->
+                <label class="reportTitle" *ngIf="showSearchBarLabel">{{ searchBarLabel | translate }}</label>
+                <span class="searchiconClass" *ngIf="showSearchBar && !isSearchBarOpened">
+                    <ion-icon class="searchicon" name="search" (click)="isSearchBarOpened = true;setSearchBarFocus();"></ion-icon>
+                </span>
+                <ion-searchbar #searchView *ngIf="showSearchBar && isSearchBarOpened" [(ngModel)]="search" placeholder="{{ searchPlaceholder | translate }}"
+                    showCancelButton="always" (ionCancel)="searchCancelClicked()" (ionInput)="onTextChange($event)"></ion-searchbar>
+                    
+                    <!-- NO RECORDS FOUND -->
+                    <div *ngIf="showData.length == 0">
+                            {{'NO_RECORDS' | translate}}
+                    </div>
+
+                <ion-list class="ion-no-margin" #dynamicList>
+                    <ion-virtual-scroll [items]="showData" approxItemHeight="320px">
+                        <ion-item-sliding class="listStyle" *virtualItem="let item" #slidingItem>
+
+                            <ion-item class="ion-no-padding background-primary" lines="full" *ngIf="unprocessed || outstanding || expiredRejected" (click)="onItemClickFunc(item, $event)">
+                                {{item.data}}
+                            </ion-item>
+                            
+                        </ion-item-sliding>
+                    </ion-virtual-scroll>
+                </ion-list>
+            </ion-col>
+           
+        </ion-row>
+    </ion-grid>
+</ion-content>

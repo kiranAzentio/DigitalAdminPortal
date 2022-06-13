@@ -1,0 +1,196 @@
+.topModule:after {
+    background:linear-gradient(200deg, rgba(255, 255, 255, 0.26), rgba(255, 255, 255, 0.2));
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+   mix-blend-mode: overlay;
+  }
+  .topModule{
+    position: relative;
+      z-index: 1;color:#fff;background: var(--ion-color-primary); border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;padding:25px
+  }
+  .bottomModule{
+    background: #fff;padding: 40px;    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  h1.moduleHeading{
+    color: #bcbcbc
+  }
+  .parentModule>ion-row{
+    max-width: 1000px;
+  margin: 0 auto;
+  display: table;
+  width:80%;position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .parentModule>ion-row>ion-col{
+    display: table-cell;
+  vertical-align: middle;width:50%; overflow: hidden
+  }
+  .parentModule{
+    position: relative;z-index:1;
+  }
+  
+  ion-content {
+    // --background: url('/assets/img/sfl/BG.png') no-repeat 100% 100%;
+    --background: none;
+    // background-image: url(/assets/img/sfl/BG.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    .logImg {
+      width: 290px;
+      float: right;
+      display: block !important;
+    }
+  }
+  
+  .logHeaderText {
+    font-size: 28px;
+    color: #ffffff;
+    position: absolute;
+    left: 20px;
+    top: 160px;
+  }
+  .forgotAnchor {
+    position: absolute;
+    right: 15px;
+    bottom: 194px;
+    font-size: 16px;
+  }
+  .errorMsg {
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+  }
+  .logImg {
+    background: url('/assets/imgs/background/2.jpg') no-repeat center center / cover;
+  }
+  .mt50 {
+    margin-top: 50px !important;
+  }
+  
+  :host {
+    --img-logo: 72px;
+    --facebook-button-background-color: #3d599d;
+    --facebook-button-text-color: var(--cs-text-light);
+  }
+  ion-grid,
+  ion-row {
+    // height: 100%;
+  
+    form {
+      // .item-has-focus,
+      // .item-has-value {
+      //   ion-input {
+      //     border-bottom: 0px solid var(--cs-background-accent) !important;
+      //   }
+      // }
+  
+      ion-item {
+        // --inner-padding-end: 0;
+        // margin-bottom: 15px;
+        --highlight-background: var(--ion-color-transparent);
+  
+        // ion-input {
+        //   // --background: var(--cs-background-primary) !important;
+        //   // border-bottom: 0px solid var(--cs-background-border) !important;
+        // }
+  
+        ion-icon {
+          position: absolute;
+          right: 5px;
+          bottom: 5px;
+          z-index: 999;
+         
+        }
+        .showpassword {
+          position: absolute;
+          right: 5px;
+          bottom: 5px;
+          z-index: 999;
+        }
+      }
+    }
+  }
+  
+  .native-input.sc-ion-input-ios,
+  .native-input.sc-ion-input-md {
+    // background-color: #f1f1f1;
+    // border: solid 1px #707070;
+    border-bottom: solid 0px !important;
+  }
+  
+  .lang {
+    display: block;
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    color: #405357 !important;
+  }
+  .reg {
+    color: var(--ion-color-primary);
+  }
+  ion-footer{
+    ion-text {
+      span {
+        text-decoration: underline;
+        color: var(--ion-color-primary);
+      }
+    }
+    span.color {
+      text-decoration: none !important;
+      color: var(--ion-color-dark) !important;
+    }
+  }
+  
+  ion-footer{
+    position:static
+  }
+  ion-footer span {
+    padding: 7px 4px;
+    display: inline-block;
+  }
+  ion-footer >ion-label > ion-text > span{
+    cursor: pointer;
+  }
+  @media screen and (max-width:767px){
+    .topModule ion-text p{
+      display: none;
+    }
+     ion-row ion-col{
+      margin: 0 auto;
+     }
+     .parentModule>ion-row>ion-col{display: table;width:100%}
+     .parentModule>ion-row>.topModule{
+      border-radius: 0;
+      text-align: center;
+      position: relative;
+      z-index: 1;    padding: 17% 8%;
+      text-align: center;
+     }
+     .parentModule>ion-row>.topModule p{
+       line-height: 1;
+     }
+     .parentModule>ion-row>.bottomModule{ 
+        width: 90%;
+      position: relative;margin: 0 auto;
+      top: -45px;
+      z-index: 2;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgb(0 0 0 / 14%);   -webkit-box-shadow: 0 0 15px rgb(0 0 0 / 14%);  -moz-box-shadow: 0 0 15px rgb(0 0 0 / 14%);
+  }
+  .parentModule>ion-row{    position: static;
+    transform: inherit;
+    width: 100%;}
+  }
+  

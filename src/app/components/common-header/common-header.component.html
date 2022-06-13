@@ -1,0 +1,23 @@
+<ion-header [ngClass]="{ 'col-md-8 offset-md-2': !isMenu }" style="padding: 0px !important;">
+	<div>
+		<ion-toolbar color="primary">
+			<ion-title>
+				<div>
+					<ion-text color="light">
+						<ion-menu-button *ngIf="appConfigService.getPlatformMobile()"></ion-menu-button>
+						{{ 'PRODUCT_NAME' | translate }}
+					</ion-text>
+				</div>
+				<div *ngIf="!appConfigService.getPlatformMobile()" class="ion-text-right">
+					<ion-button (click)="onLogoOutFunc()" *ngIf="showLogOut" icon-left class="ion-no-margin" color="light" tappable>
+						<ion-icon slot="icon-only" name="enter-outline" size="small" color="primary"></ion-icon>
+						&nbsp; {{ 'LOGOUT' | translate}}
+					</ion-button>
+				</div>
+				<div *ngIf="appConfigService.getPlatformMobile()">
+					<ion-icon slot="icon-only" name="log-out" (click)="onLogoOutFunc()"></ion-icon>
+				</div>
+			</ion-title>
+		</ion-toolbar>
+	</div>
+</ion-header>

@@ -1,0 +1,107 @@
+[{
+  "tableMetaData":[
+      {
+        "type": "input",
+        "label": "",
+        "placeholder":"",
+        "inputType": "text",
+        "name": "username",
+        "identifier":"textbox",
+        "fieldJsonMapping": "languageLocale",
+        "value":"",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+          "type": "input",
+          "label": "",
+          "placeholder":"",
+          "inputType": "text",
+          "name": "username",
+          "identifier":"textbox",
+        "fieldJsonMapping": "languageDescription",
+        "value":"",
+          "validations": [
+            {
+  
+              "name": "required",
+              "validator": "required",
+              "message": ""
+            },
+            {
+              "name": "not in use",
+              "validator": "not in use",
+              "message": ""
+            }
+          ]
+        },
+        {
+          "type": "input",
+          "label": "",
+          "placeholder":"",
+          "inputType": "text",
+          "name": "remarks",
+          "identifier":"textbox",
+        "fieldJsonMapping": "remarks",
+        "value":"",
+          "validations": [
+            {
+              "name": "not in use",
+              "validator": "not in use",
+              "message": ""
+            },
+            {
+              "name": "not in use",
+              "validator": "not in use",
+              "message": ""
+            }
+          ]
+        }
+     
+  ],
+  "tableMetaDataFieldNameLang":[
+      {"fieldJsonMapping":"languageLocale","label":"भाषा स्थान","placeholder":"भाषा स्थान दर्ज करें","validations":["This field is required","Patter is invalid"]},
+      {"fieldJsonMapping":"languageDescription","label":"भाषा विवरण","placeholder":"भाषा विवरण दर्ज करें","validations":["This field is required","Patter is invalid"]},
+      {"fieldJsonMapping":"remarks","label":"टिप्पणियां","placeholder":"टिप्पणियां दर्ज करें","validations":["This field is required","Patter is invalid"]}
+  ],
+  "tableMetaDataOLD":[
+    {
+      "type": "input",
+      "label": "",
+      "placeholder":"",
+      "inputType": "text",
+      "name": "languageLocale",
+      "identifier":"textbox",
+      "fieldJsonMapping": "languageLocale",
+      "value":"",
+      "validations": [
+        {
+          "name": "required",
+          "validator": "required",
+          "message": ""
+        },
+        {
+          "name": "not in use",
+          "validator": "not in use",
+          "message": ""
+        }
+      ]
+    }
+  ],
+  "tableMetaDataFieldNameLangOLD":[
+    {"fieldJsonMapping":"languageLocale","label":"Language locale","placeholder":"Enter language locale","validations":["This field is required","Patter is invalid"]}
+  ]
+}
+]
+
+

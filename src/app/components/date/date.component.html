@@ -1,0 +1,48 @@
+<!-- MOBILE -->
+<!-- <ion-label *ngIf="displayContent && appconfig.getPlatformMobile()" style="font-size:13px;margin-bottom:5px;top:-15px"
+        class="text-size-xxs text-color-secondary font-regular number-labels" [position]="appconfig.labelPosition">
+        {{title | translate}}</ion-label> -->
+<!-- <ion-item lines="none" style="margin-bottom:25px !important;border-radius:5px;border-color:#8c8c8c;" -->
+    <!-- class="ion-no-padding transparent select-style " *ngIf="displayContent && appconfig.getPlatformMobile()"> -->
+    <!-- [placeholder]="placeholder | translate" -->
+    <!-- {{placeholder}} -->
+    <!-- <ion-label *ngIf="isShow" style="font-size:13px;margin-bottom:5px;top:-15px"
+        class="text-size-xxs text-color-secondary font-regular number-labels" [position]="appconfig.labelPosition">
+        {{title | translate}}</ion-label> -->
+
+        <!-- mobile -->
+    <!-- <ion-datetime class="dateField" [(ngModel)]="selectedDate" (ionChange)="onChange($event)" *ngIf="displayContent && appconfig.getPlatformMobile()"
+        [displayFormat]="displayFormat" [placeholder]="placeholder | translate" [min]="minDate" [max]="maxDate"
+        [disabled]="disabled" [readonly]="readonly" [ngClass]="{'readonly': readonly}"
+        [pickerOptions]="customPickerOptions"></ion-datetime> -->
+
+        <!-- desktop -->
+        
+
+<!-- </ion-item> -->
+
+<!-- DESKTOP -->
+<!-- [style] = "{'width': '100%','margin-top':'10px'}" -->
+<!-- [inputStyle]="{'width':'96%','border':'0'}" -->
+<!-- style="margin-bottom:25px !important;border-radius:5px;border-color:#8c8c8c;" -->
+<!-- class="ion-no-padding transparent select-style p-md-12 " -->
+
+
+    <!-- <ion-label *ngIf="isShow" [position]="appconfig.labelPosition">
+        {{title | translate}}
+    </ion-label> -->
+    <!-- <div *ngIf="displayContent && !appconfig.getPlatformMobile()"> -->
+    <div>
+        <!-- <ion-label *ngIf="title"
+         [position]="appconfig.labelPosition">
+        {{title | translate}}</ion-label><br> -->
+        <!-- test : {{selectedDate}} -->
+        <!-- test: {{dynamicForm}} -->
+        <!-- test: {{showTime}} -->
+        <p-calendar class="main-container" [(ngModel)]="selectedDate" [readonlyInput]="true"  
+            (onSelect)="onChange($event)" (onClearClick)="onCancel($event)" [showButtonBar]="true"
+            [monthNavigator]="true" [yearNavigator]="true" [minDate]="minDate" [maxDate]="maxDate"
+            [dateFormat]="displayFormat" [disabled]="disabled" [placeholder]="placeholder | translate" appendTo="body"
+            [showIcon]="false" [yearRange]="yearRange" inputId="icon" [showTime]= "showTime" dateFormat="dd.mm.yy" [hourFormat]="24">
+        </p-calendar>
+    </div>

@@ -1,0 +1,43 @@
+h2{
+    font-family: 'Segoe UI Semibold';
+    font-size: 1.875em;
+    margin-bottom: 5px;
+}
+h4{
+    font-family: "Segoe UI Light";
+    font-size: 0.9em;
+    margin-bottom: 0px;
+    line-height: 19px;
+}
+.cards{
+    background: -webkit-linear-gradient(left, #006174, #00c6ff);
+    color:white;
+// --background: -webkit-linear-gradient(left, #006174, #00c6ff);
+
+}
+.value{
+    font-size: 30px;
+    font-weight: bold;
+}
+ion-card{
+    display: flex;
+    height: 100px;
+    h2{
+        color:#0033A1;
+        font-size: 1.35em;
+    }
+    h4{
+        font-size: 0.75em;
+        line-height: 16px; 
+    }
+    ion-thumbnail{
+        -webkit-margin-end: 0;
+    }
+}
+.graph{
+    padding:23px;
+    h3{
+        font-size: 1em;
+        color: #383838;
+    }
+}

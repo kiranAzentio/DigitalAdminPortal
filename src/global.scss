@@ -1,0 +1,517 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import '~@ionic/angular/css/core.css';
+
+/* Basic CSS for apps built with Ionic */
+@import '~@ionic/angular/css/normalize.css';
+@import '~@ionic/angular/css/structure.css';
+@import '~@ionic/angular/css/typography.css';
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import '~@ionic/angular/css/padding.css';
+@import '~@ionic/angular/css/float-elements.css';
+@import '~@ionic/angular/css/text-alignment.css';
+@import '~@ionic/angular/css/text-transformation.css';
+@import '~@ionic/angular/css/flex-utils.css';
+
+// dropdown
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+// bootstrap
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+//primeng
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/primeng.min.css';
+
+ @font-face {
+    font-family: 'Roboto-Medium';
+    src: url('assets/fonts/Roboto/Roboto-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Roboto-Bold';
+    src: url('assets/fonts/Roboto/Roboto-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Roboto-Regular';
+    src: url('assets/fonts/Roboto/Roboto-Regular.ttf');
+  }
+  *{
+    font-family: 'Roboto-Regular', sans-serif;
+  }
+
+  
+ion-item {
+  --ion-item-background: transparent;
+}
+
+
+// menu //
+// Menu user profile
+ion-toolbar.user-profile {
+
+  .user-avatar {
+    width: 68px;
+    height: 68px;
+  }
+  .item-inner {
+    border-width: 0;
+  }
+}
+
+// Custom toolbar (overriding Shadow DOM)
+ion-toolbar {
+  &.ion-color-primary {
+    //--ion-color-base: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary)) !important;
+  }
+}
+
+// Android card shadow
+ion-card {
+  &.sc-ion-card-md-h {
+    box-shadow: 0 2px 4px rgba(var(--ion-color-dark-rgb),.24);
+  }
+}
+
+// style for auth pages
+.auth-page {
+  background-image: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
+
+  .grid {
+    padding: 0;
+    .col {
+      padding: 0;
+    }
+  }
+
+  .btn-group {
+    .button-ios,
+    .button-md {
+      border-radius: 0;
+      &:first-of-type {
+        border-radius: 2px 0 0 2px;
+      }
+      &:last-of-type {
+        border-radius: 0 2px 2px 0;
+      }
+    }
+  }
+
+  .auth-content {
+    margin: 0 5%;
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      margin: 20px auto 8px;
+      border-radius: 10%;
+      background: url("/assets/img/ionic4start-ico.png") no-repeat;
+      background-size: 100%;
+    }
+
+    .list-form {
+      padding: 0;
+      margin-bottom: 0;
+
+      ion-item {
+        background: none;
+        padding: 0;
+
+        &:first-child {
+          border-top: none;
+        }
+
+        &:after {
+          display: none;
+        }
+
+        ion-label {
+          font-size: 1em;
+          color: var(--ion-color-light);
+        }
+
+        input {
+          color: var(--ion-color-light);
+        }
+      }
+    }
+  }
+
+}
+
+// Custom Menu styles (overriding Shadow DOM)
+ion-menu {
+  ion-header {
+    ion-toolbar {
+      &.ion-color-dark {
+        --ion-color-base: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary)) !important;
+      }
+    }
+  }
+}
+
+.mto {
+  margin-top: 12px;
+  ion-icon {
+    margin-bottom: -2px;
+  }
+}
+
+
+.boxWrapper{
+  background: grey;
+  border-radius: 3px;
+  border: 1px solid grey;
+}
+
+.errorWrapper{
+height: 8px;
+}
+
+.errorMsg{
+// padding-top: 5px;
+color : red;
+font-size: 13px;
+}
+
+ion-input{
+border: 1px solid #9b9b9b;
+border-radius: 4px;
+}
+
+ion-input .div.item-native::after {
+padding: 0;
+}
+ion-alert{
+  .alert-title.sc-ion-alert-md {
+    color: #000000;
+  }
+  }
+  
+  ion-button{
+   text-transform: capitalize;
+   margin:0;
+   font-size: 13px;
+   height: 30px;
+   
+  }
+
+  
+.popcustom .popover-content{
+--width: 40%;
+}
+
+.poprepayment  .popover-content{
+--height: 90%;
+--width: 90%;
+top: 10%; 
+}
+
+.poprepayment  .modal-content{
+  --height: 90%;
+  --width: 90%;
+  top: 10%; 
+  }
+
+.popdeclineComments  .popover-content{
+
+--height: 30%;
+--width: 30%;
+top: 20%; 
+}
+.outForm{
+background: #f4f4f4;
+  padding:0 20px 35px 25px;
+}
+.inFormGrid{
+background: #fff;
+padding: 20px;
+}
+.whiteColor{
+// color:#ffffff;
+// --color:#ffffff;
+color: var(--ion-color-light);
+}
+.whiteBackground{
+background:#ffffff;
+--background:#ffffff;
+}
+.blackColor{
+// color:#000000;
+// --color:#000000;
+color: var(--ion-color-dark);
+}
+.blackBackground{
+background:#000000;
+--background:#000000;
+}
+
+.silverColor{
+color:#eeeeee;
+--color:#eeeeee;
+}
+.silverBackground{
+background:#eeeeee;
+--background:#eeeeee;
+}
+
+
+.toastclass{
+--color:#ffffff;
+color:white;
+}
+
+
+// backgrounds //
+.bg-white {
+  background-color: #fff;
+  }
+  
+  .bg-light {
+    background-color: var(--ion-color-light);
+  }
+  
+  .bg-dark {
+      background-color: var(--ion-color-dark);
+  }
+  
+  .bg-primary {
+      background-color: var(--ion-color-primary);
+  }
+  
+  .bg-secondary {
+      background-color: var(--ion-color-secondary);
+  }
+  
+  .bg-tertiary {
+      background-color: var(--ion-color-tertiary);
+  }
+  
+  .bg-profile {
+    background-image: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary))
+  }
+  
+  .bg-main {
+      background-image: linear-gradient(-135deg, var(--ion-color-medium), var(--ion-color-light))
+  }
+  
+  // Helpers //
+  .w100 {
+    width: 100%;
+  }
+  
+  .bold,
+  .fw500 {
+      font-weight: 500 !important;
+  }
+  .fw600 {
+    font-weight: 600 !important;
+}
+  
+  .fw700 {
+      font-weight: 700 !important;
+  }
+  
+  .text08 {
+    font-size: .8rem;
+  }
+  
+  .text1 {
+    font-size: 1rem !important;
+  }
+  
+  .text12 {
+    font-size: 1.2rem;
+  }
+  
+  .text15 {
+    font-size: 1.5rem;
+  }
+  
+  .text20 {
+    font-size: 2rem;
+  }
+  
+  .text-white {
+      color: #fff;
+  }
+  
+  .text-primary {
+      color: var(--ion-color-primary);
+  }
+  
+  .text-secondary {
+    color: var(--ion-color-secondary);
+  }
+  
+  .text-dark {
+    color: var(--ion-color-dark);
+  }
+
+  // modal css
+  .modal-wrapper.sc-ion-modal-md 
+  {
+    width: 60%;
+    height: 100%;
+  }
+
+//global inputs
+  ion-input, ion-datetime, ion-select{
+    border: 1px solid #c5d9ee;
+    background: #f5faff !important;
+    --background: #5f5a55 !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 31px;
+    font-size: 13px !important;
+  }
+  p-calendar .ui-calendar .ui-inputtext{
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    height: 31px;
+    border: 1px solid #c5d9ee;
+    background: #f5faff !important;
+    font-family: 'Roboto-Regular';
+    font-size:13px ;
+
+}
+ .ui-calender .ui-inputtext {
+  background: transparent !important;
+  border-width: 0;
+}
+  p-calendar .ui-calendar .ui-inputtext::placeholder{
+  opacity: 0.7;
+}
+//specific to dynamic forms
+form {
+  ion-row{
+      ion-col{
+        ion-input, .ng-select.ng-select-single .ng-select-container, ion-textarea {
+          border: 1px solid #c5d9ee;
+          background: #f5faff !important;
+          --background: #5f5a55 !important;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          height: 31px;
+          margin-top:3px;
+          min-height:auto;
+      }
+      ion-textarea{
+        height: auto;
+        margin-top: 3px !important;
+        border-radius: 4px;
+        textarea{padding-top:0 !important;padding-bottom:0 !important;}
+      }
+          ion-label {
+          font-size: 14px;
+          }
+      }
+      p-calendar {
+          border-radius: 4px;
+          width: 100%;
+          display: block;
+          height: 31px;
+          border: 1px solid #c5d9ee;
+          background: #f5faff !important;
+          margin-top: 3px;
+          .ui-calender .ui-inputtext {
+            background: transparent;
+            border-width: 0;
+        }
+        .ui-calendar .ui-inputtext {
+            background: transparent;
+            border: 0;
+            min-width: 250px;
+            line-height: 19px;
+            font-size:13px;
+            height: auto;
+        }
+      }
+  }
+}  
+
+form ion-row p-calendar .ui-calendar .ui-inputtext:focus, body .ui-inputtext:enabled:focus:not(.ui-state-error){
+  box-shadow: none !important;
+}
+
+.ui-dropdown-label-container span {
+  border: 1px solid #b9b9b9 !important;
+  margin: -1px 5px 0px 1px;
+  padding: 5px 30px 2px 2px !important;
+  height: 34px;
+}
+span.mobileRowParent {
+  display: inline-flex;
+}
+
+
+body .ui-calendar.ui-calendar-w-btn .ui-datepicker-trigger.ui-button {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+}
+p-calendar {
+  position: relative;
+}
+
+// vanija css
+.cc_title{font-size: 19px;color: var(--ion-color-primary);display: inline-block;vertical-align: text-top;line-height: 27px;padding-right: 10px;}
+.cc_label{font-size: 14px;}
+body p-accordion .ui-accordion p-accordiontab .ui-accordion-header a{font-weight: normal;background-color: var(--ion-color-medium) !important; border: 1px solid var(--ion-color-medium-shade)!important;color: var(--ion-color-medium-contrast)!important;}
+ion-header{
+  ion-title{font-size: 18px;}
+}
+.borderBox{margin: 16px;box-shadow: 0 0 10px #d5d5d5;padding: 5px 15px;background: #fff;border-radius: 5px;}
+
+.customAlert{
+  .alert-head {
+    background: var(--ion-color-primary);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    h2 {
+      color: var(--ion-color-light);
+    }
+  }
+  .alert-button-group {
+    border-top: 1px solid #c5d9ee;
+  }
+  button:first-child {
+    background: var(--ion-color-primary);
+    color: var(--ion-color-light);
+  }
+} 
+.viewFile {
+  border: 1px solid #c5d9ee;
+  background: #f5faff;
+  border-radius: 4px;
+  ion-icon{
+    background: #c5d9ee;
+    font-size: 16px;
+    margin: 0;
+    padding: 7px 4px;
+    border-radius: 4px 0 0 4px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+input[type="file"] {
+  border: 1px solid #c5d9ee;
+  background: #f5faff;
+  padding: 7px 0px 7px 10px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+}

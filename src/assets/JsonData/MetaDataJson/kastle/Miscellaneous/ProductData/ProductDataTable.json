@@ -1,0 +1,127 @@
+[
+    {
+        "tableMetaData": [
+            { "field": "actions", "header": "", "headerType": "text", "bodyType": "actionsText" },
+            { "field": "id", "header": "", "headerType": "text", "bodyType": "text" },
+            { "field": "companyId", "header": "", "headerType": "text", "bodyType": "text"},
+            { "field": "productId", "header": "", "headerType": "text", "bodyType": "text"},
+            { "field": "subprodId", "header": "", "headerType": "text", "bodyType": "text"},
+            { "field": "language", "header": "", "headerType": "text", "bodyType": "text" },
+            { "field": "shorDesc1", "header": "", "headerType": "text", "bodyType": "text" },
+            { "field": "status", "header": "", "headerType": "text", "bodyType": "statusText" }
+        ],
+        "tableMetaDataFieldNameLang": [
+            { "field": "actions", "header": "Actions" },
+            { "field": "id", "header": "Id"},
+            { "field": "companyId", "header":"Company ID" },
+            { "field": "productId", "header": "Product"},
+            { "field": "subprodId", "header": "Sub Product" },
+            { "field": "language", "header": "Language" },
+            { "field": "shorDesc1", "header": "Short Description" },
+            { "field": "status", "header": "Status" }
+        ],
+        "filterData": [
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "id", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "companyId", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "productId", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "subprodId", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "language", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "shorDesc1", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "status", "maxLength": "100" }
+           
+        ],
+        "filterDataFieldNameLang": [
+            { "tableMetaDataField": "id", "title": "ID", "placeholder": "Enter ID" },
+            { "tableMetaDataField": "companyId", "title": " Company Id", "placeholder": "Enter Company ID" },
+            { "tableMetaDataField": "productId", "title": "Product", "placeholder": "Enter Product" },
+            { "tableMetaDataField": "subprodId", "title": "Sub Product", "placeholder": "Enter Sub Product"},
+            { "tableMetaDataField": "language", "title": "Language", "placeholder": "Enter Language"},
+            { "tableMetaDataField": "shorDesc1", "title": "Short Description", "placeholder": "Enter Short Description"},
+            { "tableMetaDataField": "status", "title": "Status", "placeholder": "Enter Status" }
+        ],
+        "tableTitle": "DATABASE - list of configuration params",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 56,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 57,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "183",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "184",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "185",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "186",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "key": "COMPANY GENERIC",
+                "description": "This configuration i..",
+                "value1": "",
+                "value2": "",
+                "value3": "",
+                "value4": ""
+            }
+        ]
+    }
+]

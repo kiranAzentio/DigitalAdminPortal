@@ -1,0 +1,140 @@
+<ion-content>
+  <ion-grid fixed>
+    <ion-row justify-content-end>
+      <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4" align-self-stretch>
+        <ion-card style="background-color: #0e0d0ded;">
+          <ion-card-content>
+            <ion-icon name="logo-usd" class="dollar"></ion-icon>
+            <span class="value">4,7000</span>
+            <h6>Total utilized amount USD for Aug'20</h6>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4" align-self-stretch>
+        <ion-card style="background: #f33763;">
+          <ion-card-content>
+            <ion-icon name="logo-usd" class="dollar"></ion-icon>
+            <span class="value">10,000</span>
+            <h6>Total unutilized amount USD for Aug'20</h6>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4" align-self-stretch>
+        <ion-card style="background-color: #cae809ed;">
+          <ion-card-content>
+            <ion-icon name="logo-usd" class="dollar"></ion-icon>
+            <span class="value">4,7000</span>
+            <h6>Total amount USD for Aug'20</h6>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-end>
+      <ion-col size-xs="8" size-sm="8" size-md="8" size-lg="8" align-self-stretch>
+        <ion-card>
+          <ion-card-header>
+            Sum of Costs and Revenue
+          </ion-card-header>
+
+          <ion-card-content>
+            <canvas #contractAmt></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4" align-self-stretch>
+        <ion-card>
+          <ion-card-header>
+            To Do List
+          </ion-card-header>
+
+          <ion-card-content>
+            <div>
+              <ion-item *ngFor="let it of [].constructor(4);let v = index">
+                <ion-thumbnail slot="start">
+                  <ion-skeleton-text animated></ion-skeleton-text>
+                  <img src="assets/img/background/splash2.jfif" style="position: relative; width: 54px; height: 51px; top: -54px;" />
+                </ion-thumbnail>
+                <ion-label>
+                  <p>
+                    <ion-text style="size: 14px;">Confirmation Pending for PO -10{{v}}</ion-text>
+                  </p>
+                </ion-label>
+              </ion-item>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-end>
+      <ion-col size-xs="8" size-sm="8" size-md="8" size-lg="8" align-self-stretch>
+        <ion-card>
+          <ion-card-header>
+            Program Details
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-row *ngFor="let data of [].constructor(3); let i = index;">
+              <ion-col col-9>
+                <ion-item [ngClass]="(i % 2 == 0) ? 'even' : 'even'">
+                  HONDA MOTORS - LIMIT 2000{{i}}
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4" align-self-stretch>
+        <ion-card>
+          <ion-card-header>
+            Turnover for PRG-SCF 2
+          </ion-card-header>
+
+          <ion-card-content>
+            <canvas #barChart></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-end>
+      <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4" align-self-stretch>
+        <ion-card>
+          <ion-card-header>
+            Vendor rogram - Finance Outstanding
+          </ion-card-header>
+
+          <ion-card-content>
+            <canvas #fxSettlement></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4" align-self-stretch>
+        <ion-card>
+          <ion-card-header>
+            Dealer program - Finance Outstanding
+          </ion-card-header>
+
+          <ion-card-content>
+            <canvas #pendingContracts></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-xs="4" size-sm="4" size-md="4" size-lg="4" align-self-stretch>
+        <ion-card>
+          <ion-card-header>
+            Total Sales and Purchase
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-row *ngFor="let data of [].constructor(3); let i = index;">
+              <ion-col col-9>
+                <ion-item [ngClass]="(i % 2 == 0) ? 'even' : 'even'">
+                  ELECTRA - MODEL{{i}} - 10,000,{{i}}
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-content>
+<ion-tabs>
+<ion-tab-bar slot="top" *ngIf="tabsConfig.getTopTabBool() && appConfigService.getPlatformMobile()">
+       
+    <span *ngFor="let entity of tabsConfig.getTopTabs()" >
+            <ion-tab-button  [tab]="entity.route" layout="icon-start" (click)="tabClickTop(entity)">
+                    <!-- <ion-icon [name]="entity.icon"></ion-icon> -->
+                    <!-- [color]="entity.tabselected?'dark':'light'" -->
+                <ion-label [ngClass]="{'isSelected':entity.tabselected}">
+                {{entity.title | translate}}
+                </ion-label>
+            </ion-tab-button> 
+            </span>
+        
+</ion-tab-bar>
+<ion-tab-bar slot="bottom" *ngIf="tabsConfig.getBottomTabBool() && appConfigService.getPlatformMobile()">
+    <span *ngFor="let entity of tabsConfig.getBottomTabs()">
+       <!-- test {{router.url}} -->
+       <!-- entity.route != null ? entity.route : router.url -->
+       <!-- orelse route from on click -->
+       <!-- [tab]="entity.route" -->
+            <ion-tab-button  layout="icon-start" (click)="tabClickBottom(entity)" >
+                    <!-- <ion-icon [name]="entity.icon"></ion-icon> -->
+                    <!-- [color]="entity.tabselected?'dark':'light'" -->
+                   
+                <ion-label [ngClass]="{'isSelected':entity.tabselected}" >
+                    
+                {{entity.title | translate}}
+                </ion-label>
+            </ion-tab-button> 
+            </span>
+        
+</ion-tab-bar>
+</ion-tabs>
+</ion-content>
+<!-- desktop footer -->
+<digital-app-footer *ngIf="!appConfigService.getPlatformMobile()"></digital-app-footer>

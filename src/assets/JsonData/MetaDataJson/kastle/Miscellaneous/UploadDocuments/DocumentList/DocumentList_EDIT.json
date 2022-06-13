@@ -1,0 +1,463 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "id",
+                "identifier": "hidden",
+                "fieldJsonMapping": "id",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "documentCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "documentCode",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 25,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "language",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "language",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "156",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "companyId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "companyId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [],
+                "metdaDataReq": {
+                    "queryId": "6",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "documentTitle",
+                "identifier": "textbox",
+                "fieldJsonMapping": "documentTitle",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "file",
+                "name": "document",
+                "identifier": "file",
+                "fieldJsonMapping": "document",
+                "accetpFileType": "image/jpeg,image/png,application/pdf",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "docDesc",
+                "identifier": "textbox",
+                "fieldJsonMapping": "docDesc",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra1",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra1",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra2",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra2",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 100,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "remarks",
+                "identifier": "textbox",
+                "fieldJsonMapping": "remarks",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "status",
+                "identifier": "toggle",
+                "fieldJsonMapping": "status",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": "Name Required"
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": "id",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "documentCode",
+                "label": "Document Code",
+                "placeholder": "Enter Document Code",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 25 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "language",
+                "label": "Language",
+                "placeholder": "Enter Language",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "companyId",
+                "label": "Company ID",
+                "placeholder": "Select Company ID",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "documentTitle",
+                "label": "Document Title",
+                "placeholder": "Enter Document Title",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "docDesc",
+                "label": "Document Description",
+                "placeholder": "Enter Document Description",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra1",
+                "label": "Extra1",
+                "placeholder": "Enter Extra1",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra2",
+                "label": "Extra2",
+                "placeholder": "Enter Extra2",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 100 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "remarks",
+                "label": "Remarks",
+                "placeholder": "Enter remarks",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "status",
+                "label": "Status",
+                "placeholder": "Select Status",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "document",
+                "label": "Document",
+                "placeholder": "upload Document",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            }
+        ]
+    }
+]

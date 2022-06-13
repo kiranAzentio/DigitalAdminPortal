@@ -1,0 +1,47 @@
+<ion-page class="ion-page">
+
+    <!-- <common-header (onBack)="back()" [isMenu]="false" [showCustomBackButton]="true" [showDefaultBackButton]="false" [showSettings]="false"
+        [showLogOut]="false" [showMenu]="false" [title]="'REGISTER'"></common-header> -->
+
+
+    <ion-content class="transparent">
+        <div class="sfl-background">
+            <ion-grid class="ion-no-padding whiteBg" size="12">
+                <ion-row>
+                    <ion-col size="12">
+                        <div class="ion-text-center">
+                            <!-- <img [src]="appConfigService.logo" class="sfl-logo"> -->
+                            <h1>{{'REGISTRATIONPAGE.REGISTER_TITLE' | translate}}</h1>
+                        </div>
+                    </ion-col>
+                    
+                            <ion-col class="ion-padding-horizontal" size="12">
+                                    <form #editForm="ngForm">
+                                            <h5 class="ion-text-center">{{'REGISTRATIONPAGE.LABEL_ENTER_NATIONALID' | translate}}</h5>
+                                        <ion-item class="ion-no-padding " input lines="none">                                           
+                                            <!-- <ion-label>{{'REGISTRATION_PAGE.LABEL_NATIONALID' | translate}}</ion-label> -->
+                                            
+                                            <ion-input class="" #idNumber="ngModel" maxlength="50" name="idNumber" inputmode="number" type="number" required [(ngModel)]="data.idNumber"
+                                                [placeholder]=" 'REGISTRATIONPAGE.PH_NATIONALID' | translate"></ion-input>
+                                            
+                                        </ion-item>
+                                        <!-- <div *ngIf="nationalId?.dirty && nationalId?.invalid" class="ion-no-padding transparent" lines="none">
+                                            <div class="errorMsg" *ngIf="nationalId?.errors.required">{{'FORM_ERROR.LOGINREQUIRED' | translate}}</div>                                               
+                                        </div> -->
+                                        <div class="ion-text-center">
+                                        <ion-button [disabled]="!editForm.valid" expand="default" 
+                                        (click)="onSubmitFunc($event)">{{'REGISTRATIONPAGE.SUBMIT' | translate}}</ion-button>
+                                    </div>
+                                    </form>
+                    </ion-col>
+                    <!-- <ion-col size="12">
+                            <div class="ion-text-center">
+                                <ion-img class = "" [src]="appConfigService.bgImg"></ion-img>                               
+                            </div>
+                            </ion-col> -->
+                </ion-row>
+            </ion-grid>
+        </div>
+    </ion-content>
+
+</ion-page>

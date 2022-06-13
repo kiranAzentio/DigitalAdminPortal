@@ -1,0 +1,163 @@
+h2 {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0 5px 10px;
+    font-size: 14px;
+    
+    border-bottom: 1px solid rgba(210,210,210,1);
+    margin: 0;
+
+
+    /* Define the style rules for the 'arrow icons' */
+    span {
+        position: absolute;
+        right: 1em;
+        top: 5px;
+        font-size: 17px;
+        color: #006174;
+    }
+ }
+
+
+ ion-card{
+    background: #FFFFFF;
+    box-shadow: 7px 7px 15px #dbdfe2, -7px -7px 20px #ffffff;
+    border-radius: 12px;
+    border: solid 1px #f5f6f7;
+    margin: 2%;
+    line-height: 16px;
+    padding: 15px;
+    text-align: center;
+    float: left;
+    width: 46%;
+    height: 125px;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ /* Here we define the actual 'menu' and its 'options' */
+ .image-wrapper {
+    margin: 0 auto 2em auto;
+    width: 20%;
+
+    img {
+       display: block;
+       margin: auto;
+    }
+ }
+
+
+ p {
+    
+    margin: 0;
+    font-size: 13px;
+    color: #006174;
+    font-weight: 500;
+ }
+
+
+ div {
+   
+    position: relative;
+    //background: #ffffff;
+    //border-bottom: 1px solid #d2d2d2;
+    font-size: 12px;
+
+
+    ion-button {
+       position: absolute;
+       bottom: 20px;
+       right: 20px;
+    }
+    ion-row{
+        // padding: 5px;
+        // border-bottom: solid 1px #e2e1e1;
+    }
+ }
+
+ .showRowBorders{
+    padding: 5px;
+    border-bottom: solid 1px #e2e1e1;
+ }
+ .hideBorders{
+    border-bottom: solid 0px #e2e1e1 !important;
+ }
+
+ /* Following classes display/hide the 'menu'
+ // based on the state change detection in the
+ // component class */
+ .active {
+    display: block;
+    //border-bottom: solid 1px #ccc;
+    padding:10px;
+    background:#f1f1f1;
+ }
+
+ .inactive {
+    display: none;
+ }
+
+//  odd style
+ .tbbody:nth-child(odd){
+    // background-color: white;
+    }
+
+    .success{
+        color: #fff;
+        background: green;
+        padding: 3px 5px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        font-size: 11px;
+        text-align: center;
+    }
+    .danger{
+        color: #fff;
+        background: #f15353;
+        padding: 3px 5px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        font-size: 11px;
+        text-align: center;
+    }
+    .warning{
+        color: #fff;
+        background: orange;
+        padding: 3px 5px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        font-size: 11px;
+        text-align: center;
+    }
+    .btnStyle{
+        background: #006174;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 10px;
+    }
+    .requirments{
+        background: #68cee2;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    white-space: nowrap;
+    }
+    .flexClass{
+        display: inline-block;
+    }
+    .extra{
+        color: #070707;
+        font-weight:400;
+    }
+    .rightExtra{
+        font-size: 13px;
+    color: #006174;
+    font-weight: 500;
+    }
+    .heading{
+        font-size: 13px !important;
+        margin-bottom: 15px !important;
+        color: #006174;
+        text-decoration: underline;
+    }

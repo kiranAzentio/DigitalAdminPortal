@@ -1,0 +1,151 @@
+ion-button ion-icon {
+  margin-right: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  position: absolute;
+  right: 0px;
+}
+.dropMenu ion-button {
+  margin: 0;font-size:14px;
+}
+
+
+.parentMenu > ion-button {
+  font-size: 1.121em !important;
+  margin: 1px auto;
+ 
+ .ion-activatable
+ {
+  border-right: 2px solid #0035a1;
+ }
+ span{
+  color:#ffffff !important;
+  text-align: left;
+  font-weight: 300;
+    letter-spacing: 0.1px;
+ }
+}
+.parentMenu > .isSelected
+{
+  --background: #1b18b0 !important;
+}
+.dropMenu > .isSelected{
+  background:var(--ion-color-light-shade);
+}
+
+h4 {
+  font-size: 14px;
+  margin-bottom: 0% !important;
+  // color: #314245;
+}
+
+.animate {
+  animation-name: animateIn;
+  animation-duration: 350ms;
+  animation-delay: calc(var(--animation-order) * 100ms);
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(-8px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.image-cropperMenu {
+  height: 80px;
+  position: relative; ;
+}
+.profile-picMenu {
+  height: 100%;
+  width: auto;
+  max-width: 110px;
+  border-radius: 12px;
+}
+
+.imageMainMenu {
+  place-items: center;
+  display: grid;
+  border-radius: 50%;
+}
+
+ion-split-pane {
+  // --border:  0px;
+  --side-max-width: 2%;
+}
+
+
+.dropMenu {
+  width: 85%;
+  margin: 0 auto;
+}
+
+
+
+.scrollBar {
+  --offset-bottom: auto !important;
+  --overflow: hidden;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &::-webkit-scrollbar-track {
+    width: 10px;
+  }
+}
+
+.edit_icon {
+  position: absolute;
+  right: -14px;
+  bottom: -6px;
+  background: var(--ion-color-primary);
+  color: #fff;
+  border-radius: 12px;
+  padding: 5px;
+  font-size: 11px;
+}
+
+
+@media (max-width: 767px){
+  .listClass{
+    width: 235px;
+  }
+  ion-button {
+   span{
+    font-size: 15px;
+   }
+  }
+  }
+
+ion-item{
+	color: var(--ion-color-primary);
+	--min-height:20px;
+	font-size:14px;
+	line-height: 34px;
+	&:hover{
+		background: var(--ion-color-light-shade);
+	}
+}
+ion-item.parentMenu {   
+    --padding-start: 16px;
+    cursor: pointer;
+}
+
+.dropMenu ion-item{
+  cursor: pointer;
+  color: var(--ion-color-primary);
+  --inner-padding-start:16px;
+}
+
+ion-list{
+  background:var(--ion-color-light);
+  ion-item{
+    --inner-border-width: 0;
+  }
+}

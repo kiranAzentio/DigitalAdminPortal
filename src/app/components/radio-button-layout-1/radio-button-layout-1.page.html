@@ -1,0 +1,53 @@
+<!--Themes Simple -->
+<ion-grid class="ion-no-padding">
+  <ion-row>
+      <!-- <ion-col style="margin-bottom: 15px;" class="ion-no-padding" size="12" *ngIf="data"> -->
+    <ion-col class="ion-no-padding blackColor" size="12" *ngIf="data">
+      <!-- <ion-list> -->
+        <!-- Header Title Top -->
+        <!-- <ion-list-header  class="ion-no-padding" *ngIf="showTitle"> -->
+          <!-- <h1 class="text-size-xl text-color-primary font-bold">{{data.title}}</h1> -->
+          <!-- [ngClass]="{'whitelabel': bluelabelbool}" -->
+          <!-- <ion-label class="text-size-xxs text-color-secondary font-regular" style="font-size:19px !important;" position="stacked" [ngClass]="{'lighBlue': bluelabelbool}">{{title | translate}}</ion-label> -->
+          <!-- <ion-label  position="stacked" [ngClass]="{'lighBlue': bluelabelbool}">{{title | translate}}</ion-label>
+           -->
+          <!-- <span *ngIf="required">*</span>          
+          <ion-label class="text-size-xxs text-color-secondary font-regular" position="stacked">FIRSTNAME</ion-label> -->
+        <!-- </ion-list-header> -->
+        <!-- <ion-label class="text-size-xxs text-color-secondary font-regular" position="stacked">FIRSTNAME</ion-label> -->
+        <!-- List -->
+        <!-- [ngClass]="{'whitelabelbackground': bluelabelbool}"  -->
+        <!-- [ngClass]="{'lighBlue': bluelabelbool}" -->
+        <!-- <div>
+            <ion-label>{{title | translate}}</ion-label>
+        </div> -->
+        <div *ngIf="readonly" class="readonly" [ngStyle]="{'height':readOnlyHeight == undefined ? '100%' : readOnlyHeight }"></div>  <!-- WORKAROUND FOR DISABLE-->
+        <ion-radio-group [(ngModel)]="selectedItem" *ngIf="!toggle">
+          <!-- selectedItem- {{selectedItem}}
+          <br/> -->
+          <ion-item class="ion-no-padding blackColor whiteBackground" [ngClass]="{'lighBlue': bluelabelbool}"
+          *ngFor="let entry of data" 
+          (click)="onItemClickFunc(entry, $event)"  lines="none" no-lines>
+          <!-- <br/>
+          data- {{data | json}}
+          <br/>
+          entry.value- {{entry.value}}
+          <br/> -->
+          <ion-radio style="margin-right:5px;  " [value]="entry.value"></ion-radio>
+            <ion-label style="margin-right:0px; font-size:13px; white-space:normal;  "  [ngClass]="{'lighBlue': bluelabelbool}" >{{entry.label | translate}}</ion-label>&nbsp;
+           
+          </ion-item>
+        </ion-radio-group>
+
+        <!-- toogle -->
+        <ion-list *ngIf="toggle" class="ion-no-padding">
+          <ion-item class="ion-no-padding" *ngIf="data.length == 2" lines="none" no-lines>
+              <ion-label style="color:#6c757d">{{data[1].label}}</ion-label>
+              <ion-toggle  [checked]="isOnline" (ionChange)="ionChangeTest($event)"></ion-toggle>
+              <ion-label style="color:#6c757d">{{data[0].label}}</ion-label>
+            </ion-item>
+      </ion-list>
+      <!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+</ion-grid>

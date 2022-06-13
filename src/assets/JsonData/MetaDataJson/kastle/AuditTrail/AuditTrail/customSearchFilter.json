@@ -1,0 +1,213 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "tableName",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "tableName",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [],
+                "metdaDataReq": {
+                    "queryId": "212",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "columnName",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "columnName",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [],
+                "metdaDataReq": {
+                    "queryId": "213",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "eventType",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "eventType",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [],
+                "metdaDataReq": {
+                    "queryId": "214",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "newDate",
+                "identifier": "date",
+                "fieldJsonMapping": "newDate",
+                "value": "",
+                "onPageLoadGetData": true,
+                "showTime": false,
+                "maxDate": "",
+                "minDate": "",
+                "minDateValidFrom": "",
+                "maxDatevalidFrom": "",
+                "apiUrl": "companyId-dropdown",
+                "onChangeMetaData": [],
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "id",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "newUsername",
+                "identifier": "textbox",
+                "fieldJsonMapping": "newUsername",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": "tableName",
+                "label": "Table Name",
+                "placeholder": "Enter Table Name",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "columnName",
+                "label": "Column Name",
+                "placeholder": "Enter Column Name",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "eventType",
+                "label": "Event Type",
+                "placeholder": "Enter Event Type",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "newDate",
+                "label": "Modified On",
+                "placeholder": "Enter Modified On",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "newUsername",
+                "label": "Modified By",
+                "placeholder": "Enter Modified By",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            }
+        ]
+    }
+]

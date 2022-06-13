@@ -1,0 +1,115 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "id",
+                "identifier": "hidden",
+                "fieldJsonMapping": "id",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "menuDescription",
+                "identifier": "textbox",
+                "fieldJsonMapping": "menuDescription",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "language",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "language",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": "menuDescription",
+                "label": "Menu Description",
+                "placeholder": "Enter Menu Description",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "id",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "language",
+                "label": "Language",
+                "placeholder": "Enter Language",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            }
+        ]
+    }
+]

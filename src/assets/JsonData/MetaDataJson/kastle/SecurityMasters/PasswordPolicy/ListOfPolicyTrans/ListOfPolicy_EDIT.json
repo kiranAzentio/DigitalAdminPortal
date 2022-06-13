@@ -1,0 +1,95 @@
+[{
+    "tableMetaData":[
+      
+        {
+            "type": "input",
+            "label": "",
+            "placeholder":"",
+            "inputType": "text",
+            "name": "policyCode",
+            "identifier":"textbox",
+            "fieldJsonMapping": "policyCode",
+            "value":"",
+            "fieldArrayNestedData":[],
+            "validations": [
+              {
+                "name": "required",
+                "validator": "required",
+                "message": ""
+              },
+              {
+                "name": "not in use",
+                "validator": "not in use",
+                "message": ""
+              }
+            ]
+          },
+        {
+          "type": "input",
+          "label": "",
+          "placeholder":"",
+          "inputType": "text",
+          "name": "passwordDescription",
+          "identifier":"textbox",
+          "fieldJsonMapping": "passwordDescription",
+          "value":"",
+          "fieldArrayNestedData":[],
+          "validations": [
+            {
+              "name": "required",
+              "validator": "required",
+              "message": ""
+            },
+            {
+              "name": "not in use",
+              "validator": "not in use",
+              "message": ""
+            }
+          ]
+        },
+        {
+          "type": "input",
+          "label": "",
+          "placeholder": "",
+          "inputType": "text",
+          "name": "language",
+          "identifier": "dropdown",
+          "fieldJsonMapping": "language",
+          "value": "",
+          "onPageLoadGetData": true,
+          "apiUrl":"querydata-by-queryid-metadata",
+"metdaDataReq": {
+"queryId":"5",
+"transactionId":"1234"
+},
+          "onChangeMetaData": [
+            
+          ],
+          "metdaData": [
+            
+          ],
+          "idToShow":"id",
+          "descriptionToShow":"label",
+          "validations": [
+            {
+              "name": "required",
+              "validator": "required",
+              "message": ""
+            },
+            {
+              "name": "not in use",
+              "validator": "not in use",
+              "message": ""
+            }
+          ]
+        }
+       
+    ],
+    "tableMetaDataFieldNameLang":[
+        {"fieldJsonMapping":"policyCode","label":"Policy Code","placeholder":"Enter Policy Code","validations":["This field is required","Patter is invalid"],"fieldArrayNestedDataNameLang":[]},
+        {"fieldJsonMapping":"passwordDescription","label":"Password Description","placeholder":"Enter Password Description","validations":["This field is required","Patter is invalid"],"fieldArrayNestedDataNameLang":[]},
+        {"fieldJsonMapping":"language","label":"Language","placeholder":"Enter Language","validations":["This field is required","Patter is invalid"],"fieldArrayNestedDataNameLang":[]}
+    ]
+  }
+  ]
+  

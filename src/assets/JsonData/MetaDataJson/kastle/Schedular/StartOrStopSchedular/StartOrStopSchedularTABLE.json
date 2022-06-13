@@ -1,0 +1,196 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "JobName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "Description",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "AutoSyncYesOrNoFlag",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field": "JobName",
+                "header": "Job Name"
+            },
+            {
+                "field": "Description",
+                "header": "Description"
+            },
+            {
+                "field": "AutoSyncYesOrNoFlag",
+                "header": "Auto Sync YesO/No Flag"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "id",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "JobName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "Description",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "AutoSyncYesOrNoFlag",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "id",
+                "title": "ID",
+                "placeholder": "Enter ID"
+            },
+            {
+                "tableMetaDataField": "JobName",
+                "title": "Job Name",
+                "placeholder": "Enter Job Name"
+            },
+            {
+                "tableMetaDataField": "Description",
+                "title": "Description",
+                "placeholder": "Enter Description"
+            },
+            {
+                "tableMetaDataField": "AutoSyncYesOrNoFlag",
+                "title": "Auto Sync YesO/No Flag",
+                "placeholder": "Enter Auto Sync YesO/No Flag"
+            }
+        ],
+        "tableTitle": "DATABASE - Schedule Job",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 29,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 30,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "85",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "SAVE_URL_COMES_HERE",
+            "apiSaveDataUrlReqData": {
+                "queryId": "86",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "UPDATE_URL_COMES_HERE",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "87",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "DELETE_URL_COMES_HERE",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "JobName": "COMPANY GENERIC",
+                "Description": "This Configuration is used to check if this job need to be....",
+                "AutoSyncYesOrNoFlag": "N",
+                "statusId": "2"
+            }
+        ]
+    }
+]

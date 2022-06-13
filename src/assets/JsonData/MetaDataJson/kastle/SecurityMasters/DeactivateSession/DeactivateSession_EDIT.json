@@ -1,0 +1,272 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "id",
+                "identifier": "hidden",
+                "fieldJsonMapping": "id",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "UserLogId",
+                "identifier": "textbox",
+                "fieldJsonMapping": "UserLogId",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "CifId",
+                "identifier": "textbox",
+                "fieldJsonMapping": "CifId",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "FirstName",
+                "identifier": "textbox",
+                "fieldJsonMapping": "FirstName",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "MiddleName",
+                "identifier": "textbox",
+                "fieldJsonMapping": "MiddleName",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "LastName",
+                "identifier": "textbox",
+                "fieldJsonMapping": "LastName",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "FamilyName",
+                "identifier": "textbox",
+                "fieldJsonMapping": "FamilyName",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "IpAddress",
+                "identifier": "textbox",
+                "fieldJsonMapping": "IpAddress",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": "id",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "UserLogId",
+                "label": "User Log Id",
+                "placeholder": "Enter User Log Id",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "CifId",
+                "label": "Cif Id",
+                "placeholder": "Enter Cif Id",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "FirstName",
+                "label": "First Name",
+                "placeholder": "Enter First Name",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "MiddleName",
+                "label": "Middle Name",
+                "placeholder": "Enter Middle Name",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "LastName",
+                "label": "Last Name",
+                "placeholder": "Enter Last Name",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "FamilyName",
+                "label": "Family Name",
+                "placeholder": "Enter Family Name",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "IpAddress",
+                "label": "Ip Address",
+                "placeholder": "Select Ip Address",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            }
+        ]
+    }
+]

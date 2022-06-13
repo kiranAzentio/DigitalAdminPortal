@@ -1,0 +1,307 @@
+[
+    {
+        "tableMetaData": [
+           
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "menuLink",
+                "identifier": "textbox",
+                "fieldJsonMapping": "menuLink",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "menuIcon",
+                "identifier": "textbox",
+                "fieldJsonMapping": "menuIcon",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "label": "",
+                "placeholder": "",
+                "inputType": "",
+                "name": "menuDetails",
+                "identifier": "array",
+                "fieldJsonMapping": "menuDetails",
+                "value": "",
+                "showAddNestedFormButton": "true",
+                "showAddNestedFormButtonLabel": "Add",
+                "showDeleteNestedFormButton": "true",
+                "formArrayTitle": "Add Mutiple Key Value Trans Descriptions",
+                "hideDeleteIconByArrayIndex": [
+                    0
+                ],
+                "readOnlyByArrayIndex": [
+                    {
+                        "language": [
+                            0
+                        ]
+                    }
+                ],
+                "fieldArrayNestedData": [
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "id",
+                        "identifier": "hidden",
+                        "fieldJsonMapping": "id",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "menuDescription",
+                        "identifier": "textbox",
+                        "fieldJsonMapping": "menuDescription",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "language",
+                        "identifier": "dropdown",
+                        "fieldJsonMapping": "language",
+                        "value": "English",
+                        "onPageLoadGetData": true,
+                        "apiUrl": "querydata-by-queryid-metadata",
+                        "metdaDataReq": {
+                            "queryId": "5",
+                            "transactionId": "1234"
+                        },
+                        "onChangeMetaData": [],
+                        "metdaData": [],
+                        "idToShow": "id",
+                        "descriptionToShow": "label",
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    }
+                ],
+                "validations": []
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "status",
+                "identifier": "toggle",
+                "fieldJsonMapping": "status",
+                "value": "A",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": "Name Required"
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "remarks",
+                "identifier": "textbox",
+                "fieldJsonMapping": "remarks",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+           
+            {
+                "fieldJsonMapping": "menuLink",
+                "label": "Menu Link",
+                "placeholder": "Enter Menu Link",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "menuIcon",
+                "label": "Menu Icon",
+                "placeholder": "Menu Icon",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "status",
+                "label": "Status",
+                "placeholder": "Select Status",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "remarks",
+                "label": "Remarks",
+                "placeholder": "Enter remarks",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "menuDetails",
+                "label": "",
+                "placeholder": "",
+                "validations": [],
+                "fieldArrayNestedDataNameLang": [
+                    {
+                        "fieldJsonMapping": "id",
+                        "label": "",
+                        "placeholder": "",
+                        "validations": [
+                            "",
+                            ""
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "menuDescription",
+                        "label": "Menu Description",
+                        "placeholder": "Enter Menu Description",
+                        "validations": [
+                            "This field is required",
+                            "Patter is invalid 1"
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "language",
+                        "label": "Language",
+                        "placeholder": "Enter Language",
+                        "validations": [
+                            "This field is required",
+                            "Patter is invalid"
+                        ],
+                        "fieldArrayNestedDataNameLang": []
+                    }
+                ]
+            }
+        ]
+    }
+]

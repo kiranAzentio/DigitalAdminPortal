@@ -1,0 +1,1482 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "id",
+                "identifier": "hidden",
+                "fieldJsonMapping": "id",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "companyCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "companyCode",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "label": "",
+                "placeholder": "",
+                "inputType": "",
+                "name": "companyDetails",
+                "identifier": "array",
+                "fieldJsonMapping": "companyDetails",
+                "value": "",
+                "showAddNestedFormButton": "true",
+                "showAddNestedFormButtonLabel": "Add",
+                "showDeleteNestedFormButton": "true",
+                "formArrayTitle": "Add Mutiple Key Value Trans Descriptions",
+                "hideDeleteIconByArrayIndex": [
+                    0
+                ],
+                "readOnlyByArrayIndex": [
+                    {
+                        "language": [
+                            0
+                        ]
+                    }
+                ],
+                "fieldArrayNestedData": [
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "id",
+                        "identifier": "hidden",
+                        "fieldJsonMapping": "id",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "companyDescription",
+                        "identifier": "textbox",
+                        "fieldJsonMapping": "companyDescription",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "language",
+                        "identifier": "dropdown",
+                        "fieldJsonMapping": "language",
+                        "value": 1,
+                        "onPageLoadGetData": true,
+                        "apiUrl": "querydata-by-queryid-metadata",
+                        "metdaDataReq": {
+                            "queryId": "5",
+                            "transactionId": "1234"
+                        },
+                        "onChangeMetaData": [],
+                        "metdaData": [],
+                        "idToShow": "id",
+                        "descriptionToShow": "label",
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    }
+                ],
+                "validations": []
+            },
+            
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "flag",
+                "identifier": "toggle",
+                "fieldJsonMapping": "flag",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": false,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "not in use",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "installedDate",
+                "identifier": "date",
+                "fieldJsonMapping": "installedDate",
+                "value": "",
+                "onPageLoadGetData": true,
+                "showTime":false,
+                "maxDate": "",
+                "minDate": "",
+                "minDateValidFrom": "",
+                "maxDatevalidFrom": "",
+                "apiUrl": "companyId-dropdown",
+                "onChangeMetaData": [
+                    {
+                        "fieldJsonMapping": "currentDate",
+                        "clear": true
+                    },
+                    {
+                        "fieldJsonMapping": "currentDate",
+                        "minDate": true,
+                        "value": "currentDate"
+                    },
+                    {
+                        "fieldJsonMapping": "effectiveDate",
+                        "clear": true
+                    },
+                    {
+                        "fieldJsonMapping": "effectiveDate",
+                        "minDate": true,
+                        "value": "effectiveDate"
+                    }
+                ],
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "id",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "currentDate",
+                "identifier": "date",
+                "fieldJsonMapping": "currentDate",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "companyId-dropdown",
+                "showTime":false,
+                "maxDate": "",
+                "minDate": "",
+                "minDateValidTill": "",
+                "maxDateValidTill": "",
+                "onChangeMetaData": [],
+                "metdaData": [
+                    "installedDate"
+                ],
+                "idToShow": "id",
+                "descriptionToShow": "id",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "effectiveDate",
+                "identifier": "date",
+                "fieldJsonMapping": "effectiveDate",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "companyId-dropdown",
+                "showTime":false,
+                "maxDate": "",
+                "minDate": "",
+                "minDateValidTill": "",
+                "maxDateValidTill": "",
+                "onChangeMetaData": [],
+                "metdaData": [
+                    "currentDate"
+                ],
+                "idToShow": "id",
+                "descriptionToShow": "id",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "baseCurrency",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "baseCurrency",
+                "value": null,
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "155",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [
+                    
+                ],
+                "metdaData": [],
+                "idToShow": "label",
+                "descriptionToShow": "label",
+                "ConvertStringToInteger": false,
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": "Base Currency required"
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "baseCountry",
+                "identifier": "textbox",
+                "fieldJsonMapping": "baseCountry",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "registeredAdd",
+                "identifier": "toggle",
+                "fieldJsonMapping": "registeredAdd",
+                "value": "Y",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "Y",
+                "uncheckedToogleId": "N",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": "not in use"
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "address1",
+                "identifier": "textbox",
+                "fieldJsonMapping": "address1",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "address2",
+                "identifier": "textbox",
+                "fieldJsonMapping": "address2",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "address3",
+                "identifier": "textbox",
+                "fieldJsonMapping": "address3",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "address4",
+                "identifier": "textbox",
+                "fieldJsonMapping": "address4",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "cityName",
+                "identifier": "textbox",
+                "fieldJsonMapping": "cityName",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "district",
+                "identifier": "textbox",
+                "fieldJsonMapping": "district",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "province",
+                "identifier": "textbox",
+                "fieldJsonMapping": "province",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "zipcode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "zipcode",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "compWebsiteAddress",
+                "identifier": "textbox",
+                "fieldJsonMapping": "compWebsiteAddress",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "email",
+                "identifier": "textbox",
+                "fieldJsonMapping": "email",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "boardphone",
+                "identifier": "textbox",
+                "fieldJsonMapping": "boardphone",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "contactPerson",
+                "identifier": "textbox",
+                "fieldJsonMapping": "contactPerson",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "designation",
+                "identifier": "textbox",
+                "fieldJsonMapping": "designation",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "mobile",
+                "identifier": "textbox",
+                "fieldJsonMapping": "mobile",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "contactPerMail",
+                "identifier": "textbox",
+                "fieldJsonMapping": "contactPerMail",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "phone1",
+                "identifier": "textbox",
+                "fieldJsonMapping": "phone1",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "conIslFalg",
+                "identifier": "toggle",
+                "fieldJsonMapping": "conIslFalg",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "C",
+                "uncheckedToogleId": "I",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "compRefId",
+                "identifier": "textbox",
+                "fieldJsonMapping": "compRefId",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "comDefFalg",
+                "identifier": "toggle",
+                "fieldJsonMapping": "comDefFalg",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "Y",
+                "uncheckedToogleId": "N",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra1",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra1",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra2",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra2",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra3",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra3",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra4",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra4",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "extraFlag1",
+                "identifier": "toggle",
+                "fieldJsonMapping": "extraFlag1",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "extraFlag2",
+                "identifier": "toggle",
+                "fieldJsonMapping": "extraFlag2",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+        
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "status",
+                "identifier": "toggle",
+                "fieldJsonMapping": "status",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": "Name Required"
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "remarks",
+                "identifier": "textbox",
+                "fieldJsonMapping": "remarks",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": "id",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "companyCode",
+                "label": "Company Code",
+                "placeholder": "Enter Company Code",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "flag",
+                "label": "Flag",
+                "placeholder": "Select Flag",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "installedDate",
+                "label": "System Installed Date",
+                "placeholder": "Enter System Installed Date",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "currentDate",
+                "label": "Current Business Date of A company Based On The System Date",
+                "placeholder": "Enter Current Business Date",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "effectiveDate",
+                "label": "Effective Business Date of A company Based On The System Date",
+                "placeholder": "Enter Effective Business Date",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "baseCurrency",
+                "label": "ISO Currency Code",
+                "placeholder": "select Base Currency",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "baseCountry",
+                "label": "ISO Code Of Country",
+                "placeholder": "Enter Base Country",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "registeredAdd",
+                "label": "Is Registered Address?",
+                "placeholder": "select Registered Address",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "address1",
+                "label": "Address 1",
+                "placeholder": "Enter Address 1",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "address2",
+                "label": "Address 2",
+                "placeholder": "Enter Address 2",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "address3",
+                "label": "Address 3",
+                "placeholder": "Enter Address 3",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "address4",
+                "label": "Address 4",
+                "placeholder": "Enter Address 4",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "cityName",
+                "label": "City Name",
+                "placeholder": "Enter City Name",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "district",
+                "label": "District",
+                "placeholder": "Enter District",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "province",
+                "label": "Province/state",
+                "placeholder": "Enter Province/state",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "zipcode",
+                "label": "Zipcode",
+                "placeholder": "Enter Zipcode",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "compWebsiteAddress",
+                "label": "Company Website Address",
+                "placeholder": "Enter Company Website Address",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "email",
+                "label": "Email of the company",
+                "placeholder": "Enter Email of the company",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+
+            {
+                "fieldJsonMapping": "boardphone",
+                "label": "boardphone Phone number 1",
+                "placeholder": "Enter boardphone phone number",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "contactPerson",
+                "label": "Contact Person",
+                "placeholder": "Enter Contact Person",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "designation",
+                "label": "Designation of the Contact Person",
+                "placeholder": "Enter Designation",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "mobile",
+                "label": "Mobile of Contact person",
+                "placeholder": "Enter Contact person Mobile",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "contactPerMail",
+                "label": "Email of the contact person",
+                "placeholder": "Enter Contact Person Email",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "phone1",
+                "label": "Phone number of contact person",
+                "placeholder": "Enter Phone number",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "conIslFalg",
+                "label": "Conventional or Islamic?",
+                "placeholder": "Select Conventional or Islamic",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+
+            {
+                "fieldJsonMapping": "compRefId",
+                "label": "Reference ID of Core System",
+                "placeholder": "Enter Reference ID of Core System",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid 1"
+                ]
+            },
+            {
+                "fieldJsonMapping": "comDefFalg",
+                "label": "Default Company Flag",
+                "placeholder": "Select Default Company Flag",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra1",
+                "label": "extra1",
+                "placeholder": "Enter extra1",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra2",
+                "label": "extra2",
+                "placeholder": "Enter extra2",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra3",
+                "label": "extra3",
+                "placeholder": "Enter extra3",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra4",
+                "label": "extra4",
+                "placeholder": "Enter extra4",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extraFlag1",
+                "label": "Extra Flag 1",
+                "placeholder": "Select Extra Flag 1",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extraFlag2",
+                "label": "Extra Flag 2",
+                "placeholder": "Select extra Flag 2",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "status",
+                "label": "Status",
+                "placeholder": "Select Status",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "remarks",
+                "label": "Remarks",
+                "placeholder": "Enter remarks",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            
+            {
+                "fieldJsonMapping": "companyId",
+                "label": "Company ID",
+                "placeholder": "Select Company ID",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "companyDetails",
+                "label": "",
+                "placeholder": "",
+                "validations": [],
+                "fieldArrayNestedDataNameLang": [
+                    {
+                        "fieldJsonMapping": "id",
+                        "label": "",
+                        "placeholder": "",
+                        "validations": [
+                            "",
+                            ""
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "companyDescription",
+                        "label": "Company Name",
+                        "placeholder": "Enter Company Name",
+                        "validations": [
+                            "This field is required",
+                            "Patter is invalid 1"
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "language",
+                        "label": "Language",
+                        "placeholder": "Select Language",
+                        "validations": [
+                            "This field is required",
+                            "Patter is invalid 2"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

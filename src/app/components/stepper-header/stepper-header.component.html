@@ -1,0 +1,116 @@
+<div class="headerClass">
+
+    <div class="titleWrap">
+        <div class="firstBlock" style="color: #383838;
+        font-family: Segoe UI Semibold;">
+            {{ stepperConfigurationService.getTitle()}}
+            <!-- <div *ngIf="showBelowTitle" style="font-size: 15px;">
+                Search by any of the following fields
+                </div> -->
+        </div>
+        <div class="secondBlock">
+            <div *ngIf="showDeclineButton" class="inliner">
+                <ion-button type="submit" color="danger" (click)="declineClick()">
+                    Cancel
+                </ion-button>
+            </div>
+            <div  *ngIf="showExitButton" (click)="exitClick()" class="inliner left25Space">
+            <ion-button type="submit" color="medium">
+                    Exit
+                </ion-button>
+            </div>
+        </div>
+    </div>
+
+    <!-- customer details -->
+    <div *ngIf="showCustomerDetails" class="custWrap">
+        <div class="flexClass" style="font-size:14px;" *ngIf="appConfig.getInnerJourneyData('selectProductPage','selectProductData') != null">
+            <div class="custcss"> 
+               
+                <div>
+                    <b>
+                        {{appConfig.getInnerJourneyData('selectProductPage','selectProductData').customerId}}
+                    </b>
+                </div> <p> Customer ID </p>
+                        <!-- </p>                  -->
+            </div>
+            <div class="custcss"> 
+              
+                <div>
+                    <b>
+                        {{appConfig.getInnerJourneyData('selectProductPage','selectProductData').customerName}}
+                    </b>
+                </div>  <p> Customer Name </p>
+                        <!-- </p>                  -->
+            </div>
+            <div class="custcss">
+               
+                <div>
+                    <b>
+                        {{appConfig.getInnerJourneyData('selectProductPage','selectProductData').customerType}}
+ 
+                    </b>
+                </div> <p> Customer Type </p>
+                <!-- </p>                  -->
+            </div>
+            <!-- <div class="custcss">
+              
+                <div *ngIf="appConfig.getInnerJourneyData('selectProductPage','selectProductData').customerLimit != null &&
+                appConfig.getInnerJourneyData('selectProductPage','selectProductData').customerLimit != '' &&
+                appConfig.getInnerJourneyData('selectProductPage','selectProductData').currencyLabel != null &&
+                appConfig.getInnerJourneyData('selectProductPage','selectProductData').currencyLabel != null
+                " else #currelse>
+                    <b> 
+                    {{ appConfig.getInnerJourneyData('selectProductPage','selectProductData').customerLimit | customcurrency: appConfig.getInnerJourneyData('selectProductPage','selectProductData').currencyLabel
+                        :appConfig.getCurrencyPipeDisplay():appConfig.getCurrencyPipeLimit()}}
+                </b>
+            </div> <p> Customer Limit  </p>
+            </div> -->
+            <div class="custcss">
+               
+                <div>
+                    <b> 
+                    {{appConfig.getInnerJourneyData('selectProductPage','selectProductData').selectedProduct[0].product}}
+                </b>
+            </div>  <p> Product Selected  </p>
+            <!-- </p>                  -->
+            </div>
+            <div class="custcss">
+               
+                <div *ngIf="appConfig.getInnerJourneyData('createApplicationPage', 'appRefId')">
+                    <b> 
+                    {{ appConfig.getInnerJourneyData('createApplicationPage', 'appRefId') }}
+                </b>
+            </div>  <p> Application Reference ID  </p>
+            <!-- </p>                  -->
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="centreClass">
+    <div class="flexParent">
+        <!-- stepsArray -->
+
+        <div *ngFor="let data of stepperConfigurationService.getStepsArray()" 
+        class="flexChild" [ngClass]="{'showColor': data.showColor,'showTickColor':data.showTick}">
+        <!-- <ion-label>Step 1</ion-label> -->
+        <!-- <span style="    display: -webkit-box;"> -->
+        <span >
+              {{data.title}}
+          </span>
+      </div>
+
+        <!-- <div id="pointer"
+        [ngClass]="{'showColor': data.showColor,'showTickColor':data.showTick}"
+         *ngFor="let data of stepperConfigurationService.getStepsArray()">
+            <div class="cnt">
+                <p> {{data.title}}</p>
+            </div>
+        </div> -->
+
+    </div>
+</div>
+
+
+

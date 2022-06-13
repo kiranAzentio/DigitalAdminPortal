@@ -1,0 +1,60 @@
+<div class="stepBtn">
+<ion-grid size="12">
+    <ion-row>
+        <ion-col size="3" align-self-end *ngIf="showColLeft">
+            <!-- <ion-button (click)="onPrevious()" *ngIf="showPreviousBtn" class="plainClass">
+                Previous
+            </ion-button> -->
+            <!--below is working which is commented -->
+            <div class="prevDivclass" (click)="onPrevious($event)" *ngIf="showPreviousBtn">
+                Previous
+            </div>
+        </ion-col>
+        <ion-col size="6" *ngIf="showColMiddle">
+
+            <!-- <div style="display: inline-flex;" *ngIf="showRejectBtn && showAcceptBtn">
+                <div style="width:33%">
+                    <ion-button type="submit" (click)="onReject()" *ngIf="showRejectBtn"
+                    class="rejectClass1" color="trans" style="color: #372e88;background: #e9ecef;">
+                        Reject
+                    </ion-button>
+                </div>
+                <div style="width:33%"></div>
+                <div style="width:33%">
+                    <ion-button type="submit" (click)="onAccept()" *ngIf="showAcceptBtn"
+                    class="gradientClass"
+                    >
+                        Accept
+                    </ion-button>
+                </div>
+            </div> -->
+
+            <ion-button type="submit" (click)="onCustom($event)" *ngIf="showCustomBtn">
+                Custom Text 
+            </ion-button>
+        </ion-col>
+        <ion-col size="3" align-self-end *ngIf="showColRight">
+            <ion-button type="submit" (click)="onNext($event)" *ngIf="showNextBtn" style="float: right;"
+            class="gradientClass"
+            >
+            <span *ngIf="btnTextNext">{{btnTextNext}}</span>
+            <span *ngIf="!btnTextNext">Save &amp; Next</span>
+
+            <!-- <ng-template #elseBlockNext>
+                <span>SAVE & NEXT</span>
+            </ng-template> -->
+            </ion-button>
+            <ion-button type="submit" (click)="onFinish($event)" *ngIf="showFinishBtn">
+                Finish
+            </ion-button>
+            <div style="text-align: right;">
+                <ion-button type="submit" (click)="onAccept($event)" *ngIf="showAcceptBtn"
+                class="gradientClass"
+                >
+                    {{btnTextCustom}}
+                </ion-button>
+            </div>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+</div>

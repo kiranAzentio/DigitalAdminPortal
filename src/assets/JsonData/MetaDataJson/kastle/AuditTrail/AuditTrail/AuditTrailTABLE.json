@@ -1,0 +1,318 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "tableName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "columnName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "eventType",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            },
+            
+            {
+                "field": "oldValue",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+             {
+                "field": "oldDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "oldUsername",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+           
+            {
+                "field": "newValue",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "newDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "newUsername",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            { "field": "status", "header": "", "headerType": "text", "bodyType": "statusText"}
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "tableName",
+                "header": "Table Name"
+            },
+            {
+                "field": "columnName",
+                "header": "Column Name"
+            },
+            {
+                "field": "eventType",
+                "header": "Event Type"
+            },
+            {
+                "field": "oldValue",
+                "header": "Original Value "
+            },
+            {
+                "field": "oldDate",
+                "header": "Created On"
+            },
+            {
+                "field": "oldUsername",
+                "header": "Created By"
+            },
+            {
+                "field": "newValue",
+                "header": "Modified Value"
+            },
+            {
+                "field": "newDate",
+                "header": "Modified On "
+            },
+            {
+                "field": "newUsername",
+                "header": "Modifited By"
+            },
+            { "field": "status", "header": "Status" }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "dropdown",
+                "value": null,
+                "tableMetaDataField": "tableName",
+                "maxLength": "200"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "columnName",
+                "maxLength": "200"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "eventType",
+                "maxLength": "1"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "newDate",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "newUsername",
+                "maxLength": "150"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "tableName",
+                "title": "Table Name",
+                "placeholder": "Enter Table Name"
+            },
+            {
+                "tableMetaDataField": "columnName",
+                "title": "Column Name",
+                "placeholder": "Column Name"
+            },
+            {
+                "tableMetaDataField": "eventType",
+                "title": "Event Type",
+                "placeholder": "Enter Event Type"
+            },
+            {
+                "tableMetaDataField": "newDate",
+                "title": "Modified On ",
+                "placeholder": "Enter Modified On"
+            },
+            {
+                "tableMetaDataField": "newUsername",
+                "title": "Modifited By",
+                "placeholder": "Enter Modifited By"
+            }
+        ],
+        "tableTitle": "DATABASE -list of audit trail",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"audit search",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "kastle/AuditTrail/AuditTrail/AuditTrail_ADD": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": 0,
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "transactionId": "123456"
+            },
+            
+            "apiUrlCustomSearch":"screenconfig",
+            "apiUrlCustomSearchReqMataData": {
+                "screenConfigId": 64,
+                "langId": null
+            },
+            "apiCustomSearchDataUrl": "custom-filter",
+            "apiCustomSearchDataUrlReqData": {
+                "queryId": "40",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "sNo": "1",
+                "tableName": "KDB_GENERIC",
+                "columnName": "REMARKS",
+                "oldValue": "",
+                "oldUsername": "1",
+                "oldDate": "2021-09-27",
+                "newValue": "2",
+                "newUsername": "1",
+                "newDate": "2021-09-27"
+            },
+            {
+                "sNo": "2",
+                "tableName": "KDB_GENERIC",
+                "columnName": "REMARKS",
+                "oldValue": "",
+                "oldUsername": "1",
+                "oldDate": "2021-09-27",
+                "newValue": "2",
+                "newUsername": "1",
+                "newDate": "2021-09-27"
+            },
+            {
+                "sNo": "3",
+                "tableName": "KDB_GENERIC",
+                "columnName": "REMARKS",
+                "oldValue": "",
+                "oldUsername": "1",
+                "oldDate": "2021-09-27",
+                "newValue": "2",
+                "newUsername": "1",
+                "newDate": "2021-09-27"
+            },
+            {
+                "sNo": "4",
+                "tableName": "KDB_GENERIC",
+                "columnName": "REMARKS",
+                "oldValue": "",
+                "oldUsername": "1",
+                "oldDate": "2021-09-27",
+                "newValue": "2",
+                "newUsername": "1",
+                "newDate": "2021-09-27"
+            },
+            {
+                "sNo": "5",
+                "tableName": "KDB_GENERIC",
+                "columnName": "REMARKS",
+                "oldValue": "",
+                "oldUsername": "1",
+                "oldDate": "2021-09-27",
+                "newValue": "1",
+                "newUsername": "1",
+                "newDate": "2021-09-27"
+            }
+        ]
+    }
+]

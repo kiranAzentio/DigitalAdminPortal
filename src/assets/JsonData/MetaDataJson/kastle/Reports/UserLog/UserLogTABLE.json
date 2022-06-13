@@ -1,0 +1,364 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "userId",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "firstName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "ipAddresslmeiNumber",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "loginTime",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "logoutTime",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "logoutReason",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+           
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": " Id"
+            },
+            {
+                "field": "userId",
+                "header": "User Id"
+            },
+            {
+                "field": "firstName",
+                "header": "First Name"
+            },
+            {
+                "field": "loginTime",
+                "header": "Login Time"
+            },
+            {
+                "field": "ipAddresslmeiNumber",
+                "header": "IP Address lmei Number"
+            },
+            {
+                "field": "logoutTime",
+                "header": "Logout Time"
+            },
+            {
+                "field": "logoutReason",
+                "header": "logout Reason"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "userId",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "firstName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "logoutReason",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "userId",
+                "title": "User Id",
+                "placeholder": "Enter User Id"
+            },
+            {
+                "tableMetaDataField": "firstName",
+                "title": "First Name",
+                "placeholder": "Enter First Name"
+            },
+            {
+                "tableMetaDataField": "logoutReason",
+                "title": "logout Reason",
+                "placeholder": "Enter logout Reason"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+            
+        ],
+        "tableTitle": "DATABASE - User Log",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "kastle/Reports/UserLog/UserLog_ADD": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": 0,
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "id": "19",
+                "firstName": "System",
+                "loginTime": "2021-09-30",
+                "ipAddresslmeiNumber": "10.200.16.26",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "15",
+                "firstName": "smit",
+                "loginTime": "2021-09-30",
+                "ipAddresslmeiNumber": "192.168.0.106",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "13",
+                "firstName": "smit",
+                "loginTime": "2021-09-29",
+                "ipAddresslmeiNumber": "192.168.0.106",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "11",
+                "firstName": "smit",
+                "loginTime": "2021-09-29",
+                "ipAddresslmeiNumber": "192.168.0.106",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "9",
+                "firstName": "smit",
+                "loginTime": "2021-09-28",
+                "ipAddresslmeiNumber": "192.168.0.106",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "8",
+                "firstName": "smit",
+                "loginTime": "2021-09-28",
+                "ipAddresslmeiNumber": "192.168.0.106",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "6",
+                "firstName": "System",
+                "loginTime": "2021-09-28",
+                "ipAddresslmeiNumber": "192.168.0.106",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "7",
+                "firstName": "smit",
+                "loginTime": "2021-09-28",
+                "ipAddresslmeiNumber": "192.168.0.106",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "5",
+                "firstName": "smit",
+                "loginTime": "2021-09-28",
+                "ipAddresslmeiNumber": "192.168.0.106",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "3",
+                "firstName": "System",
+                "loginTime": "2021-09-27",
+                "ipAddresslmeiNumber": "10.200.16.73",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "1",
+                "firstName": "System",
+                "loginTime": "2021-09-27",
+                "ipAddresslmeiNumber": "10.200.16.73",
+                "logoutTime": "",
+                "status": "Active",
+                "statusId": "1",
+                "logoutReason": ""
+            },
+            {
+                "id": "18",
+                "firstName": "System",
+                "loginTime": "2021-09-30",
+                "ipAddresslmeiNumber": "10.200.16.26",
+                "logoutTime": "2021-09-30",
+                "status": "Inactive",
+                "statusId": "2",
+                "logoutReason": ""
+            },
+            {
+                "id": "17",
+                "firstName": "System",
+                "loginTime": "2021-09-30",
+                "ipAddresslmeiNumber": "10.200.16.26",
+                "logoutTime": "2021-09-30",
+                "status": "Inactive",
+                "statusId": "2",
+                "logoutReason": ""
+            },
+            {
+                "id": "2",
+                "firstName": "System",
+                "loginTime": "2021-09-27",
+                "ipAddresslmeiNumber": "10.200.16.73",
+                "logoutTime": "2021-09-27",
+                "status": "Inactive",
+                "statusId": "2",
+                "logoutReason": ""
+            }
+        ]
+    }
+]

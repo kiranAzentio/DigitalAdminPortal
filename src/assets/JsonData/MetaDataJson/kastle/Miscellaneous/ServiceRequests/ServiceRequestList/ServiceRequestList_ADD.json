@@ -1,0 +1,348 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "id",
+                "identifier": "hidden",
+                "fieldJsonMapping": "id",
+                "value": "",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "srCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "srCode",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "label": "",
+                "placeholder": "",
+                "inputType": "",
+                "name": "companyDetails",
+                "identifier": "array",
+                "fieldJsonMapping": "companyDetails",
+                "value": "",
+                "showAddNestedFormButton": "true",
+                "showAddNestedFormButtonLabel": "Add",
+                "showDeleteNestedFormButton": "true",
+                "formArrayTitle": "Add Mutiple Key Value Trans Descriptions",
+                "hideDeleteIconByArrayIndex": [
+                    0
+                ],
+                "readOnlyByArrayIndex": [
+                    {
+                        "language": [
+                            0
+                        ]
+                    }
+                ],
+                "fieldArrayNestedData": [
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "id",
+                        "identifier": "hidden",
+                        "fieldJsonMapping": "id",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "serviceHeading",
+                        "identifier": "textbox",
+                        "fieldJsonMapping": "serviceHeading",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "serviceGroup",
+                        "identifier": "textbox",
+                        "fieldJsonMapping": "serviceGroup",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "serviceDescription",
+                        "identifier": "textbox",
+                        "fieldJsonMapping": "serviceDescription",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    }
+                ],
+                "validations": []
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "valueForInterface",
+                "identifier": "textbox",
+                "fieldJsonMapping": "valueForInterface",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "displayCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "displayCode",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "status",
+                "identifier": "toggle",
+                "fieldJsonMapping": "status",
+                "value": "1",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "1",
+                "uncheckedToogleId": "2",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": "Name Required"
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": "id",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "srCode",
+                "label": "SR Code",
+                "placeholder": "Enter SR Code",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "valueForInterface",
+                "label": "Value For Interface",
+                "placeholder": "Enter Value For Interface",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "status",
+                "label": "Status",
+                "placeholder": "Select Status",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "displayCode",
+                "label": "Display Code",
+                "placeholder": "Select Display Code",
+                "validations": [
+                    "This field is required",
+                    "Patter is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "companyDetails",
+                "label": "",
+                "placeholder": "",
+                "validations": [],
+                "fieldArrayNestedDataNameLang": [
+                    {
+                        "fieldJsonMapping": "id",
+                        "label": "",
+                        "placeholder": "",
+                        "validations": [
+                            "",
+                            ""
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "serviceHeading",
+                        "label": "Service Heading",
+                        "placeholder": "Enter Service Heading",
+                        "validations": [
+                            "This field is required",
+                            "Patter is invalid 1"
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "serviceGroup",
+                        "label": "Service Group",
+                        "placeholder": "Service Group",
+                        "validations": [
+                            "This field is required",
+                            "Patter is invalid 2"
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "serviceDescription",
+                        "label": "Service Description",
+                        "placeholder": "Service Description",
+                        "validations": [
+                            "This field is required",
+                            "Patter is invalid 2"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

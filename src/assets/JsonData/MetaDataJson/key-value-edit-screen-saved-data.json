@@ -1,0 +1,21 @@
+{
+"genericKey":"1",
+"valueForInterface":"2",
+"companyId":"1",
+"remarks":"4",
+"status":"1",
+"companyDetails":[
+    {
+        "valueDescription":"val 1",
+        "language":"English"
+    },
+    {
+        "valueDescription":"val 2",
+        "language":"Arabic"
+    },
+    {
+        "valueDescription":"val 3",
+        "language":"Hindi"
+    }
+]
+}

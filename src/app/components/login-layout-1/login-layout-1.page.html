@@ -1,0 +1,56 @@
+<ion-page class="ion-page " *ngIf="data != null">
+    <ion-content class="transparent">
+        <div class="centreclass" style="height: 100vh;" style="background-image: url('assets/img/products/kastle/login-bg.jpg');background-repeat: no-repeat;background-position :center;background-size: cover;height: 100vh; width: auto;padding: 70px;">
+            <div style="color: var(--ion-color-primary-contrast);">
+                <ion-grid size="12">
+                    <ion-row class="boxParent centreclass whiteBackground">
+                        <ion-col size="12">
+                            <div class="head1 ion-text-center">
+                                <span>
+                                    <img [src]="logo1" alt="Company Logo" width="70%">
+                                </span>
+                                <h2 class="ion-text-center fw600 text-primary ion-padding-top"> {{'WELCOME_LOGIN' | translate}}</h2>
+                            </div>
+                            <div class="formMain">
+                                <form #ctrl='ngForm' (submit)="onLoginFunc($event)">
+                                    <div class="div1Wrap">
+                                        <div class="blackColor">{{'LOGIN.USERNAME' | translate}}</div>
+                                        <digital-text-box [showTitle]="false" [title]=" 'LOGIN.USERNAME' " [placeholder]=" 'LOGIN.USERNAME_PLACEHOLDER' " [(ngModel)]="data.username"
+                                            [(enteredText)]="data.username" [required]="true" name="username" [maxlength]="50"
+                                            (onInput)="usernameInputCheck($event)" [blockCopyPasteProcessFlag]="true" >
+                                        </digital-text-box>
+                                        <div class="errorMsg text08" *ngIf="ctrl.controls?.username?.invalid && isFormSubmitted">
+                                            {{ 'FORM_ERROR.REQUIRED' | translate}}
+                                        </div>
+                                    </div>
+                                    <div class="div2Wrap">
+                                        <div class="blackColor">{{'LOGIN.PASSWORD' | translate}} &nbsp;
+                                            <a class="type-toggle" (click)="toggleShow()" class="blackColor" style="font-size: 22px;position: absolute;">
+                                                <ion-icon class="show-option" [hidden]="showPassword" name="eye-off-outline"></ion-icon>
+                                                <ion-icon class="hide-option" [hidden]="!showPassword" name="eye-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                        <digital-text-box [inputType]="inputType" [showTitle]="false" [title]=" 'LOGIN.PASSWORD' " [placeholder]=" 'LOGIN.PASSWORD_PLACEHOLDER'| translate "
+                                            [(ngModel)]="data.password" [(enteredText)]="data.password" [required]="true" name="password"
+                                            [maxlength]="50" (onInput)="passwordInputCheck($event)" [blockCopyPasteProcessFlag]="true">
+                                        </digital-text-box>
+                                        <div class="errorMsg text08" *ngIf="ctrl.controls?.password?.invalid && isFormSubmitted">
+                                            {{ 'FORM_ERROR.REQUIRED' | translate}}
+                                        </div>
+                                    </div>
+                                    <div class="ion-text-right">
+                                        <ion-button icon-left size="medium" shape="round" color="primary" (click)="onLoginFunc($event)" tappable>
+                                           <ion-icon slot="icon-only" name="log-in" color="light"></ion-icon>
+                                            &nbsp; {{'LOGIN.LOGIN' | translate}}
+                                        </ion-button>
+                                        <input type='submit' style="opacity: 0;width: 0;position:absolute;right:-20%">
+                                    </div>
+                                </form>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </div>
+        </div>
+    </ion-content>
+</ion-page>

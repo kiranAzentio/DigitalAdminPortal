@@ -1,0 +1,410 @@
+[
+  {
+  "tableMetaData": [
+    {
+      "type":"input",
+      "label":"",
+      "placeholder":"",
+      "inputType":"text",
+      "name":"id",
+      "identifier":"hidden",
+      "fieldJsonMapping":"id",
+      "value":"",
+      "showDelete":true,
+      "validations":[
+        {
+          "name":"not in use",
+          "validator":"not in use",
+          "message":""
+        },
+        {
+          "name":"not in use",
+          "validator":"not in use",
+          "message":""
+        }
+      ]
+    },
+    {
+      "type":"input",
+      "label":"",
+      "placeholder":"",
+      "inputType":"text",
+      "name":"genericKey",
+      "identifier":"dropdown",
+      "fieldJsonMapping":"genericKey",
+      "value":"",
+      "onPageLoadGetData":true,
+      "apiUrl":"querydata-by-queryid-metadata",
+      "onChangeMetaData":[
+        
+      ],
+      "metdaDataReq":{
+        "queryId":"7",
+        "transactionId":"1234",
+        ":langId":null
+      },
+      "metdaData":[
+        
+      ],
+      "idToShow":"id",
+      "descriptionToShow":"label",
+      "validations":[
+        {
+          "name":"required",
+          "validator":"required",
+          "message":""
+        },
+        {
+          "name":"not in use",
+          "validator":"not in use",
+          "message":""
+        }
+      ]
+    },
+    {
+      "type":"input",
+      "label":"",
+      "placeholder":"",
+      "inputType":"text",
+      "name":"valueForInterface",
+      "identifier":"textbox",
+      "fieldJsonMapping":"valueForInterface",
+      "value":"",
+      "fieldArrayNestedData":[
+        
+      ],
+      "validations":[
+        {
+          "name":"required",
+          "validator":"required",
+          "message":""
+        },
+        {
+          "name":"not in use",
+          "validator":"not in use",
+          "message":""
+        }
+      ]
+    },
+    {
+      "type":"array",
+      "label":"",
+      "placeholder":"",
+      "inputType":"",
+      "name":"companyDetails",
+      "identifier":"array",
+      "fieldJsonMapping":"companyDetails",
+      "value":"",
+      "showAddNestedFormButton":"true",
+      "showAddNestedFormButtonLabel":"Add",
+      "showDeleteNestedFormButton":false,
+      "formArrayTitle":"Add Mutiple Key Value Trans Descriptions",
+      "hideDeleteIconByArrayIndex":[
+        
+      ],
+      "readOnlyByArrayIndex":[
+        {
+          "language":[
+            0
+          ]
+        }
+      ],
+      "fieldArrayNestedData":[
+        {
+          "type":"input",
+          "label":"",
+          "placeholder":"",
+          "inputType":"text",
+          "name":"id",
+          "identifier":"hidden",
+          "fieldJsonMapping":"id",
+          "value":"",
+          "showDelete":true,
+          "validations":[
+            {
+              "name":"not in use",
+              "validator":"not in use",
+              "message":""
+            },
+            {
+              "name":"not in use",
+              "validator":"not in use",
+              "message":""
+            }
+          ]
+        },
+        {
+          "type":"input",
+          "label":"",
+          "placeholder":"",
+          "inputType":"text",
+          "name":"valueDescription",
+          "identifier":"textbox",
+          "fieldJsonMapping":"valueDescription",
+          "value":"",
+          "showDelete":true,
+          "validations":[
+            {
+              "name":"required",
+              "validator":"required",
+              "message":""
+            },
+            {
+              "name":"not in use",
+              "validator":"not in use",
+              "message":""
+            }
+          ]
+        },
+        {
+          "type":"input",
+          "label":"",
+          "placeholder":"",
+          "inputType":"text",
+          "name":"language",
+          "identifier":"dropdown",
+          "fieldJsonMapping":"language",
+          "value":1,
+          "onPageLoadGetData":true,
+          "apiUrl":"querydata-by-queryid-metadata",
+          "onChangeMetaData":[
+            
+          ],
+          "metdaDataReq":{
+            "queryId":"5",
+            "transactionId":"1234"
+          },
+          "metdaData":[
+            
+          ],
+          "idToShow":"id",
+          "descriptionToShow":"label",
+          "validations":[
+            {
+              "name":"required",
+              "validator":"required",
+              "message":""
+            },
+            {
+              "name":"not in use",
+              "validator":"not in use",
+              "message":""
+            }
+          ]
+        }
+      ],
+      "validations":[
+        
+      ]
+    },
+    {
+      "type":"input",
+      "label":"",
+      "placeholder":"",
+      "inputType":"text",
+      "name":"companyId",
+      "identifier":"dropdown",
+      "fieldJsonMapping":"companyId",
+      "value":"",
+      "onPageLoadGetData":true,
+      "apiUrl":"querydata-by-queryid-metadata",
+      "onChangeMetaData":[
+        
+      ],
+      "metdaDataReq":{
+        "queryId":"6",
+        "transactionId":"1234",
+        ":langId":null
+      },
+      "metdaData":[
+        
+      ],
+      "idToShow":"id",
+      "descriptionToShow":"id",
+      "validations":[
+        {
+          "name":"required",
+          "validator":"required",
+          "message":""
+        },
+        {
+          "name":"not in use",
+          "validator":"not in use",
+          "message":""
+        }
+      ]
+    },
+    {
+      "type":"input",
+      "label":"",
+      "placeholder":"",
+      "inputType":"text",
+      "name":"remarks",
+      "identifier":"textbox",
+      "fieldJsonMapping":"remarks",
+      "value":"",
+      "fieldArrayNestedData":[
+        
+      ],
+      "validations":[
+        {
+          "name":"required",
+          "validator":"required",
+          "message":""
+        },
+        {
+          "name":"not in use",
+          "validator":"not in use",
+          "message":""
+        }
+      ]
+    },
+    {
+      "type":"toggle",
+      "label":" ",
+      "placeholder":"",
+      "inputType":"toggle",
+      "name":"status",
+      "identifier":"toggle",
+      "fieldJsonMapping":"status",
+      "value":"1",
+      "onPageLoadGetData":true,
+      "ShowToggle":true,
+      "apiUrl":"querydata-by-queryid-metadata",
+      "onChangeMetaData":[
+        
+      ],
+      "checkedToogleId":"A",
+      "uncheckedToogleId":"X",
+      "metdaData":[
+        
+      ],
+      "idToShow":"id",
+      "descriptionToShow":"label",
+      "validations":[
+        {
+          "name":"required",
+          "validator":"required",
+          "message":"Name Required"
+        },
+        {
+          "name":"not in use",
+          "validator":"not in use",
+          "message":""
+        }
+      ]
+    }
+  ],
+  "tableMetaDataFieldNameLang":[
+    {
+      "fieldJsonMapping":"id",
+      "label":"",
+      "placeholder":"",
+      "validations":[
+        "",
+        ""
+      ],
+      "fieldArrayNestedDataNameLang":[
+        
+      ]
+    },
+    {
+      "fieldJsonMapping":"genericKey",
+      "label":"Generic Key",
+      "placeholder":"Select Generic Key",
+      "validations":[
+        "This field is required",
+        "Patter is invalid"
+      ],
+      "fieldArrayNestedDataNameLang":[
+        
+      ]
+    },
+    {
+      "fieldJsonMapping":"valueForInterface",
+      "label":"Value for Interaface",
+      "placeholder":"Enter Value for Interaface",
+      "validations":[
+        "This field is required",
+        "Patter is invalid"
+      ],
+      "fieldArrayNestedDataNameLang":[
+        
+      ]
+    },
+    {
+      "fieldJsonMapping":"remarks",
+      "label":"Remarks",
+      "placeholder":"Enter remarks",
+      "validations":[
+        "This field is required",
+        "Patter is invalid"
+      ],
+      "fieldArrayNestedDataNameLang":[
+        
+      ]
+    },
+    {
+      "fieldJsonMapping":"status",
+      "label":"Status",
+      "placeholder":"Select Status",
+      "validations":[
+        "This field is required",
+        "Patter is invalid"
+      ],
+      "fieldArrayNestedDataNameLang":[
+        
+      ]
+    },
+    {
+      "fieldJsonMapping":"companyId",
+      "label":"Company ID",
+      "placeholder":"Select Company ID",
+      "validations":[
+        "This field is required",
+        "Patter is invalid"
+      ],
+      "fieldArrayNestedDataNameLang":[
+        
+      ]
+    },
+    {
+      "fieldJsonMapping":"companyDetails",
+      "label":"",
+      "placeholder":"",
+      "validations":[
+        
+      ],
+      "fieldArrayNestedDataNameLang":[
+        {
+          "fieldJsonMapping":"id",
+          "label":"",
+          "placeholder":"",
+          "validations":[
+            "",
+            ""
+          ]
+        },
+        {
+          "fieldJsonMapping":"valueDescription",
+          "label":"Value Description",
+          "placeholder":"Enter Value Description",
+          "validations":[
+            "This field is required",
+            "Patter is invalid 1"
+          ]
+        },
+        {
+          "fieldJsonMapping":"language",
+          "label":"Language",
+          "placeholder":"Select Language",
+          "validations":[
+            "This field is required",
+            "Patter is invalid 2"
+          ]
+        }
+      ]
+    }
+  ]
+}
+]

@@ -1,0 +1,145 @@
+<digital-common-header></digital-common-header>
+<ion-content>
+  <ion-split-pane when="md" contentId="main-content">
+
+    <ion-menu side="start" contentId="main-content" type="overlay" class="menuClass">
+      <ion-content class="contentClass1" color="primary">
+        <ion-grid class="ion-no-padding">
+          <ion-row>
+            <ion-col size="12" class="ion-no-padding">
+              <!-- Menu List -->
+              <ion-list *ngFor="let item of menuConfig.menuData" class="ion-no-padding">
+                <ion-item [ngClass]="{'isSelected':item.menuselected}" class="parentMenu ion-no-padding" (click)="menuClicked(item)">
+                 {{item.menudesc}} 
+                    <ion-icon name="chevron-forward-outline" *ngIf="item.submMenuList.length > 0 && item.menuOpened==false" slot="end" color="light" size="small"></ion-icon>
+                    <!-- <ion-icon name="arrow-down" ></ion-icon> -->
+                    <ion-icon name="chevron-down-outline" *ngIf="item.submMenuList.length > 0 && item.menuOpened" slot="end" color="light" size="small"></ion-icon>
+                  
+                </ion-item>
+                <ion-list *ngIf="item.submMenuList.length > 0 && item.menuOpened" class="ion-no-padding dropMenu">
+                  <ion-item class="ion-no-padding" (click)="subMenuClicked(categories, item)"
+                    [ngClass]="{'isSelected':categories.menuselected}" *ngFor="let categories of item.submMenuList">
+                    {{categories.menudesc}}
+                  </ion-item>
+                </ion-list>
+
+              </ion-list>
+
+
+
+
+              <!-- <ion-list class="listClass">
+                  <ion-card-content class="ion-no-padding  parentMenu" *ngFor="let item of menuConfig.menuData">
+                    <ion-button mode="ios" class="ion-text-capitalize " slot="start" expand="full" 
+                    [ngClass]="{'isSelected':item.menuselected}"
+                    (click)="menuClicked(item)">
+                    {{item.menudesc}}
+                      <ion-icon name="chevron-forward-outline" *ngIf="item.submMenuList.length > 0 && item.menuOpened==false" slot="end"></ion-icon>
+                     
+                      <ion-icon name="chevron-down-outline" *ngIf="item.submMenuList.length > 0 && item.menuOpened" slot="end"></ion-icon>
+                    </ion-button>
+                    <ion-card-content *ngIf="item.submMenuList.length > 0 && item.menuOpened" class="ion-no-padding dropMenu">
+                      <ion-button class="ion-padding-start" mode="ios"  fill="clear" class="ion-text-capitalize ion-no-padding animate"
+                       *ngFor="let categories of item.submMenuList" 
+                       (click)="subMenuClicked(categories, item)"
+                      [ngClass]="{'isSelected':categories.menuselected}"
+                      >
+                          <span> {{categories.menudesc}}</span>
+                      </ion-button>
+                    </ion-card-content>
+                  </ion-card-content>
+                  
+              </ion-list> -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+      <ion-footer class="ion-align-items-center" color="light">
+      </ion-footer>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+
+
+
+
+
+  <!-- <digital-common-header></digital-common-header>
+<ion-content > -->
+  <!-- <ion-split-pane when="md" contentId="main-content"> mobile only buttons for open close -->
+  <!-- <ion-split-pane when="false" contentId="main-content">  -->
+  <!-- <ion-split-pane when="md" contentId="main-content" style="margin-top: 45px;">
+    <ion-menu side="start" contentId="main-content" type="overlay" class="menuClass"> -->
+  <!-- <ion-header  color="light">
+      </ion-header> -->
+  <!-- <ion-content class="contentClass1" color="light" style="border-right: 1px solid #b3b1b1;">
+        <ion-grid class="ion-no-padding">
+          <ion-row>
+            <ion-col size="12" class="ion-no-padding"> -->
+  <!-- Menu List -->
+  <!-- <ion-list class="listClass"> -->
+  <!-- desktop<ion-button (click)="toogleMenu()">
+                  <ion-icon slot="start" name="menu"></ion-icon>
+            </ion-button> -->
+  <!-- <ion-menu-toggle auto-hide="false" *ngFor="let item of menuConfig.menuData"> -->
+
+  <!-- <ion-item [routerDirection]="'root'" [routerLink]="item.menulink" (click)="menuClicked(item)"
+                    color="light"  [ngClass]="{'isSelected':item.menuselected}">
+                        <div class="labelClass">
+                          <div  class="imgSpace">
+                            <ion-icon [name]="item.icon" color="primary"></ion-icon>
+                          </div>
+                          <div>
+                        {{item.menudesc}}
+                          </div>
+                        </div>
+                  </ion-item> -->
+  <!-- <ion-card-content class="ion-no-padding ion-text-left" *ngFor="let item of menuConfig.menuData">
+                    <ion-button mode="ios" color="light" class="ion-text-capitalize " expand="full" color="light"
+                    [ngClass]="{'isSelected':item.menuselected}"
+                    (click)="menuClicked(item)"> -->
+  <!-- <ion-icon slot="icon-only" color="primary" [name]="item.icon"></ion-icon> -->
+  <!-- <img [src]="item.image" style="width:30px;height:30px"> -->
+  <!-- <h4 style="color: var(--ion-color-medium); text-align: left; width: 100%; font-weight: bold;">
+                        {{item.menudesc}}
+                      </h4> -->
+  <!-- <span style="color: green;"> {{item.menudesc}}</span>
+                      <ion-icon name="arrow-down" *ngIf="item.submMenuList.length > 0"></ion-icon>
+                    </ion-button>
+                    <ion-card-content *ngIf="item.submMenuList.length > 0 && item.menuOpened" class="ion-no-padding dropMenu">
+                      <ion-button class="ion-padding-start" mode="ios" color="light" fill="clear" class="ion-text-capitalize ion-no-padding animate"
+                       *ngFor="let categories of item.submMenuList" 
+                       (click)="subMenuClicked(categories, item)"
+                      [ngClass]="{'isSelected':categories.menuselected}"
+                      > -->
+  <!-- <ion-icon slot="icon-only" color="primary" [name]="categories.icon"></ion-icon> -->
+  <!-- <img [src]="categories.image" style="width:30px;height:30px"> -->
+  <!-- <h4 style="color: var(--ion-color-medium); padding-left: 6%; text-align: left; width: 100%; font-weight: bold;"> -->
+  <!-- <span style="color: red;"> {{categories.menudesc}}</span> -->
+  <!-- </h4> -->
+  <!-- </ion-button>
+                    </ion-card-content>
+                  </ion-card-content> -->
+
+  <!-- </ion-menu-toggle> -->
+  <!-- </ion-list>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+      <ion-footer class="ion-align-items-center" color="light"> -->
+  <!-- <ion-toolbar>
+          <ion-title style="text-align: center;">{{ 'FOOTER_TITLE' | translate}}</ion-title>
+        </ion-toolbar> -->
+  <!-- </ion-footer>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane> -->
+
+
+  <!-- <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+      <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+      <ion-label>{{ p.title }}</ion-label>
+    </ion-item>
+  </ion-menu-toggle> -->

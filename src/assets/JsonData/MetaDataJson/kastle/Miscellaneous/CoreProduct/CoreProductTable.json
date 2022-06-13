@@ -1,0 +1,150 @@
+[
+    {
+        "tableMetaData": [
+            { "field": "actions", "header": "", "headerType": "text", "bodyType": "actionsText" },
+            { "field": "id", "header": "", "headerType": "text", "bodyType": "text" },
+            { "field": "companyId", "header": "", "headerType": "text", "bodyType": "text"},
+            { "field": "productCode", "header": "", "headerType": "text", "bodyType": "text"},
+            { "field": "fromDate", "header": "", "headerType": "date", "bodyType": "dateText" },
+            { "field": "toDate", "header": "", "headerType": "date", "bodyType": "dateText" },
+            { "field": "channels", "header": "", "headerType": "text", "bodyType": "text" },
+            { "field": "status", "header": "", "headerType": "text", "bodyType": "statusText" }
+        ],
+        "tableMetaDataFieldNameLang": [
+            { "field": "actions", "header": "Actions" },
+            { "field": "id", "header": "Id"},
+            { "field": "companyId", "header":"Company Name" },
+            { "field": "productCode", "header": "Product Code"},
+            { "field": "fromDate", "header": "Valid From Date" },
+            { "field": "toDate", "header": "Valid Till Date" },
+            { "field": "channels", "header": "Channels" },
+            { "field": "status", "header": "Status" }
+        ],
+        "filterData": [
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "id", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "companyId", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "productCode", "maxLength": "25" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "subModule", "maxLength": "25" },
+            { "title": "", "placeholder": "", "type": "date", "value": null, "tableMetaDataField": "fromDate", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "date", "value": null, "tableMetaDataField": "toDate", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "channels", "maxLength": "10" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "remarks", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "extra1", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "extra2", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "status", "maxLength": "100" }
+           
+        ],
+        "filterDataFieldNameLang": [
+            { "tableMetaDataField": "id", "title": "ID", "placeholder": "Enter ID" },
+            { "tableMetaDataField": "companyId", "title": " Company Id", "placeholder": "Enter Company ID" },
+            { "tableMetaDataField": "productCode", "title": "Product Code", "placeholder": "Enter Product Code" },
+            { "tableMetaDataField": "subModule", "title": "Sub Module in the Product", "placeholder": "Enter Sub Module in the Product"},
+            { "tableMetaDataField": "fromDate", "title": "Valid From Date", "placeholder": "Enter Valid From Date"},
+            { "tableMetaDataField": "toDate", "title": "Valid Till Date", "placeholder": "Enter Valid Till Date"},
+            { "tableMetaDataField": "channels", "title": "Channels", "placeholder": "Enter Channels" },
+            { "tableMetaDataField": "remarks", "title": "Remarks", "placeholder": "Enter Remarks" },
+            { "tableMetaDataField": "extra1", "title": "Extra Column 1", "placeholder": "Enter Extra Column 1" },
+            { "tableMetaDataField": "extra2", "title": "Extra Column 2", "placeholder": "Enter Extra Column 2" },
+            { "tableMetaDataField": "status", "title": "Status", "placeholder": "Enter Status" }
+        ],
+        "tableTitle": "DATABASE - list of Core Product",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Core Product",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": false,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEdit": false,
+            "showDelete": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 58,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 59,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "192",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "193",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "uti",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "194",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "195",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null,
+            "submitCustomDataManupulation":{
+                "singleLevel": [ 
+                    {
+                        "fieldName":"fromDate",
+                        "dateFormatConversion": "date"
+                    },
+                    {
+                        "fieldName":"toDate",
+                        "dateFormatConversion": "date"
+                    }
+                ],
+                "arrayLevel": []
+            }
+        },
+        "jsonTableData": [
+            {
+                "key": "COMPANY GENERIC",
+                "description": "This configuration i..",
+                "value1": "",
+                "value2": "",
+                "value3": "",
+                "value4": ""
+            }
+        ]
+    }
+]

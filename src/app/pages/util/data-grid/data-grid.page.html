@@ -1,0 +1,85 @@
+<ion-content>
+  <!-- <ion-button (click)="test2()">
+ BELOW GRID
+  </ion-button> -->
+  <div *ngIf="showSkeleton" style="background: #f4f4f4;padding: 20px;font-size: 18px;"><div>
+  <span style="color: #383838;font-family: Segoe UI Semibold;"> {{tableTitle}}</span>
+    </div>
+    <br>
+    <digital-app-skeleton *ngIf="showSkeleton"></digital-app-skeleton>
+  </div>
+  <!-- [showActionsAdd]="showActionsAdd" -->
+
+
+  <div *ngIf="showTable">
+    <div *ngFor="let tab of this.parentTableData;let i = index" class="borderBox">
+    <!-- parentTableData - {{parentTableData | json}} -->
+
+      <!-- {{tab.tableSelectedValue | json}} -->
+      <!-- //tab.dataKey -->
+      <digital-p-prime-table
+      *ngIf="showTable"
+      [rows]="10"
+      [showActionsAdd]="tab.showActionsAdd"
+      [tableSelectedValue]="tab.tableSelectedValue"
+      [showActionsAddLabel]="'Create Application'"
+      [showSearchBar]="tab.showSearchBar"
+      [changeModalTitle]="tab.changeModalTitle"
+      [modalTitle]= "tab.modalTitle"
+      [showDownLoadCsv]="tab.showDownLoadCsv"
+      [showCustomFilter]="tab.showCustomFilter" 
+      [customFilterData]="tab.customFilterData"
+      [showSerialNumber]="true"
+      [paginator]="true"
+      [showActions]="tab.showActions"
+      [showSortIcon]="tab.showSortIcon"
+      [tableData]="tab.tableData"
+      [downloadData]="tab.downloadData"
+      [tableMetaData]="tab.tableMetaData"
+      [tableGlobalFilterFields]="tab.tableGlobalFilterFields"
+      [tableTitle]="tab.tableTitle"
+      [searchPlaceholder]="tab.searchPlaceholder"
+      [dataKey]="'roh_id'"
+      [filterLabelMsg]="tab.filterLabelMsg"
+      [rowsPerPageOptions]="tab.rowsPerPageOptions"
+      [rows]="tab.rows"
+      [apiUrlAdd]="tab.apiUrlAdd"
+      [apiUrlCustomSearch]= "tab.apiUrlCustomSearch"
+      [apiUrlEdit]="tab.apiUrlEdit"
+      [apiUrlEditSavedData]="tab.apiUrlEditSavedData"
+      [apiSaveDataUrl]="tab.apiSaveDataUrl"
+      [apiCustomSearchDataUrl]="tab.apiCustomSearchDataUrl"
+      [apiUpdateDataUrl]="tab.apiUpdateDataUrl"
+      [apiDeleteDataUrl]="tab.apiDeleteDataUrl"
+      [apiUrlAddReqMetaData]="tab.apiUrlAddReqMetaData"
+      [apiUrlCustomSearchReqMataData]= "tab.apiUrlCustomSearchReqMataData"
+      [apiUrlEditReqMetaData]="tab.apiUrlEditReqMetaData"
+      [apiUrlEditReqSavedData]="tab.apiUrlEditReqSavedData"
+      [apiUrlEditReqSavedDataMetaData]="tab.apiUrlEditReqSavedDataMetaData"
+      [apiSaveDataUrlReqData]="tab.apiSaveDataUrlReqData"
+      [apiCustomSearchDataUrlReqData]= "tab.apiCustomSearchDataUrlReqData"
+      [apiUpdateDataUrlReqData]="tab.apiUpdateDataUrlReqData"
+      [apiDeleteDataUrlReqData]="tab.apiDeleteDataUrlReqData"
+      [submitCustomValidation]="tab.submitCustomValidation"
+      [submitCustomValidationMetaData]="tab.submitCustomValidationMetaData"
+      [submitCustomDataManupulation]="tab.submitCustomDataManupulation"
+      (onEdit)="onEdit($event)"
+      (onAdd)="onAdd()"
+      (onDelete)="onDelete($event,tab.apiDeleteDataUrlReqData,tab.apiDeleteDataUrl)"
+      (onSelect)="onSelect($event,i)"
+      (onUnSelect)="onUnSelect($event)"
+      (onCancelApplication)="onCancelApplication($event)"
+      (popupClose)="popupClose($event)"
+     
+      ></digital-p-prime-table>
+
+      <div *ngIf="i == 1" style="margin-top: 20px;">
+ <!-- extra space for 2nd table -->
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+
+  <!-- [showSerialNumber]="false" -->
+

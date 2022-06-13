@@ -1,0 +1,80 @@
+.number-labels{
+    font-size: 17px !important;
+       text-transform: uppercase  !important;
+       margin-bottom: 7px  !important;
+   }
+   
+.main-container ::ng-deep p-calendar body .ui-calendar.ui-calendar-w-btn .ui-inputtext {
+    // add style here
+    background-color: red
+  }
+  .main-container ::ng-deep p-calendar body.ui-inputtext {
+    // add style here
+    border: 1px solid black;
+    height:48px;
+  }
+
+  
+  
+  .ui-calendar {
+    position: relative;
+    display: block;
+    width: 100% !important; 
+    // border: 1px solid black;
+}
+body .ui-calendar.ui-calendar-w-btn .ui-inputtext {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0 none;
+    width: 96%;
+    border: 0;
+}
+
+.date-input{
+    width: 96%;
+    border: 0;
+    background-color: red;
+}
+.dateField{
+    font-size: 13px;
+background: #f4f4f5;
+border: solid 1px #006174;
+width: 100%;
+}
+
+// ::ng-deep .ui-calendar .ui-inputtext {
+//     border: 1px solid #9b9b9b;
+//     border-radius: 4px;
+//     height: 35px;
+//     width:100%;
+//     background: #f4f4f4;
+    
+//   }
+  
+  ::ng-deep .ui-state-default .ui-icon-calendar
+  {
+    // background-image: url("assets/img/sfl/arabic.png");
+      
+  }
+
+  ::ng-deep .ui-datepicker .ui-datepicker-header .ui-datepicker-title select{
+    background: white;
+  }
+
+// kajal css
+::ng-deep .ui-calendar .ui-inputtext{
+  border:0;
+  background-color: transparent
+}
+  // ::ng-deep .ui-calendar .ui-inputtext {
+  //   border: 1px solid #a9a4a4;
+  //   border-radius: 4px;
+  //   height: 42px;
+  //   width: 100%;
+  //   background: #ffffff;
+  // }
+
+  // ::ng-deep .ui-calendar .ui-inputtext[placeholder]
+  // {
+  //     color: gray
+  // }

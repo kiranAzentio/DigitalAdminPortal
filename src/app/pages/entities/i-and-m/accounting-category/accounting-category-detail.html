@@ -1,0 +1,119 @@
+<ion-content>
+
+  <!-- <stepper-header></stepper-header> -->
+
+  <div style="margin-top: 20px;">
+    <form #editForm="ngForm">
+      <ion-input placeholder="enter" [(ngModel)]="username1" name="username1">
+  
+      </ion-input>
+      <ion-input placeholder="enter" [(ngModel)]="email1" name="email1">
+          
+      </ion-input>
+  </form>
+  </div>
+ 
+
+
+  <div>
+    
+    <ion-button (click)="prevSteps()">
+      Previous
+  </ion-button>
+  </div>
+
+    <!-- <div  class="divParent" style="
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        padding: 0 15px;
+        position: absolute;
+        z-index: 999;
+        margin-top: 10px;
+      ">
+        <div *ngFor="let steps of stepsArray;let i = index;" (click)="stepsClicked(steps,i)"
+        style="border-radius: 5px;
+        display: block;
+        width: 100px;
+        text-align: center;
+        height: 50px;
+        background: rgb(21, 216, 230);
+        color: white;
+        padding-top: 15px;
+        margin-right: 10px;"
+        >
+            {{steps.title}}
+        </div>
+    </div>
+    
+
+   
+    <div style="height: 389px;
+    margin-top: 68px;
+    background: #6c757d;
+    text-align: center;
+    padding-top: 41px;
+    color: white;
+">
+        <ion-slides #wizardSlider pager="false" *ngIf="data != null" class="slidesHeight"
+    >
+        <ion-slide>
+            <div>
+                component 1
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div>
+                component 2
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div>
+                component 3
+            </div>
+        </ion-slide>
+    </ion-slides>
+
+    </div>
+
+  
+    <div style="background: #e9ecef;">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6" class="ion-float-start">
+              <ion-button fill="clear" class="text-color-accent ion-text-capitalize ion-float-start prevDiv secondary" (click)="onPreviousFunc()"
+                *ngIf="prev">
+                {{data.btnPrev | translate}}
+              </ion-button>
+            </ion-col>
+            <ion-col size="6" class="ion-float-end">
+              <ion-button fill="clear" class="text-color-accent ion-text-capitalize ion-float-end nextDiv" (click)="onNextFunc()"
+                *ngIf="next">
+                {{data.btnNext | translate}}
+              </ion-button>
+              <ion-button fill="clear"  class="text-color-accent ion-text-capitalize ion-float-end nextDiv"
+                [ngClass]="{'successtDiv': disbaleFinalButton() == false}" (click)="onFinishFunc()" *ngIf="finish">
+                {{data.btnFinish | translate}}
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        </div> -->
+
+
+
+        <!-- dates -->
+        <!-- startDate - {{startDate}} <br>
+        endDate - {{endDate}} <br>
+        currentDate - {{currentDate}}<br>
+        currentTime -- {{currentTime}}<br>
+        currentday - {{currentday}}<br>
+        currentIndiaFormat - {{currentIndiaFormat}}<br>
+        humanized - {{humanized}} <br>
+        humanizedNow - {{humanizedNow}} <br>
+        difference - {{difference}} <br>
+        difference2Days - {{difference2Days}} <br>
+        daysFrom2017 - {{daysFrom2017}} <br>
+        weeks - {{weeks}} -->
+      
+</ion-content>

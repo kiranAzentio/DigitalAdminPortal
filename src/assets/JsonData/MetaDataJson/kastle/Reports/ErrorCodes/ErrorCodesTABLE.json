@@ -1,0 +1,248 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            { "field": "id", "header": "", "headerType": "text", "bodyType": "text" },
+            {
+                "field": "language",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "errorCode",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "errorDesc",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "errorComment",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            { "field": "id", "header": "Id"},
+            {
+                "field": "language",
+                "header": "Language"
+            },
+            {
+                "field": "errorCode",
+                "header": "Error Code"
+            },
+            {
+                "field": "errorDesc",
+                "header": "Error Desc"
+            },
+            {
+                "field": "errorComment",
+                "header": "Error Comment"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "errorCode",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "errorDesc",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "errorCode",
+                "title": "Error Code",
+                "placeholder": "Enter Error Code"
+            },
+            {
+                "tableMetaDataField": "errorDesc",
+                "title": "Error Desc",
+                "placeholder": "Enter Error Desc"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - Error Codes",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "kastle/Reports/ErrorCodes/ErrorCodes_ADD": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 49,
+                "langId": null
+            },
+            "kastle/Reports/ErrorCodes/ErrorCodes_EDIT": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 50,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "150",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "151",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "152",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "153",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "errorCode": "EVC0010",
+                "errorDesc": "CIFID Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "errorCode": "EGC0010",
+                "errorDesc": "CIFID Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "errorCode": "EUC0010",
+                "errorDesc": "CIFID Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "errorCode": "EVI0010",
+                "errorDesc": "CIFID Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "errorCode": "CGA0010",
+                "errorDesc": "CIFID Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "errorCode": "ECA0010",
+                "errorDesc": "CIFID Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "errorCode": "EAS0010",
+                "errorDesc": "Loanid Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "errorCode": "EVC0010",
+                "errorDesc": "Loanid Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            }
+        ]
+    }
+]

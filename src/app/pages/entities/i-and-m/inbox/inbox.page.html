@@ -1,0 +1,44 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>INBOX</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div *ngIf="showSkeleton" style="margin-top:60px;background: #f4f4f4;padding: 20px;font-size: 18px;"><div>
+  <span style="color: #383838;font-family: Segoe UI Semibold;"> APPLICATIONS PENDING FOR PROCESSING </span>
+    </div>
+    <div style="margin-top:20px;"></div>
+    <digital-app-skeleton *ngIf="showSkeleton"></digital-app-skeleton>
+  </div>
+  <!-- [showActionsAdd]="showActionsAdd" -->
+
+  <div style="margin-top:60px;" *ngIf="showTable">
+  <digital-p-prime-table
+  *ngIf="showTable"
+  [rows]="10"
+  [showActionsAdd]="false"
+  [showActionsAddLabel]="'Create Application'"
+  [showSearchBar]="true"
+  [showCustomFilter]="false" 
+  [customFilterData]="customFilterData"
+  [showSerialNumber]="true"
+  [paginator]="true"
+  [showActions]="false"
+  [showSortIcon]="true"
+  [tableData]="tableData"
+  [downloadData]="downloadData"
+  [tableMetaData]="tableMetaData"
+  [tableGlobalFilterFields]="tableGlobalFilterFields"
+  [tableTitle]="tableTitle"
+  (onEdit)="onEdit($event)"
+  (onAdd)="onAdd()"
+  (onSelect)="onSelect($event)"
+  (onCancelApplication)="onCancelApplication($event)"
+  ></digital-p-prime-table>
+  </div>
+</ion-content>
+
+
+  <!-- [showSerialNumber]="false" -->
+

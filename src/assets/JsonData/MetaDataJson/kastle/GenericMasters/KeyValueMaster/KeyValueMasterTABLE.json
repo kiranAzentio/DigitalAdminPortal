@@ -1,0 +1,398 @@
+[
+    {
+        "tableMetaData": [
+            { "field": "radioBoxText", "header": "", "headerType": "text", "bodyType": "radioBoxText"},
+            { "field": "actions", "header": "", "headerType": "text", "bodyType": "actionsText"},
+            { "field": "id", "header": "", "headerType": "text", "bodyType": "text"},
+            { "field": "key", "header": "", "headerType": "text", "bodyType": "text" },
+            { "field": "valueDescription", "header": "", "headerType": "text","bodyType": "text"},
+            { "field": "valueInUls", "header": "", "headerType": "text", "bodyType": "text"}, 
+            { "field": "parentKey", "header": "", "headerType": "text","bodyType": "text"},
+            { "field": "status", "header": "", "headerType": "text", "bodyType": "statusText"}
+        ],
+        "tableMetaDataFieldNameLang": [
+            { "field": "actions", "header": "Actions" },
+            { "field": "id", "header": "ID"},
+            { "field": "key", "header": "Key"},
+            { "field": "valueDescription", "header": "Value Description" },
+            { "field": "valueInUls", "header": "Value in Uls" },
+            { "field": "parentKey", "header": "Parentkey"},
+            { "field": "status", "header": "Status" }
+        ],
+        "filterData": [
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "id", "maxLength": "100"},
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "key", "maxLength": "100" },
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "valueDescription", "maxLength": "100"},
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "valueInUls", "maxLength": "100"},
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "parentKey", "maxLength": "10"},
+            { "title": "", "placeholder": "", "type": "text", "value": null, "tableMetaDataField": "status", "maxLength": "100" }
+        ],
+        "filterDataFieldNameLang": [
+            { "tableMetaDataField": "id", "title": "ID","placeholder": "Enter ID"},
+            { "tableMetaDataField": "key", "title": "Key", "placeholder": "Enter Key"},
+            { "tableMetaDataField": "valueDescription", "title": "Value Description", "placeholder": "Enter Value Description" },
+            { "tableMetaDataField": "valueInUls", "title": "Value in Uls", "placeholder": "Enter Value in Uls"},
+            { "tableMetaDataField": "parentKey", "title": "Parentkey", "placeholder": "Enter Parentkey" },
+            { "tableMetaDataField": "status", "title": "Status","placeholder": "Enter Status" }
+        ],
+        "tableTitle": "DATABASE - List of Key Values",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Key Value",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 1,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 2,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "3",
+                    "transactionId": "1234"
+                },
+                {
+                    "queryId": "8",
+                    "transactionId": "123456",
+                    "arrayName": "companyDetails"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                },
+                {
+                    "fieldMapping": "valueDescription",
+                    "value": "",
+                    "reqKeyName": ":genkeyDescription"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "9",
+                "queryId2": "10",
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "11",
+                "queryId2": "12",
+                "queryId3": "10",
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "13",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null,
+            "submitCustomValidation": true,
+            "submitCustomValidationMetaData": {
+                "singleLevel": [],
+                "arrayLevel": [
+                    {
+                        "duplicateCheck": true,
+                        "arrayFieldJsonMapping": "companyDetails",
+                        "fieldJsonMapping": "language"
+                    }
+                ]
+            },
+            "submitCustomDataManupulation":{
+                "singleLevel": [ 
+                    {
+                        "fieldName":"validFrom",
+                        "dateFormatConversion": "date"
+                    },
+                    {
+                        "fieldName":"validTill",
+                        "dateFormatConversion": "date"
+                    },
+                    {
+                        "fieldName":"synchon",
+                        "dateFormatConversion": "date"
+                    }
+                ],
+                "arrayLevel": []
+            }
+        },
+        "jsonTableData": [
+            {
+                "id": "1",
+                "valueInUls": "AHL",
+                "valueDescription": "Home Loan",
+                "valueInDigital": "AHL",
+                "status": "Active",
+                "statusId": "1",
+                "companyid": "1"
+            },
+            {
+                "id": "2",
+                "valueInUls": "AAL",
+                "valueDescription": "Asset & Vehicle Finance",
+                "valueInDigital": "AAL",
+                "status": "Active",
+                "statusId": "1",
+                "companyid": "1"
+            },
+            {
+                "id": "3",
+                "valueInUls": "APL",
+                "valueDescription": "Personal Loan",
+                "valueInDigital": "APL",
+                "status": "Active",
+                "statusId": "1",
+                "companyid": "1"
+            },
+            {
+                "id": "4",
+                "valueInUls": "CD",
+                "valueDescription": "DreamLife(consum..)",
+                "valueInDigital": "APL",
+                "status": "Active",
+                "statusId": "1",
+                "companyid": "1"
+            },
+            {
+                "id": "11",
+                "valueInUls": "HLEXT",
+                "valueDescription": "Home Improvement...",
+                "valueInDigital": "HLEXT",
+                "status": "Active",
+                "statusId": "1",
+                "companyid": "1"
+            }
+        ]
+    },
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "valueDescription",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "language",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "createdDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": "ID"
+            },
+            {
+                "field": "valueDescription",
+                "header": " Value Decription"
+            },
+            {
+                "field": "language",
+                "header": "Language"
+            },
+            {
+                "field": "createdDate",
+                "header": "Created Date",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "id",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "valueDescription",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "language",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "id",
+                "title": "ID",
+                "placeholder": "Enter ID"
+            },
+            {
+                "tableMetaDataField": "valueDescription",
+                "title": "Value Description",
+                "placeholder": "Enter Value Description"
+            },
+            {
+                "tableMetaDataField": "language",
+                "title": "Language",
+                "placeholder": "Enter Language"
+            }
+        ],
+        "tableTitle": "DATABASE - List of Kdb Generic Key Values Trans",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": false,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd_DELETE_IT_LATER": "key-value-trans-add-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-trans-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 3,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "4",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "SAVE_URL_COMES_HERE",
+            "apiUpdateDataUrl": "UPDATE_URL_COMES_HERE",
+            "apiDeleteDataUrl": "DELETE_URL_COMES_HERE",
+            "dependantGrid": true,
+            "dependantGridMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                },
+                {
+                    "fieldMapping": "valueDescription",
+                    "value": "",
+                    "reqKeyName": ":genkeyDescription"
+                }
+            ],
+            "dependantGridReqObj": {
+                "queryId": "2",
+                "transactionId": ""
+            },
+            "dependantGridUrl": "querydata-by-queryid-metadata",
+            "submitCustomValidation": false,
+            "submitCustomValidationMetaData": null
+        },
+        "jsonTableData": [
+            {
+                "id": "50",
+                "valueDescription": "Home Loan",
+                "language": "English",
+                "createdDate": "2021-10-27"
+            },
+            {
+                "id": "51",
+                "valueDescription": "قرض المنزل",
+                "language": "Arabic",
+                "createdDate": "2021-10-28"
+            },
+            {
+                "id": "53",
+                "valueDescription": "गृह ऋण",
+                "language": "Hindi",
+                "createdDate": "2021-10-29"
+            }
+        ]
+    }
+]

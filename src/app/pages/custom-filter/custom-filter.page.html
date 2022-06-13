@@ -1,0 +1,246 @@
+<div class="borderBox">
+    <ion-grid>
+        <ion-row>
+            <ion-col size-xl="8" size-xs="12">
+                <!-- <ion-card-title> -->
+                <span class="cc_title">Filter Form</span>
+                <!-- </ion-card-title> -->
+            </ion-col>
+            <ion-col size-xl="4" size-xs="12" class="ion-text-right">
+
+                <ion-button *ngIf="tableData.length > 0" (click)="downloadFile(tableData)">
+                    <ion-icon slot="start" name="download-outline"></ion-icon>
+                    Export
+                </ion-button>
+
+            </ion-col>
+        </ion-row>
+
+
+    </ion-grid>
+    <!-- <ion-card-header>
+        <ion-card-title>Filter Form
+            <ion-button class="ion-text-right" *ngIf="tableData.length > 0" (click)="downloadFile(tableData)">
+                <ion-icon slot="start" name="download-outline"></ion-icon>
+                Export
+            </ion-button>
+        </ion-card-title>
+    </ion-card-header> -->
+
+    <form [formGroup]="CustomFilterform" (ngSubmit)="saveDetails()">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="6">
+                    <ion-label>Table Name</ion-label>
+                    <digital-cs-select-layout-1 #dropdownref [readonly]="false" [show]="false" style="width:100% !important" placeholder="select Table Name"
+                        [onPageLoadGetData]="false" [data]="tableNameDroupdownData" [valueId]="'label'" [valueDesc]="'label'"
+                        (onChange)="dropdownChange($event)" formControlName="tableName"></digital-cs-select-layout-1>
+                </ion-col>
+                <ion-col size="6">
+                    <ion-label>column Name</ion-label>
+                    <digital-cs-select-layout-1 #dropdownref [readonly]="false" [show]="false" style="width:100% !important" placeholder="select column Name"
+                        [onPageLoadGetData]="false" [data]="columnNameDroupdownData" [valueId]="'label'" [valueDesc]="'label'"
+                        (onChange)="dropdownChange($event)" formControlName="columnName"></digital-cs-select-layout-1>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="6">
+                    <ion-label>Event Type</ion-label>
+                    <digital-cs-select-layout-1 #dropdownref [readonly]="false" [show]="false" style="width:100% !important" placeholder="select Event Type"
+                        [onPageLoadGetData]="false" [data]="cityData" [valueId]="'label'" [valueDesc]="'label'" (onChange)="dropdownChange($event)"
+                        formControlName="eventType"></digital-cs-select-layout-1>
+
+                </ion-col>
+                <ion-col size="6">
+                    <ion-label>Modified On</ion-label>
+                    <digital-app-date formControlNameLabel="newDate" placeholder="Enter Modified On">
+                    </digital-app-date>
+
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="6">
+                    <ion-label>Modified By</ion-label>
+                    <digital-text-box placeholder="Enter Modified By " formControlName="newUsername" name="newUsername">
+                    </digital-text-box>
+                </ion-col>
+
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <div class="ion-text-right">
+                        <ion-button class="ion-margin-end" icon-left color="medium" (click)="ClearForm($event)" tappable>
+                            <ion-icon slot="start" name="close"></ion-icon> Clear
+                        </ion-button>
+                        <ion-button icon-left color="primary" (click)="onLoginFunc($event)" tappable>
+                            <ion-icon slot="start" name="search"></ion-icon>
+                            Search
+                        </ion-button>
+                        <input type='submit' style="opacity: 0;width: 0;position:absolute;right:-20%">
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+
+
+
+
+
+
+
+
+
+        <!-- <br>
+
+        <div class="ion-text-right">
+            <ion-button icon-left size="medium" shape="round" color="primary" (click)="ClearForm($event)" tappable>
+
+                &nbsp; Clear
+            </ion-button>
+            <ion-button icon-left size="medium" shape="round" color="primary" (click)="onLoginFunc($event)" tappable>
+                <ion-icon slot="start" name="search"></ion-icon>
+                &nbsp; Search
+            </ion-button>
+            <input type='submit' style="opacity: 0;width: 0;position:absolute;right:-20%">
+        </div>
+        <br> -->
+        <!-- <div style="text-align: center;">
+            <pre>
+                      {{ CustomFilterform.value | json }}
+                    </pre> {{CustomFilterform.valid}}
+
+        </div> -->
+    </form>
+    <!-- table -->
+    <div *ngIf="showTable">
+        <!-- tableData - {{tableData | json}}
+        <br/>
+        {{tableData[0].tableName}} -->
+        <p-table class="ui-table-customers" #dt [value]="tableData" [paginator]="true" [rowsPerPageOptions]="[5,10,15,20]" [rows]="5">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>tableName</th>
+                    <th>columnName</th>
+                    <th>eventType</th>
+                    <th>Modified On</th>
+                    <th>Modified By</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-tableData>
+                <tr>
+                    <td>{{tableData.tableName}}</td>
+                    <td>{{tableData.columnName}}</td>
+                    <td>{{tableData.eventType}}</td>
+                    <td>{{tableData.newDate | date:'longDate'}}</td>
+                    <td>{{tableData.newUsername}}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+
+        <!-- {{tableData.tableSelectedValue | json}} -->
+        <!-- <digital-p-prime-table  [rows]="10" [showActionsAdd]="tableData.showActionsAdd" [tableSelectedValue]="tableData.tableSelectedValue"
+            [showActionsAddLabel]="'Create Application'" [showSearchBar]="tableData.showSearchBar" [changeModalTitle]="tableData.changeModalTitle"
+            [modalTitle]="tableData.modalTitle" [showDownLoadCsv]="tableData.showDownLoadCsv" [showCustomFilter]="tableData.showCustomFilter"
+            [customFilterData]="tableData.customFilterData" [showSerialNumber]="true" [paginator]="true" [showActions]="tableData.showActions"
+            [showSortIcon]="tableData.showSortIcon" [tableData]="tableData.tableData" [downloadData]="tableData.downloadData" [tableMetaData]="tableData.tableMetaData"
+            [tableGlobalFilterFields]="tableData.tableGlobalFilterFields" [tableTitle]="tableData.tableTitle" [searchPlaceholder]="tableData.searchPlaceholder"
+            [dataKey]="'roh_id'" [filterLabelMsg]="tableData.filterLabelMsg" [rowsPerPageOptions]="tableData.rowsPerPageOptions"
+            [rows]="tableData.rows" [apiUrlAdd]="tableData.apiUrlAdd" [apiUrlCustomSearch]="tableData.apiUrlCustomSearch" [apiUrlEdit]="tableData.apiUrlEdit"
+            [apiUrlEditSavedData]="tableData.apiUrlEditSavedData" [apiSaveDataUrl]="tableData.apiSaveDataUrl" [apiCustomSearchDataUrl]="tableData.apiCustomSearchDataUrl"
+            [apiUpdateDataUrl]="tableData.apiUpdateDataUrl" [apiDeleteDataUrl]="tableData.apiDeleteDataUrl" [apiUrlAddReqMetaData]="tableData.apiUrlAddReqMetaData"
+            [apiUrlCustomSearchReqMataData]="tableData.apiUrlCustomSearchReqMataData" [apiUrlEditReqMetaData]="tableData.apiUrlEditReqMetaData"
+            [apiUrlEditReqSavedData]="tableData.apiUrlEditReqSavedData" [apiUrlEditReqSavedDataMetaData]="tableData.apiUrlEditReqSavedDataMetaData"
+            [apiSaveDataUrlReqData]="tableData.apiSaveDataUrlReqData" [apiCustomSearchDataUrlReqData]="tableData.apiCustomSearchDataUrlReqData"
+            [apiUpdateDataUrlReqData]="tableData.apiUpdateDataUrlReqData" [apiDeleteDataUrlReqData]="tableData.apiDeleteDataUrlReqData"
+            [submitCustomValidation]="tableData.submitCustomValidation" [submitCustomValidationMetaData]="tableData.submitCustomValidationMetaData"
+            [submitCustomDataManupulation]="tableData.submitCustomDataManupulation" (onEdit)="onEdit($event)" (onAdd)="onAdd()" (onDelete)="onDelete($event,tableData.apiDeleteDataUrlReqData,tableData.apiDeleteDataUrl)"
+            (onSelect)="onSelect($event,i)" (onUnSelect)="onUnSelect($event)" (onCancelApplication)="onCancelApplication($event)"
+            (popupClose)="popupClose($event)"></digital-p-prime-table> -->
+
+        <div *ngIf="i == 1" style="margin-top: 20px;">
+            <!-- extra space for 2nd table -->
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- <ion-content class="transparent">
+    <div class="centreclass" style="height: 100vh;" style="background-image: url('assets/img/products/kastle/login-bg.jpg');background-repeat: no-repeat;background-position :center;background-size: cover;height: 100vh; width: auto;padding: 70px;">
+        <div style="color: var(--ion-color-primary-contrast);">
+            <ion-grid size="12">
+                <ion-row class="boxParent centreclass whiteBackground">
+                    <ion-col size="12"> -->
+<!-- <div class="head1 ion-text-center">
+                            <span>
+                                <img [src]="logo1" alt="Company Logo" width="70%">
+                            </span>
+                            <h2 class="ion-text-center fw600 text-primary ion-padding-top"> {{'WELCOME_LOGIN' | translate}}</h2>
+                        </div> -->
+<!-- <div class="formMain" *ngIf="data"> 
+                              <form #ctrl='ngForm' (submit)="onLoginFunc($event)">
+                                  <div class="div1Wrap">
+                                      <div class="blackColor">{{'LOGIN.USERNAME' | translate}}</div>
+                                      <digital-text-box [showTitle]="false" [title]=" 'LOGIN.USERNAME' " [placeholder]=" 'LOGIN.USERNAME_PLACEHOLDER' " [(ngModel)]="data.username"
+                                          [(enteredText)]="data.username" [required]="true" name="username" [maxlength]="50"
+                                          (onInput)="usernameInputCheck($event)" [blockCopyPasteProcessFlag]="true" >
+                                      </digital-text-box>
+                                      <div class="errorMsg text08" *ngIf="ctrl.controls?.username?.invalid && isFormSubmitted">
+                                          {{ 'FORM_ERROR.REQUIRED' | translate}}
+                                      </div>
+                                  </div>
+                                  <div class="div2Wrap">
+                                      <div class="blackColor">{{'LOGIN.PASSWORD' | translate}} &nbsp;
+                                          <a class="type-toggle" (click)="toggleShow()" class="blackColor" style="font-size: 22px;position: absolute;">
+                                              <ion-icon class="show-option" [hidden]="showPassword" name="eye-off-outline"></ion-icon>
+                                              <ion-icon class="hide-option" [hidden]="!showPassword" name="eye-outline"></ion-icon>
+                                          </a>
+                                      </div>
+                                      <digital-text-box [inputType]="inputType" [showTitle]="false" [title]=" 'LOGIN.PASSWORD' " [placeholder]=" 'LOGIN.PASSWORD_PLACEHOLDER'| translate "
+                                          [(ngModel)]="data.password" [(enteredText)]="data.password" [required]="true" name="password"
+                                          [maxlength]="50" (onInput)="passwordInputCheck($event)" [blockCopyPasteProcessFlag]="true">
+                                      </digital-text-box>
+                                      <div class="errorMsg text08" *ngIf="ctrl.controls?.password?.invalid && isFormSubmitted">
+                                          {{ 'FORM_ERROR.REQUIRED' | translate}}
+                                      </div>
+                                  </div>
+
+
+                                  <digital-cs-select-layout-1 #dropdownref [readonly]="false" 
+                                  [show]="false" style="width:100% !important" [title]="'enter city'"
+                                 [onPageLoadGetData]="false"
+                                 [data]="cityData"
+                                  [valueId]="'id'"
+                                  [valueDesc]="'label'" (onChange)="dropdownChange($event)"   [(ngModel)]="data.city" name="city"
+                                                            
+                                 >
+                                 </digital-cs-select-layout-1>
+
+
+                                  <div class="ion-text-right">
+                                      <ion-button icon-left size="medium" shape="round" color="primary" (click)="onLoginFunc($event)" tappable>
+                                         <ion-icon slot="icon-only" name="log-in" color="light"></ion-icon>
+                                          &nbsp; {{'LOGIN.LOGIN' | translate}}
+                                      </ion-button>
+                                      <input type='submit' style="opacity: 0;width: 0;position:absolute;right:-20%">
+                                  </div>
+                              </form>
+                          </div> -->
+<!-- </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </div>
+
+
+</ion-content> -->

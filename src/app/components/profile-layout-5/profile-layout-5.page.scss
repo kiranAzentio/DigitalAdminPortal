@@ -1,0 +1,122 @@
+/* Profile 5
+========================================*/
+:host {
+  --cs-size-avatar: 120px;
+}
+/* Settings Card
+=========================================*/
+
+ion-card {
+  box-shadow: none;
+  ion-avatar {
+    width: var(--cs-size-avatar) !important;
+    height: var(--cs-size-avatar) !important;
+    margin: 15px auto 20px;
+    border: 2px solid var(--cs-background-primary);
+    opacity: 1;
+    z-index: 999;
+  }
+}
+/* Social Share
+=========================================*/
+
+.social-share {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+.logHeaderText{
+  font-size: 28px;
+  color: #ffffff;
+  position: absolute;
+  left: 20px;
+  top: 160px;
+  }
+  .forgotAnchor{
+  position: absolute;
+  right: 15px;
+  bottom: 125px;
+  font-size: 16px;
+}
+.errorMsg{
+  font-size: 12px;
+    color: red;
+    font-style: italic;
+}
+.logImg{
+  background: url("/assets/imgs/background/2.jpg") no-repeat center center / cover;
+  
+}
+.mt50{
+  margin-top: 50px !important;
+}
+
+:host {
+  --img-logo: 72px;
+  --facebook-button-background-color: #3D599D;
+  --facebook-button-text-color: var(--cs-text-light);
+}
+
+ion-grid,
+ion-row {
+  // height: 100%;
+
+  img {
+    width: var(--img-logo);
+    height: var(--img-logo);
+  }
+
+  form {
+    .item-has-focus,
+    .item-has-value {
+      ion-input {
+        border-bottom: 0px solid var(--cs-background-accent) !important;
+      }
+    }
+
+    ion-item {
+      --inner-padding-end: 0;
+      margin-bottom: 15px;
+
+      ion-input {
+        --background: var(--cs-background-primary) !important;
+        border-bottom: 0px solid var(--cs-background-border) !important;
+      }
+
+      ion-icon {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        z-index: 999;
+      }
+
+      ion-label {
+        margin: 5px 0 0 0 !important;
+        transform: none;
+        font-size:13px !important;
+      }
+     
+    }
+
+   
+
+   
+  }
+  .bgColor{
+    background-color: #1a1d50;
+  }
+}
+.ibno{
+  background: #35c8e4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px;
+}
+.item-inner {
+  
+  -webkit-padding-end: 0 !important;
+}

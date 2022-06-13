@@ -1,0 +1,14 @@
+
+[
+    {
+    "appNo": "1",
+    "customerName": "John Doe1",
+    "productName": "Personal Loan1"
+},
+{
+    "appNo": "2",
+    "customerName": "John Doe2",
+    "productName": "Personal Loan2"
+}
+
+]

@@ -1,0 +1,338 @@
+<ion-content class="ion-padding">
+	<div class="gridContainer">
+		<div class="gridItem">
+			<div class="img">
+				<img src="assets/img/icons/users.png" alt="Icon Image" width="80px" />
+			</div>
+			<div class="totaluserCount">
+				<!-- {{apiResponse.totalUser}} -->
+				{{totalUser}}
+				<small>Total Users</small>
+			</div>
+		</div>
+
+		<div class="gridItem" *ngFor="let item of apiResponseUpper">
+			<ion-row>
+				<ion-col size="6">
+					<span class="role">{{item.role}}</span>
+					<span [ngClass]="item.countColor" class="totalCount">{{item.count}}</span>
+				</ion-col>
+				<ion-col class="ion-text-right" size="6">
+					<img src="assets/img/icons/{{item.img}}" alt="Icon Image" />
+				</ion-col>
+				<ion-col size="12">
+					<div class="progressBar">
+						<span [ngClass]="item.bgColor" [ngStyle]="{ 'width': item.width  + '%'}" class="completedBar"></span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<div [ngClass]="item.bgColor" class="gridBottom">
+				<ion-row>
+					<ion-col size="6" *ngIf="item.active != undefined">
+						<span class="online">
+							{{item.active}}
+							<small>(Active)</small>
+						</span>
+					</ion-col>
+					<ion-col size="6" *ngIf="item.inActive != undefined">
+						<span class="online">{{item.inActive}}
+							<small>(Inactive)</small>
+						</span>
+					</ion-col>
+				</ion-row>
+			</div>
+		</div>
+	</div>
+	<ion-row class="ion-no-padding ion-margin-vertical">
+		<ion-col size="8" class="ion-no-padding">
+			<ion-row class="ion-no-padding">
+				<ion-col size="6">
+					<span class="cc_title">Active Users</span>
+				</ion-col>
+				<ion-col size="6" class="ion-text-right">
+					<div class="ion-padding-horizontal">
+						<!-- <label for="monthpicker">Month Picker</label> -->
+						<p-calendar [(ngModel)]="date" view="month" dateFormat="mm/yy" [maxDate]="maxDateValue"
+							[yearNavigator]="true" yearRange="2000:2030" [readonlyInput]="true" inputId="monthpicker"
+							[showIcon]="true" (onSelect)="onChange($event)">
+						</p-calendar>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row class="ion-no-padding">
+				<ion-col size="12">
+					<ion-card-content>
+						<canvas #barchart></canvas>
+					</ion-card-content>
+				</ion-col>
+			</ion-row>
+		</ion-col>
+		<ion-col size="4"></ion-col>
+	</ion-row>
+
+	<!-- <ion-row *ngIf="!appConfigService.getPlatformMobile()">
+		<ion-col size="4" *ngFor="let it of [].constructor(3); let i = index">
+			<ion-card class="ion-no-margin">
+				<ion-card-header style="background: #04478b;">
+					<span style="font-weight: 700;color:whitesmoke"> Heading {{ i + 1 }}</span>
+				</ion-card-header>
+				<ion-card-content class="ion-padding">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				</ion-card-content>
+			</ion-card>
+		</ion-col>
+	</ion-row>
+	<ion-row *ngIf="appConfigService.getPlatformMobile()">
+		<ion-col size="12" *ngFor="let it of [].constructor(3); let i = index">
+			<ion-card>
+				<ion-card-header style="    background: #04478b;">
+					<span style="font-weight: 700;color:whitesmoke"> Heading {{i +1 }}</span>
+				</ion-card-header>
+				<ion-card-content>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				</ion-card-content>
+			</ion-card>
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col size="7" class="ion-no-padding">
+			<ion-card>
+				<ion-card-header>
+					<ion-card-title>Project Status</ion-card-title>
+				</ion-card-header>
+				<ion-card-content>
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>
+										#
+									</th>
+									<th>
+										Name
+									</th>
+									<th>
+										Due Date
+									</th>
+									<th>
+										Progress
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										1
+									</td>
+									<td>
+										Herman Beck
+									</td>
+									<td>
+										May 15, 2015
+									</td>
+									<td>
+										<div class="progress">
+											<div class="progress-bar bg-gradient-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+											 aria-valuemax="100"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										2
+									</td>
+									<td>
+										Messsy Adam
+									</td>
+									<td>
+										Jul 01, 2015
+									</td>
+									<td>
+										<div class="progress">
+											<div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										3
+									</td>
+									<td>
+										John Richards
+									</td>
+									<td>
+										Apr 12, 2015
+									</td>
+									<td>
+										<div class="progress">
+											<div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											 aria-valuemax="100"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										4
+									</td>
+									<td>
+										Peter Meggik
+									</td>
+									<td>
+										May 15, 2015
+									</td>
+									<td>
+										<div class="progress">
+											<div class="progress-bar bg-gradient-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+											 aria-valuemax="100"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										5
+									</td>
+									<td>
+										Edward
+									</td>
+									<td>
+										May 03, 2015
+									</td>
+									<td>
+										<div class="progress">
+											<div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										5
+									</td>
+									<td>
+										Ronald
+									</td>
+									<td>
+										Jun 05, 2015
+									</td>
+									<td>
+										<div class="progress">
+											<div class="progress-bar bg-gradient-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</ion-card-content>
+			</ion-card>
+		</ion-col>
+		<ion-col size="5" class="ion-no-padding">
+			<ion-card>
+				<ion-card-header>
+					<ion-card-title>To do Items</ion-card-title>
+				</ion-card-header>
+				<ion-card-content>
+					<ion-item *ngFor="let it of [].constructor(3)" class="whiteBackground" lines="none">
+						<ion-thumbnail slot="start">
+							<img src="assets/img/products/kastle/money.jpg">
+						</ion-thumbnail>
+						<ion-label>
+							<h3 style="    color: #007bff;">
+								To do list come here
+							</h3>
+							<ion-skeleton-text animated style="width: 25%" class="silverBackground"></ion-skeleton-text>
+							<ion-skeleton-text animated style="width: 50%" class="silverBackground"></ion-skeleton-text>
+						</ion-label>
+					</ion-item>
+				</ion-card-content>
+			</ion-card>
+
+
+		</ion-col>
+	</ion-row>
+	<ion-row>
+		<ion-col size="12" class="ion-no-padding">
+			<ion-card>
+				<ion-card-header>
+					<ion-card-title>Recent Tickets</ion-card-title>
+				</ion-card-header>
+				<ion-card-content>
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr style="background: #007bff;">
+									<th>
+										Assignee
+									</th>
+									<th>
+										Subject
+									</th>
+									<th>
+										Status
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										David Grey
+									</td>
+									<td>
+										Fund is not recieved
+									</td>
+									<td>
+										<label class="badge badge-gradient-success">DONE</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+
+										Stella Johnson
+									</td>
+									<td>
+										High loading time
+									</td>
+									<td>
+										<label class="badge badge-gradient-warning">PROGRESS</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Marina Michel
+									</td>
+									<td>
+										Website down for one week
+									</td>
+									<td>
+										<label class="badge badge-gradient-info">ON HOLD</label>
+									</td>
+
+								</tr>
+								<tr>
+									<td>
+										John Doe
+									</td>
+									<td>
+										Loosing control on server
+									</td>
+									<td>
+										<label class="badge badge-gradient-danger">REJECTED</label>
+									</td>
+
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</ion-card-content>
+			</ion-card>
+		</ion-col>
+	</ion-row> -->
+</ion-content>
+
+<!-- below is used -->
+<!-- https://stackblitz.com/edit/angular-ivy-rotgq5 -->
+
+<!-- other ref -->
+<!-- https://stackblitz.com/edit/angular-nested-formarray-dynamic-forms -->
+<!-- https://stackblitz.com/edit/angular-form-dynamic-add-control-so59033703-bxawyp -->
+<!-- https://stackblitz.com/edit/angular6-dynamic-form-array -->
+<!-- https://medium.com/aubergine-solutions/add-push-and-remove-form-fields-dynamically-to-formarray-with-reactive-forms-in-angular-acf61b4a2afe -->

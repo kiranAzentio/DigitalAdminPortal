@@ -1,0 +1,449 @@
+[
+  {
+    "tableMetaData": [
+      {
+        "field": "radioBoxText",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "radioBoxText"
+      },
+      {
+        "field": "actions",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "actionsText"
+      },
+      {
+        "field": "id",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      },
+      {
+        "field": "valueInUls",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      },
+      {
+        "field": "valueDescription",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      },
+      {
+        "field": "valueInDigital",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      },
+      {
+        "field": "status",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "statusText"
+      },
+      {
+        "field": "companyid",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      }
+    ],
+    "tableMetaDataFieldNameLang": [
+      {
+        "field": "id",
+        "header": "Id"
+      },
+      {
+        "field": "valueInUls",
+        "header": "Value in Uls"
+      },
+      {
+        "field": "valueDescription",
+        "header": "Value Description"
+      },
+      {
+        "field": "valueInDigital",
+        "header": "Value in Digital"
+      },
+      {
+        "field": "status",
+        "header": "Status"
+      },
+      {
+        "field": "companyid",
+        "header": "Company ID"
+      },
+      {
+        "field": "actions",
+        "header": "Actions"
+      }
+    ],
+    "filterData": [
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "id",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "valueInUls",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "valueDescription",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "valueInDigital",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "status",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "companyid",
+        "maxLength": "100"
+      }
+    ],
+    "filterDataFieldNameLang": [
+      {
+        "tableMetaDataField": "id",
+        "title": "ID",
+        "placeholder": "Enter ID"
+      },
+      {
+        "tableMetaDataField": "valueInUls",
+        "title": "Value in Uls",
+        "placeholder": "Enter Value in Uls"
+      },
+      {
+        "tableMetaDataField": "valueDescription",
+        "title": "Value Description",
+        "placeholder": "Enter Value Description"
+      },
+      {
+        "tableMetaDataField": "valueInDigital",
+        "title": "Value in Digital",
+        "placeholder": "Enter Value in Digital"
+      },
+      {
+        "tableMetaDataField": "companyid",
+        "title": "Company ID",
+        "placeholder": "Enter Company ID"
+      },
+      {
+        "tableMetaDataField": "status",
+        "title": "Status",
+        "placeholder": "Enter Status"
+      }
+    ],
+    "tableTitle": "List of Key Values",
+    "commonLangConfiguration": {
+      "searchPlaceholder": "Global Search"
+    },
+    "tableConfigurationData": {
+      "showDownLoadFlag": true,
+      "showDownLoadPdf": true,
+      "showDownLoadExcel": true,
+      "showDownLoadCsv": true,
+      "showSearchBar": true,
+      "showCustomFilter": true,
+      "showSerialNumber": true,
+      "showPaginator": true,
+      "showSortIcon": true,
+      "showActionsAdd": true,
+      "showEditNOTINUSE": true,
+      "showDeleteNOTINUSE": true,
+      "showActions": true,
+      "downloadData": [],
+      "filteredTableData": [],
+      "rowsPerPageOptions": [
+        10,
+        25,
+        50
+      ],
+      "rows": "5",
+      "dataKey": "id",
+      "apiUrlAdd": "screenconfig",
+      "apiUrlAddReqMetaData": {
+        "screenConfigId": 1,
+        "langId": null
+      },
+      "apiUrlEdit": "screenconfig",
+      "apiUrlEditReqMetaData": {
+        "screenConfigId": 2,
+        "langId": null
+      },
+      "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+      "apiUrlEditReqSavedData": [
+        {
+          "queryId": "3",
+          "transactionId": "1234"
+        },
+        {
+          "queryId": "8",
+          "transactionId": "123456",
+          "arrayName": "companyDetails"
+        }
+      ],
+      "apiUrlEditReqSavedDataMetaData": [
+        {
+          "fieldMapping": "id",
+          "value": "",
+          "reqKeyName": ":id"
+        },
+        {
+          "fieldMapping": "valueDescription",
+          "value": "",
+          "reqKeyName": ":genkeyDescription"
+        }
+      ],
+      "apiSaveDataUrl": "querydata-save",
+      "apiSaveDataUrlReqData": {
+        "queryId": "9",
+        "queryId2": "10",
+        "transactionId": "123456"
+      },
+      "apiUpdateDataUrl": "querydata-update",
+      "apiUpdateDataUrlReqData": {
+        "queryId": "11",
+        "queryId2": "12",
+        "queryId3": "10",
+        "transactionId": "123456"
+      },
+      "apiDeleteDataUrl": "querydata-update",
+      "apiDeleteDataUrlReqData": {
+        "queryId": "13",
+        "transactionId": "123456"
+      },
+      "dependantGrid": false,
+      "dependantGridMetaData": null,
+      "dependantGridReqObj": null,
+      "dependantGridUrl": null,
+      "submitCustomValidation": true,
+      "submitCustomValidationMetaData": {
+        "singleLevel": [],
+        "arrayLevel": [
+          {
+            "duplicateCheck": true,
+            "arrayFieldJsonMapping": "companyDetails",
+            "fieldJsonMapping": "language"
+          }
+        ]
+      }
+    },
+    "jsonTableData": []
+  },
+  {
+    "tableMetaData": [
+      {
+        "field": "id",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      },
+      {
+        "field": "valueDescription",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      },
+      {
+        "field": "language",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      },
+      {
+        "field": "createdDate",
+        "header": "",
+        "headerType": "date",
+        "bodyType": "dateText"
+      }
+    ],
+    "tableMetaDataFieldNameLang": [
+      {
+        "field": "id",
+        "header": "ID"
+      },
+      {
+        "field": "valueDescription",
+        "header": "ValueDecription"
+      },
+      {
+        "field": "language",
+        "header": "Language"
+      },
+      {
+        "field": "createdDate",
+        "header": "CreatedDate",
+        "headerType": "date",
+        "bodyType": "dateText"
+      },
+      {
+        "field": "actions",
+        "header": "Actions"
+      }
+    ],
+    "filterData": [
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "id",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "valueDescription",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "language",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "date",
+        "value": null,
+        "tableMetaDataField": "createdDate",
+        "minDate": "",
+        "maxDate": ""
+      }
+    ],
+    "filterDataFieldNameLang": [
+      {
+        "tableMetaDataField": "id",
+        "title": "ID",
+        "placeholder": "Enter ID"
+      },
+      {
+        "tableMetaDataField": "valueDescription",
+        "title": "Value Description",
+        "placeholder": "Enter Value Description"
+      },
+      {
+        "tableMetaDataField": "language",
+        "title": "Language",
+        "placeholder": "Enter Language"
+      },
+      {
+        "tableMetaDataField": "createdDate",
+        "title": "Created Date",
+        "placeholder": "Select Created Date"
+      }
+    ],
+    "tableTitle": "List of Key Values Trans",
+    "commonLangConfiguration": {
+      "searchPlaceholder": "Global Search"
+    },
+    "tableConfigurationData": {
+      "showDownLoadFlag": true,
+      "showDownLoadPdf": true,
+      "showDownLoadExcel": true,
+      "showDownLoadCsv": true,
+      "showSearchBar": true,
+      "showCustomFilter": true,
+      "showSerialNumber": true,
+      "showPaginator": true,
+      "showSortIcon": true,
+      "showActionsAdd": false,
+      "showEditNOTINUSE": true,
+      "showDeleteNOTINUSE": true,
+      "showActions": false,
+      "downloadData": [],
+      "filteredTableData": [],
+      "rowsPerPageOptions": [
+        10,
+        25,
+        50
+      ],
+      "rows": "5",
+      "dataKey": "id",
+      "apiUrlAdd_DELETE_IT_LATER": "key-value-trans-add-screen",
+      "apiUrlAdd": "screenconfig",
+      "apiUrlAddReqMetaData": {
+        "screenConfigId": 0,
+        "langId": null
+      },
+      "apiUrlEdit_DELETE_IT_LATER": "key-value-trans-edit-screen",
+      "apiUrlEdit": "screenconfig",
+      "apiUrlEditReqMetaData": {
+        "screenConfigId": 3,
+        "langId": null
+      },
+      "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+      "apiUrlEditReqSavedData": [
+        {
+          "queryId": "4",
+          "transactionId": "1234"
+        }
+      ],
+      "apiUrlEditReqSavedDataMetaData": [
+        {
+          "fieldMapping": "id",
+          "value": "",
+          "reqKeyName": ":id"
+        }
+      ],
+      "apiSaveDataUrl": "SAVE_URL_COMES_HERE",
+      "apiUpdateDataUrl": "UPDATE_URL_COMES_HERE",
+      "apiDeleteDataUrl": "DELETE_URL_COMES_HERE",
+      "dependantGrid": true,
+      "dependantGridMetaData": [
+        {
+          "fieldMapping": "id",
+          "value": "",
+          "reqKeyName": ":id"
+        },
+        {
+          "fieldMapping": "valueDescription",
+          "value": "",
+          "reqKeyName": ":genkeyDescription"
+        }
+      ],
+      "dependantGridReqObj": {
+        "queryId": "2",
+        "transactionId": ""
+      },
+      "dependantGridUrl": "querydata-by-queryid-metadata",
+      "submitCustomValidation": false,
+      "submitCustomValidationMetaData": null
+    },
+    "jsonTableData": []
+  }
+]

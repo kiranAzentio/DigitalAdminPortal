@@ -1,0 +1,5 @@
+<!-- Theme Search Bars - Simple -->
+<ion-page class="ion-page" *ngIf="viewEntered">
+  <label *ngIf="showSearchBarLabel">{{searchBarLabel | translate}}</label>
+ <ion-searchbar [(ngModel)]="search" (ionInput)="onTextChangeFunc($event)" [placeholder]="searchBarPlaceholder"></ion-searchbar>
+</ion-page>

@@ -1,0 +1,242 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "companyid",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "key",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "description",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            
+            {
+                "field": "value1",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field":"companyid",
+                "header":"Company Name"
+            },
+            {
+                "field": "key",
+                "header": "Key"
+            },
+            {
+                "field": "description",
+                "header": "Key Description"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            },
+            {
+                "field": "value1",
+                "header": "Value1"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "key",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "description",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+           
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "key",
+                "title": "Key",
+                "placeholder": "Enter Key"
+            },
+            {
+                "tableMetaDataField": "description",
+                "title": "Key Description",
+                "placeholder": "Enter Key Description"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+            
+        ],
+        "tableTitle": "DATABASE - List of Configuration Parameters",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Configuration Parameters",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 14,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 15,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "43",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "44",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "45",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "124",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "key": "COMPANY GENERIC",
+                "description": "This configuration i..",
+                "value1": "",
+                "value2": "",
+                "value3": "",
+                "value4": ""
+            },
+            {
+                "key": "TEST JOB",
+                "description": "This configuration i..",
+                "value1": "",
+                "value2": "",
+                "value3": "",
+                "value4": ""
+            },
+            {
+                "key": "API_URL",
+                "description": "This configuration i..",
+                "value1": "http://10.1.56.153:8",
+                "value2": "",
+                "value3": "",
+                "value4": ""
+            },
+            {
+                "key": "PRIVATE_KEY",
+                "description": "This key is used to....",
+                "value1": "",
+                "value2": "",
+                "value3": "",
+                "value4": ""
+            },
+            {
+                "key": "PROSPECT_API_U...",
+                "description": "This configuration i..",
+                "value1": "http://10.1.56.233:8",
+                "value2": "",
+                "value3": "",
+                "value4": ""
+            }
+        ]
+    }
+]

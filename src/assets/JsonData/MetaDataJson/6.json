@@ -1,0 +1,402 @@
+[{
+    "tableMetaData":[
+        { "field": "id", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "valueInUls", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "valueDescription", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "valueInDigital", "header": "", "headerType": "text", "bodyType": "text"  },
+        { "field": "status", "header": "", "headerType": "text", "bodyType": "statusText"  },
+        { "field": "companyid", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "actions", "header": "", "headerType": "text", "bodyType": "actionsText"  }
+    ],
+    "tableMetaDataFieldNameLang":[
+        {"field":"id","header":"Id"},
+        {"field":"valueInUls","header":"Value in Uls"},
+        {"field":"valueDescription","header":"Value Description"},
+        {"field":"valueInDigital","header":"Value in Digital"},
+        {"field":"status","header":"Status"},
+        {"field":"companyid","header":"Company ID"},
+        {"field":"actions","header":"Actions"}
+        
+    ],
+    "filterData":[
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "id","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "valueInUls","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "valueDescription","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "valueInDigital","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "status","maxLength":"100"}, 
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "companyid","maxLength":"100"}
+
+    ],
+    "filterDataFieldNameLang":[
+        {"tableMetaDataField":"id","title":"ID","placeholder":"Enter ID"},
+        {"tableMetaDataField":"valueInUls","title":"Value in Uls","placeholder":"Enter Value in Uls"},
+        {"tableMetaDataField":"valueDescription","title":"Value Description","placeholder":"Enter Value Description"},
+        {"tableMetaDataField":"valueInDigital","title":"Value in Digital","placeholder":"Enter Value in Digital"},
+        {"tableMetaDataField":"companyid","title":"Company ID","placeholder":"Enter Company ID"},
+        {"tableMetaDataField":"status","title":"Status","placeholder":"Enter Status"}
+    ],
+    "tableConfigurationData":{
+        "tableTitle": "List of Key Values",
+        "searchPlaceholder":"Global Search",
+        "showDownLoadFlag":true,
+        "showDownLoadPdf":true,
+        "showDownLoadExcel":true,
+        "showDownLoadCsv":true,
+        "showSearchBar":true,
+        "showCustomFilter":true,
+        "showSerialNumber":true,
+        "showPaginator":true,
+        "showSortIcon":true,
+        "showActionsAdd":true, 
+        "showEditNOTINUSE":true,
+        "showDeleteNOTINUSE":true,
+        "showActions":true,
+        "downloadData":[],
+        "filteredTableData":[],
+        "rowsPerPageOptions":[10, 25, 50],
+        "rows":"5",
+        "dataKey":"id" ,
+        "apiUrlAdd":"key-value-screen",
+        "apiUrlEdit":"key-value-edit-screen"
+    },
+        "jsonTableData":
+    [
+        {
+            "id": "100",
+            "valueInUls": "AHL",
+            "valueDescription": "Home Loan",
+            "valueInDigital":"AHL",
+            "status":"Active",
+            "statusId":"1",
+            "companyid":"1"
+        },
+        {
+            "id": "101",
+            "valueInUls": "AAL",
+            "valueDescription": "Asset & Vehicle Finance",
+            "valueInDigital":"AAL",
+            "status":"Active",
+            "statusId":"1",
+            "companyid":"1"
+        },{
+            "id": "102",
+            "valueInUls": "APL",
+            "valueDescription": "Personal Loan",
+            "valueInDigital":"APL",
+            "status":"Inactive",
+            "statusId":"2",
+            "companyid":"1"
+        },{
+            "id": "103",
+            "valueInUls": "HLEXT",
+            "valueDescription": "Home Improvement",
+            "valueInDigital":"HLEXT",
+            "status":"Inactive",
+            "statusId":"2",
+            "companyid":"1"
+        }
+    ]
+},
+{
+    "tableMetaData":[
+        { "field": "id", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "valueDescription", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "language", "header": "", "headerType": "text", "bodyType": "text" },
+        { "field": "createdDate", "header": "", "headerType": "date", "bodyType": "dateText" },
+        { "field": "actions", "header": "", "headerType": "text", "bodyType": "actionsText"  }
+    ],
+    "tableMetaDataFieldNameLang":[
+        {"field":"id","header":"ID"},
+        {"field":"valueDescription","header":" Value Decription"},
+        {"field":"language","header":"Language"},
+        { "field": "createdDate", "header": "Created Date", "headerType": "date", "bodyType": "dateText" },
+        {"field":"actions","header":"Actions"}
+        
+    ],
+    "filterData":[
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "id","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "valueDescription","maxLength":"100"},
+        {"title": "","placeholder":"","type": "text","value": null,"tableMetaDataField": "language","maxLength":"100"},
+        {"title": "","placeholder":"","type": "date","value": null,"tableMetaDataField": "createdDate","minDate":"","maxDate":""}
+    ],
+    "filterDataFieldNameLang":[
+        {"tableMetaDataField":"id","title":"ID","placeholder":"Enter ID"},
+        {"tableMetaDataField":"valueDescription","title":"Value Description","placeholder":"Enter Value Description"},
+        {"tableMetaDataField":"language","title":"Language","placeholder":"Enter Language"},
+        {"tableMetaDataField":"createdDate","title":"Created Date","placeholder":"Select Created Date"}
+    ],
+    "tableConfigurationData":{
+        "tableTitle": "List of Kdb Generic companyid Values Trans", 
+        "searchPlaceholder":"Global Search",
+        "showDownLoadFlag":true,
+        "showDownLoadPdf":true,
+        "showDownLoadExcel":true,
+        "showDownLoadCsv":true,
+        "showSearchBar":true,
+        "showCustomFilter":true,
+        "showSerialNumber":true,
+        "showPaginator":true,
+        "showSortIcon":true,
+        "showActionsAdd":true, 
+        "showEditNOTINUSE":true,
+        "showDeleteNOTINUSE":true,
+        "showActions":true,
+        "downloadData":[],
+        "filteredTableData":[],
+        "rowsPerPageOptions":[10, 25, 50],
+        "rows":"5",
+        "dataKey":"id",
+        "apiUrlAdd":"key-value-trans-add-screen",
+        "apiUrlEdit":"key-value-trans-edit-screen"
+    },
+        "jsonTableData":
+    [
+        {
+            "id": "50",
+            "valueDescription": "Home Loan",
+            "language":"English",
+            "createdDate":"2021-10-27"
+        },
+        {
+            "id": "51",
+            "valueDescription": "قرض المنزل",
+            "language":"Arabic",
+            "createdDate":"2021-10-28"
+        },
+        {
+            "id": "53",
+            "valueDescription": "गृह ऋण",
+            "language":"Hindi",
+            "createdDate":"2021-10-29"
+        }
+    ]
+},
+{
+        "tableMetaData": [
+            {
+                "field": "Roll No",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "CandidateName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "DetailAddress",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "Location",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "Result",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            },
+            {
+                "field": "ClassName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "Roll No",
+                "header": "Roll No"
+            },
+            {
+                "field": "CandidateName",
+                "header": "Candidate Name"
+            },
+            {
+                "field": "DetailAddress",
+                "header": "Detail Address"
+            },
+            {
+                "field": "Location",
+                "header": "Locations"
+            },
+            {
+                "field": "Result",
+                "header": "Result"
+            },
+            {
+                "field": "ClassName",
+                "header": "Class Name"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "pass",
+                "header": "Test"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "Roll No",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "CandidateName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "DetailAddress",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "Location",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "Result",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "ClassName",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "Roll No",
+                "title": "Roll No",
+                "placeholder": "Enter Roll No"
+            },
+            {
+                "tableMetaDataField": "CandidateName",
+                "title": "Candidate Name",
+                "placeholder": "Enter Candidate Name"
+            },
+            {
+                "tableMetaDataField": "DetailAddress",
+                "title": "Detail Address",
+                "placeholder": "Enter Detail Address"
+            },
+            {
+                "tableMetaDataField": "Location",
+                "title": "Location",
+                "placeholder": "Enter Location"
+            },
+            {
+                "tableMetaDataField": "Result",
+                "title": "Result",
+                "placeholder": "Enter Result"
+            },
+            {
+                "tableMetaDataField": "ClassName",
+                "title": "Class Name",
+                "placeholder": "Enter Class Name"
+            }
+        ],
+        "tableConfigurationData": {
+            "tableTitle": "Result Dashbord",
+            "searchPlaceholder": "Global Search",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "key-value-screen",
+            "apiUrlEdit": "key-value-edit-screen"
+        },
+        "jsonTableData": [
+            {
+                "Roll No": "IN10901",
+                "CandidateName": "kajal",
+                "DetailAddress": "street 1",
+                "Location": "mumbai",
+                "Result": "PASS",
+                "statusId": "1",
+                "ClassName": "A"
+            },
+            {
+                "Roll No": "IN10902",
+                "CandidateName": "kaushal",
+                "DetailAddress": "street 2",
+                "Location": "delhi",
+                "Result": "FAILED",
+                "statusId": "1",
+                "ClassName": "A"
+            },
+            {
+                "Roll No": "IN10903",
+                "CandidateName": "kannya",
+                "DetailAddress": "street 3",
+                "Location": "noida",
+                "Result": "PASS",
+                "statusId": "2",
+                "ClassName": "B"
+            },
+            {
+                "Roll No": "IN10904",
+                "CandidateName": "vandana",
+                "DetailAddress": "street 4",
+                "Location": "gujrat",
+                "Result": "FAILED",
+                "statusId": "2",
+                "ClassName": "B"
+            }
+        ]
+    }
+]

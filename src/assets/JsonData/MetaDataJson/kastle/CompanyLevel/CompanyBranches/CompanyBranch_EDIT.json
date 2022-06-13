@@ -1,0 +1,1101 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "id",
+                "identifier": "hidden",
+                "fieldJsonMapping": "id",
+                "value": "",
+                "maxlength": "50",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "companyId",
+                "identifier": "dropdown",
+                "fieldJsonMapping": "companyId",
+                "value": "",
+                "onPageLoadGetData": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "onChangeMetaData": [],
+                "metdaDataReq": {
+                    "queryId": "6",
+                    "transactionId": "1234",
+                    ":langId": null
+                },
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "branchType",
+                "identifier": "toggle",
+                "fieldJsonMapping": "branchType",
+                "value": "H",
+                "onPageLoadGetData": true,
+                "ShowToggle": false,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "not in use",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": ""
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "branchCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "branchCode",
+                "value": "",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 50,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "array",
+                "label": "",
+                "placeholder": "",
+                "inputType": "",
+                "name": "companyDetails",
+                "identifier": "array",
+                "fieldJsonMapping": "companyDetails",
+                "value": "",
+                "showAddNestedFormButton": "true",
+                "showAddNestedFormButtonLabel": "Add",
+                "showDeleteNestedFormButton": "true",
+                "formArrayTitle": "Add Mutiple Key Value Trans Descriptions",
+                "hideDeleteIconByArrayIndex": [
+                    0
+                ],
+                "readOnlyByArrayIndex": [
+                    {
+                        "language": [
+                            0
+                        ]
+                    }
+                ],
+                "fieldArrayNestedData": [
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "id",
+                        "identifier": "hidden",
+                        "fieldJsonMapping": "id",
+                        "value": "",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "workingTiming",
+                        "identifier": "textbox",
+                        "fieldJsonMapping": "workingTiming",
+                        "value": "",
+                        "maxlength": "200",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "pattern",
+                                "validator": "^[a-zA-Z 0-9]+$",
+                                "message": ""
+                            },
+                            {
+                                "name": "minlength",
+                                "validator": 1,
+                                "message": ""
+                            },
+                            {
+                                "name": "maxlength",
+                                "validator": 200,
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "branchAddress1",
+                        "identifier": "textbox",
+                        "fieldJsonMapping": "branchAddress1",
+                        "value": "",
+                        "maxlength": "500",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            },
+                            {
+                                "name": "pattern",
+                                "validator": "^[a-zA-Z 0-9]+$",
+                                "message": ""
+                            },
+                            {
+                                "name": "minlength",
+                                "validator": 1,
+                                "message": ""
+                            },
+                            {
+                                "name": "maxlength",
+                                "validator": 500,
+                                "message": ""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "branchAddress2",
+                        "identifier": "textbox",
+                        "fieldJsonMapping": "branchAddress2",
+                        "value": "",
+                        "maxlength": "500",
+                        "showDelete": true,
+                        "validations": [
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            },
+                            {
+                                "name": "pattern",
+                                "validator": "^[a-zA-Z 0-9]+$",
+                                "message": ""
+                            },
+                            {
+                                "name": "minlength",
+                                "validator": 1,
+                                "message": ""
+                            },
+                            {
+                                "name": "maxlength",
+                                "validator": 500,
+                                "message": ""
+                            }
+                        ]
+                    },
+                     {
+                        "type": "input",
+                        "label": "",
+                        "placeholder": "",
+                        "inputType": "text",
+                        "name": "language",
+                        "identifier": "dropdown",
+                        "fieldJsonMapping": "language",
+                        "value": 1,
+                        "onPageLoadGetData": true,
+                        "apiUrl": "querydata-by-queryid-metadata",
+                        "metdaDataReq": {
+                            "queryId": "5",
+                            "transactionId": "1234"
+                        },
+                        "onChangeMetaData": [],
+                        "metdaData": [],
+                        "idToShow": "id",
+                        "descriptionToShow": "label",
+                        "validations": [
+                            {
+                                "name": "required",
+                                "validator": "required",
+                                "message": ""
+                            },
+                            {
+                                "name": "not in use",
+                                "validator": "not in use",
+                                "message": ""
+                            }
+                        ]
+                    }
+                ],
+                "validations": []
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "number",
+                "name": "lattitude",
+                "identifier": "textbox",
+                "fieldJsonMapping": "lattitude",
+                "value": "",
+                "maxlength": "15",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[0-9]+$",
+                        "message": " "
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 15,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "number",
+                "name": "longitude",
+                "identifier": "textbox",
+                "fieldJsonMapping": "longitude",
+                "value": "",
+                "maxlength": "15",
+                "fieldArrayNestedData": [],
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[0-9]+$",
+                        "message": " "
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 15,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "clearingCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "clearingCode",
+                "value": "",
+                "maxlength": "50",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 50,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "swiftCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "swiftCode",
+                "value": "",
+                "maxlength": "50",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 50,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "abaCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "abaCode",
+                "value": "",
+                "maxlength": "50",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 50,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "micrCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "micrCode",
+                "value": "",
+                "maxlength": "50",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 50,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "rtgsCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "rtgsCode",
+                "value": "",
+                "maxlength": "50",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 50,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "neftCode",
+                "identifier": "textbox",
+                "fieldJsonMapping": "neftCode",
+                "value": "",
+                "maxlength": "50",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 50,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "number",
+                "name": "interBankId",
+                "identifier": "textbox",
+                "fieldJsonMapping": "interBankId",
+                "value": "",
+                "maxlength": "10",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 10,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "number",
+                "name": "interBranchId",
+                "identifier": "textbox",
+                "fieldJsonMapping": "interBranchId",
+                "value": "",
+                "maxlength": "10",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 10,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra1",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra1",
+                "value": "",
+                "maxlength": "200",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra2",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra2",
+                "value": "",
+                "maxlength": "200",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra3",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra3",
+                "value": "",
+                "maxlength": "200",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "input",
+                "label": "",
+                "placeholder": "",
+                "inputType": "text",
+                "name": "extra4",
+                "identifier": "textbox",
+                "fieldJsonMapping": "extra4",
+                "value": "",
+                "maxlength": "200",
+                "showDelete": true,
+                "validations": [
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    },
+                    {
+                        "name": "pattern",
+                        "validator": "^[a-zA-Z 0-9]+$",
+                        "message": ""
+                    },
+                    {
+                        "name": "minlength",
+                        "validator": 1,
+                        "message": ""
+                    },
+                    {
+                        "name": "maxlength",
+                        "validator": 200,
+                        "message": ""
+                    }
+                ]
+            },
+            {
+                "type": "toggle",
+                "label": " ",
+                "placeholder": "",
+                "inputType": "toggle",
+                "name": "status",
+                "identifier": "toggle",
+                "fieldJsonMapping": "status",
+                "value": "",
+                "onPageLoadGetData": true,
+                "ShowToggle": true,
+                "apiUrl": "querydata-by-queryid-metadata",
+                "metdaDataReq": {
+                    "queryId": "5",
+                    "transactionId": "1234"
+                },
+                "onChangeMetaData": [],
+                "checkedToogleId": "A",
+                "uncheckedToogleId": "X",
+                "metdaData": [],
+                "idToShow": "id",
+                "descriptionToShow": "label",
+                "validations": [
+                    {
+                        "name": "required",
+                        "validator": "required",
+                        "message": "Name Required"
+                    },
+                    {
+                        "name": "not in use",
+                        "validator": "not in use",
+                        "message": ""
+                    }
+                ]
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "fieldJsonMapping": "id",
+                "label": "",
+                "placeholder": "",
+                "validations": [
+                    "",
+                    ""
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "companyId",
+                "label": "Company ID",
+                "placeholder": "Select Company ID",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "branchType",
+                "label": "Branch Type",
+                "placeholder": "Select Branch Type",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "branchCode",
+                "label": "Branch Code",
+                "placeholder": "Enter Branch Code",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! only alphabetic characters are allowed",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 50 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "lattitude",
+                "label": "Lattiude for address",
+                "placeholder": "Enter Lattiude for address",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! only numeric value is allowed",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 15 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "longitude",
+                "label": "Longitude for address",
+                "placeholder": "Enter Longitude for address",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! only numeric value is allowed",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 15 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "clearingCode",
+                "label": "Clearing Code",
+                "placeholder": "Enter Clearing Code",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 50 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "swiftCode",
+                "label": "SWIFT code",
+                "placeholder": "Enter SWIFT code",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 50 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "abaCode",
+                "label": "ABA code",
+                "placeholder": "Enter ABA code",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid 1",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 50 characters only"
+                ]
+            },
+            {
+                "fieldJsonMapping": "micrCode",
+                "label": "MICR code",
+                "placeholder": "Enter MICR code",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid 1",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 50 characters only"
+                ]
+            },
+            {
+                "fieldJsonMapping": "rtgsCode",
+                "label": "RTGS code",
+                "placeholder": "Enter RTGS code",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid 1",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 50 characters only"
+                ]
+            },
+            {
+                "fieldJsonMapping": "neftCode",
+                "label": "NEFT code",
+                "placeholder": "Enter NEFT code",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid 1",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 50 characters only"
+                ]
+            },
+            {
+                "fieldJsonMapping": "interBankId",
+                "label": "Inter bank id",
+                "placeholder": "Enter Inter bank id",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! only numeric value is allowed",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 10 characters only"
+                ]
+            },
+            {
+                "fieldJsonMapping": "interBranchId",
+                "label": "Inter branch id",
+                "placeholder": "Enter Inter branch id",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! only numeric value is allowed",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 10 characters only"
+                ]
+            },
+            {
+                "fieldJsonMapping": "extra1",
+                "label": "Extra Field 1",
+                "placeholder": "Enter Extra Field 1",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! ",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra2",
+                "label": "Extra Field 2",
+                "placeholder": "Enter Extra Field 2",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! ",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra3",
+                "label": "Extra Field 3",
+                "placeholder": "Enter Extra Field 3",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! ",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "extra4",
+                "label": "Extra Field 4",
+                "placeholder": "Enter Extra Field 4",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid ! ",
+                    "Please Enter Minimum 1 characters",
+                    "maximum 200 characters only"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "status",
+                "label": "Status",
+                "placeholder": "Select Status",
+                "validations": [
+                    "This field is required",
+                    "Pattern is invalid"
+                ],
+                "fieldArrayNestedDataNameLang": []
+            },
+            {
+                "fieldJsonMapping": "companyDetails",
+                "label": "",
+                "placeholder": "",
+                "validations": [],
+                "fieldArrayNestedDataNameLang": [
+                    {
+                        "fieldJsonMapping": "id",
+                        "label": "",
+                        "placeholder": "",
+                        "validations": [
+                            "",
+                            ""
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "workingTiming",
+                        "label": " Name Of The Company ",
+                        "placeholder": "Enter  Name Of The Company ",
+                        "validations": [
+                            "This field is required",
+                            "Pattern is invalid ! ",
+                            "Please Enter Minimum 1 characters",
+                            "maximum 200 characters only"
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "branchAddress1",
+                        "label": "Branch Address 1",
+                        "placeholder": "Enter Branch Address 1",
+                        "validations": [
+                            "This field is required",
+                            "Pattern is invalid ! ",
+                            "Please Enter Minimum 1 characters",
+                            "maximum 500 characters only"
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "branchAddress2",
+                        "label": "Branch Address 2",
+                        "placeholder": "Enter Branch Address 2",
+                        "validations": [
+                            "This field is required",
+                            "Pattern is invalid ! ",
+                            "Please Enter Minimum 1 characters",
+                            "maximum 500 characters only"
+                        ]
+                    },
+                    {
+                        "fieldJsonMapping": "language",
+                        "label": "Language",
+                        "placeholder": "Select Language",
+                        "validations": [
+                            "This field is required",
+                            "Pattern is invalid"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,45 @@
+<ion-app>
+  <!-- <div *ngIf = "!hideRouter">
+      <cs-splash-screen-layout-3 [data]="data" (onRedirect)="onRedirect()"></cs-splash-screen-layout-3>
+  </div> -->
+
+  <div *ngIf="hideRouter">
+    <div *ngIf="show" class="loaderMask" style="  height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(100, 100, 100, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: absolute;">
+      <!-- loading -->
+      <!-- <img src="../assets/img/products/kastle/loader.gif" style="width: 5%;"> -->
+      <img src="assets/img/products/kastle/loader.gif" style="width: 5%;">
+
+    </div>
+    <!--  -->
+    <ion-card *ngIf="showTimeLeftPopup" style="color: red;
+      width: 350px;
+      z-index: 100;
+      top: 290%;
+      font-weight: 700;
+      left: 35%;
+      text-align: center;
+      ">
+      <ion-card-content *ngIf="seconds != 00">
+        <div>
+          Your Session will expire in {{seconds - 2}} seconds.
+        </div>
+        <div>
+          <div>
+            <ion-button size="medium" shape="round" color="primary" (click)='unsubscribeObservable(true)'>Continue</ion-button>
+            <!-- <button (click)='expiryLogOut()'>Logout</button> -->
+          </div>
+          <!-- Move the mouse to continue the session. -->
+        </div>
+      </ion-card-content>
+    </ion-card>
+    <ion-router-outlet></ion-router-outlet>
+  </div>
+</ion-app>

@@ -1,0 +1,116 @@
+
+input:focus{
+    border-color: transparent;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #ffffff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #ffffff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #ffffff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #ffffff;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #ffffff;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #ffffff;
+}
+
+.head1{
+       
+        font-size: 1.875em;
+       
+        line-height: 56px;
+}
+.head2{
+    font-size: 3.1875em;
+   line-height: 46px;
+    font-family:'Segoe UI Semibold';
+}
+.head3{
+    font-size: 1.875em;
+    /* font-weight: 200; */
+    line-height: 49px;
+    margin-bottom: 25px;
+}
+
+
+.div1Wrap{
+    margin-bottom: 15px
+}
+.div2Wrap{
+    margin-bottom: 25px;
+}
+@media screen and (max-width: 600px) {
+    .head1{
+        font-size: 18px;
+    }
+    .head2{
+        font-size: 28px;
+    }
+    .head3{
+        font-size: 14px;
+    } 
+    .inpStyle{
+        width:15rem;
+    }  
+    .submitBtn{
+        width: 5rem;
+        height: 32px;
+        font-size: 14px;
+    }
+  
+   input[type=submit]:focus {
+        background: blue;
+    }
+    .div2Wrap{
+        margin-bottom: 20px;
+    }
+
+}
+
+:host {
+    ion-content {
+        --background: linear-gradient(135deg, var(--ion-color-dark), var(--ion-color-primary));
+    }
+}
+
+.centreclass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxParent{
+    box-shadow: 5px 5px 35px rgb(0 0 0 / 50%);
+    width: 500px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px){
+    .boxParent{
+        width: 400px;
+    }
+    @media (max-width: 420px){
+        .boxParent{
+            width: 360px;
+        }
+    }
+@media (max-width: 360px){
+    .boxParent{
+        width: 300px;
+    }
+}
+
+
+}

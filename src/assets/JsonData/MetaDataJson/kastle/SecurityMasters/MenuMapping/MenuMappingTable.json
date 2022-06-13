@@ -1,0 +1,517 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "menuDescription",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "companyId",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "productId",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "roleId",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "menuPosition",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            },
+            {
+                "field": "menuLevel",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "menuDescription",
+                "header": "Menu Description"
+            },
+            {
+                "field": "companyId",
+                "header": "Company Name"
+            },
+            {
+                "field": "productId",
+                "header": "Product"
+            },
+            {
+                "field": "roleId",
+                "header": "Role"
+            },
+            {
+                "field": "menuPosition",
+                "header": "Position of Menu"
+            },
+            {
+                "field": "menuLevel",
+                "header": "Level of Menu"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "id",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "number",
+                "value": null,
+                "tableMetaDataField": "menuDescription",
+                "maxLength": "10"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "companyId",
+                "maxLength": "10"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "productId",
+                "maxLength": "10"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "roleId",
+                "maxLength": "10"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "menuPosition",
+                "maxLength": "1"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "menuLevel",
+                "maxLength": "3"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "id",
+                "title": "ID",
+                "placeholder": "Enter ID"
+            },
+            {
+                "tableMetaDataField": "menuDescription",
+                "title": "Menu Description",
+                "placeholder": "Enter Menu Description"
+            },
+            {
+                "tableMetaDataField": "companyId",
+                "title": "Company Name",
+                "placeholder": "Enter Company Name"
+            },
+            {
+                "tableMetaDataField": "productId",
+                "title": "Product",
+                "placeholder": "Enter Product"
+            },
+            {
+                "tableMetaDataField": "roleId",
+                "title": "Role",
+                "placeholder": "Enter Role"
+            },
+            {
+                "tableMetaDataField": "menuPosition",
+                "title": "Position of Menu",
+                "placeholder": "Enter Position of Menu"
+            },
+            {
+                "tableMetaDataField": "menuLevel",
+                "title": "Level of Menus",
+                "placeholder": "Enter Level of Menus"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - Menu Mapping List",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Menu Mapping",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEdit": false,
+            "showDelete": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 60,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 61,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "199",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "200",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "201",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "202",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "menuId": "1",
+                "menuLink": "i-kastle-menu/i-kastle-tabs/i-kastle-bome",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "menuId": "2",
+                "menuLink": "i-kastle-menu/i-kastle-tabs/tracker",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "menuId": "3",
+                "menuLink": " ",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "menuId": "4",
+                "menuLink": "i-kastle-menu/i-kastle-tabs/calculator/quick-quote-calculator",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "menuId": "5",
+                "menuLink": "i-kastle-menu/i-kastle-tabs/calculator/rate-change-calculator",
+                "status": "Active",
+                "statusId": "1"
+            }
+        ]
+    },
+    {
+        "tableMetaData": [
+            {
+                "field": "menuTransId",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "menuDescription",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "language",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "configStatus",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "menuTransId",
+                "header": "Menu Trans Id"
+            },
+            {
+                "field": "menuDescription",
+                "header": "Menu Description"
+            },
+            {
+                "field": "language",
+                "header": "Language"
+            },
+            {
+                "field": "configStatus",
+                "header": "Config Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "menuTransId",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "menuDescription",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "language",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "configStatus",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "menuTransId",
+                "title": "Menu Trans Id",
+                "placeholder": "Enter Menu Trans Id"
+            },
+            {
+                "tableMetaDataField": "menuDescription",
+                "title": "Menu Description",
+                "placeholder": "Enter Menu Description"
+            },
+            {
+                "tableMetaDataField": "language",
+                "title": "Language",
+                "placeholder": "Enter Language"
+            },
+            {
+                "tableMetaDataField": "configStatus",
+                "title": "Config Status",
+                "placeholder": "Enter Config Status"
+            }
+        ],
+        "tableTitle": "DATABASE - Menu Details",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd_DELETE_IT_LATER": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEdit_DELETE_IT_LATER": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 24,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "69",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "SAVE_URL_COMES_HERE",
+            "apiSaveDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "UPDATE_URL_COMES_HERE",
+            "apiUpdateDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "DELETE_URL_COMES_HERE",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": true,
+            "dependantGridMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "dependantGridReqObj": {
+                "queryId": "67",
+                "transactionId": "1234"
+            },
+            "dependantGridUrl": "querydata-by-queryid-metadata",
+            "submitCustomValidation": false,
+            "submitCustomValidationMetaData": null
+        },
+        "jsonTableData": [
+            {
+                "menuTransId": "1",
+                "menuDescription": "Home",
+                "configStatus": "Active",
+                "statusId": "1"
+            },
+            {
+                "menuTransId": "15",
+                "menuDescription": "Home_L2",
+                "configStatus": "Active",
+                "statusId": "1"
+            }
+        ]
+    }
+]

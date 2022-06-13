@@ -1,0 +1,209 @@
+
+.showColor{
+    background: #0033a1  !important;
+    color:white !important;
+  
+    // --background: -webkit-linear-gradient(left, #006174, #00c6ff);
+}
+.showTickColor{
+    
+    //border: 1px solid #0033a1 !important;
+   
+    // background: #00a13a url(/assets/img/products/kastle/tick.png) no-repeat !important;
+    background: #00a13a url(~src/assets/img/products/kastle/tick.png) no-repeat !important;
+    background-position: 9px 13px !important;
+    top: 20px !important;
+}
+.centreClass{
+    background: #f4f4f4;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.headerClass{
+    margin-top: 60px;
+    font-size: 1.2em;
+    background: #f4f4f4;
+    padding-left: 25px;
+    padding-top: 25px;
+    color:#383838;
+    font-family: 'Segoe UI Semibold';
+    
+}
+.flexParent{
+    display: inline-flex;
+    width:100%;
+}
+.flexChild{
+    // display: grid;
+    // margin-top: 12px;
+    // margin-right: 10px;
+    // // padding-top: 12px;
+    // border-radius: 10px;
+    // width: 110px;
+    // height: 60px;
+    // border: 5px;
+    // background: #ffffff;
+    // color: #000000;
+    // border: 2px solid silver;
+    // text-align: center;
+    // align-items: center;
+    // // /* justify-content: center;
+    //display: grid; 
+    margin-top: 12px;
+    border: 5px;
+    background: #ffffff;
+    color: #383838;
+    border: 1px solid #C1C0C0;
+    text-align: center;
+    align-items: center;
+    padding: 10px 43px;
+    width: 25%;
+//     width: 200px;
+//   height: 40px;
+//   position: relative;
+//   background: red;
+}
+// .flexChild:before{
+//     content: "";
+//     position: absolute;
+//     right: -20px;
+//     bottom: 0;
+//     width: 0;
+//     height: 0;
+//     border-left: 20px solid red;
+//     border-top: 20px solid transparent;
+//     border-bottom: 20px solid transparent;
+// }
+ion-label{
+    font-size: 12px;
+
+}
+.flexChild2{
+    width: 110px;
+    margin-right: 10px;
+}
+
+.tickclass{
+    font-size: 25px;
+    position: relative;
+    top:-6px
+}
+
+.flexChild1{
+    height:40px;
+    background:red;
+    color:#fff;
+    position:relative;
+    width:200px;
+    text-align:center;
+    line-height:40px;
+}
+.flexChild1:after{
+    content:"";
+    position:absolute;
+    height:0;
+    width:0;
+    left:100%;
+    top:0;
+    border:20px solid transparent;
+    border-left: 20px solid red;
+}
+
+.reactangle{
+    height:50px;
+    width:100px;
+    background-color: red;;
+}
+
+.triangle-right{
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-left: 50px solid #555;
+    border-bottom: 25px solid transparent;
+}
+
+//////////////////////////////////
+#pointer {
+    display: inline-block;
+    font-size: 12pt; //Width of pointer
+    width: 150px;
+    height: 4em;
+    position: relative;
+    background: gray;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0.6em;
+  }
+  #pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 1.25em solid white;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+  }
+  #pointer:before {
+    content: "";
+    position: absolute;
+    right: -1.25em;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 1.25em solid gray;
+    border-top: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+  }
+  
+  .cnt {
+    position: relative;
+    top: 0.25em;
+    left: 1em;
+    color: white;
+  }
+  
+  .titleWrap{
+    display: inline-block;
+    width: 100%;
+  }
+  .firstBlock{
+    width: 30%;
+    display: inline-block;
+  }
+  .inliner{
+    display: inline-block;
+  }
+  .secondBlock{
+    width: 70%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 25px;
+    margin-bottom: 15px;
+    // background: red;
+  }
+  .left25Space{
+    padding-left: 10px;      
+}
+.flexClass{
+display: inline-flex; 
+width: 100%   
+}
+.custcss{
+       /* border: 1px solid #C1C0C0; */
+       text-align: center;
+       align-items: center;
+       padding: 10px 25px;
+       color: #0033a1; 
+       width: 25%
+}
+p{
+  color: #0a0a0a;
+  margin-bottom: 0px;
+}
+.custWrap{
+  background-color: white;
+  margin-right: 25px;;
+}

@@ -1,0 +1,222 @@
+
+<div style="padding-left: 10px;
+padding-top: 10px;
+font-size: 20px;
+font-weight: 500;
+color: #00718a;
+">
+<ion-back-button defaultHref="/menu/tabs/entities/i-and-m/accounting" style="display:inline-block;">
+    <ion-icon name="arrow-back"></ion-icon>
+</ion-back-button>
+    PURCHASE ORDER 
+
+    <!-- <div (click)="saveForm()" *ngIf="isNew">
+save - {{isReadyToSave}}
+    </div>
+    <div (click)="updateForm"  *ngIf="!isNew">
+update - {{isReadyToSave}}
+    </div> -->
+</div>
+
+<ion-content class="ion-padding">
+    
+    <!-- <form *ngIf="form" name="form" [formGroup]="form"  #acctForm="ngForm">
+            <ion-input (ionChange)="disableFormSubmission(formInvalid.value)" [value]="acctForm.form.invalid" type="hidden" #formInvalid>
+                </ion-input>
+        <ion-infinite-scroll>
+            <ion-grid>
+                <ion-row>
+                    <ion-col size-lg="4" size-md="4" size-sm="4" size="12" [hidden]="!form.id">
+
+                        <ion-item>
+                            <ion-label>ID</ion-label>
+                            <ion-input type="hidden" id="id" formControlName="id" readonly></ion-input>
+                        </ion-item>
+                    </ion-col>
+                    <ion-col size-lg="4" size-md="4" size-sm="4" size="12">
+                        <ion-item>
+                            <ion-label position="floating">Name
+                                <ion-text color="danger">*</ion-text>
+                            </ion-label>
+                            <ion-input type="text" name="name" formControlName="name" #name [value]="name.value === undefined ? '' : macCode.value.toUpperCase()"
+                                required> </ion-input>
+                            <small *ngIf="form.get('name').hasError('pattern')" class="danger" padding>Special Characters not allowed.</small>
+                        </ion-item>
+
+                    </ion-col>
+                    <ion-col size-lg="4" size-md="4" size-sm="4" size="12">
+                        <ion-item>
+                            <ion-label position="floating">company
+                                <ion-text color="danger">*</ion-text>
+                            </ion-label>
+                            <ion-input type="text" name="company" formControlName="company" #company [value]="company.value === undefined ? '' : company.value.toUpperCase()"
+                                required> </ion-input>
+                            <small *ngIf="form.get('company').hasError('pattern')" class="danger" padding>Special Characters not allowed.</small>
+                        </ion-item>
+
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col size-lg="4" size-md="4" size-sm="4" size="12">
+                        <ion-item>
+                            <ion-label position="floating">Amount
+                                <ion-text color="danger">*</ion-text>
+                            </ion-label>
+                            <ion-input type="text" name="name" formControlName="name" #name [value]="name.value === undefined ? '' : macCode.value.toUpperCase()"
+                                required> </ion-input>
+                            <small *ngIf="form.get('name').hasError('pattern')" class="danger" padding>Special Characters not allowed.</small>
+                        </ion-item>
+
+                    </ion-col>
+                    <ion-col size-lg="4" size-md="4" size-sm="4" size="12">
+                        <ion-item>
+                            <ion-label position="floating">Joining Date
+                                <ion-text color="danger">*</ion-text>
+                            </ion-label>
+                            <ion-input type="text" name="company" formControlName="company" #company [value]="company.value === undefined ? '' : company.value.toUpperCase()"
+                                required> </ion-input>
+                            <small *ngIf="form.get('company').hasError('pattern')" class="danger" padding>Special Characters not allowed.</small>
+                        </ion-item>
+
+
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-infinite-scroll>
+    </form> -->
+
+<ion-card>
+    <ion-card-content>
+
+        <!-- reactive form -->
+           <!-- reeactive -->
+           <div *ngIf="reactiveformBool">
+            <!-- (ngSubmit)="save()"  -->
+            <form *ngIf="form" name="form" [formGroup]="form" #bpbranchForm="ngForm">
+                <ion-label class="text-size-xxs text-color-secondary font-regular number-labels"
+                    [position]="appConfigService.labelPosition">
+                    FACILITY NAME
+                </ion-label>
+                <ion-input class="" inputmode="email"
+                    [placeholder]=" 'Please enter facility' | translate" 
+                    formControlName="react_branchName">
+                </ion-input>
+
+                <br>
+                <br>
+                <!-- [(selectedItem)]="accountingCategory.status"  -->
+<digital-cs-select-layout-1 [show]="false" style="width:100% !important" [title]="'STATUS'"
+[data]="statusDropdownArr" [valueId]="'id'" [valueDesc]="'value'"
+(onChange)="onChangeOfStatus($event)"
+[control]="form.get('react_status')"
+[required]="true">
+</digital-cs-select-layout-1>
+
+<br>
+<digital-app-number-input #poAmountAmtArrNumView
+[show]="true" 
+[control]="form.get('react_curr')"
+[label]="'PO AMOUNT'" [placeholder]=" 'Please enter PO amount' "
+[currCode]="'USD'" [doCurrencyFormatting]="true"></digital-app-number-input>
+
+    <br>
+{{bpbranchForm.value | json}}
+<ion-button [disabled]="!bpbranchForm.valid" type="submit" (click)="savedummy()" class="ion-margin-top ion-text-capitalize button-default" color="secondary" style="float: right;">
+Next
+</ion-button>
+                
+            </form>
+
+        </div>
+
+     
+        <!-- ends -->
+        <form #editForm="ngForm" class=""  *ngIf="!reactiveformBool">
+            <ion-grid size="12">
+            <ion-row>
+            <ion-col size="6" >
+                <div class="boxWrapper">
+                <!-- <ion-item class="ion-no-padding transparent" input > -->
+                    <ion-label class="text-size-xxs text-color-secondary font-regular number-labels"
+                    [position]="appConfigService.labelPosition" >
+                       <!-- {{'FC_TRANSACTION_PAGE.COMMISSION' | translate}} -->
+                       FACILITY NAME
+                   </ion-label>
+                <!-- <div *ngIf="!appConfigService.getPlatformMobile()">{{'FACILITY' | translate}}</div> -->
+                <!-- <ion-item lines=none> -->
+                    <ion-input class="" #facility="ngModel"  maxlength="50" inputmode="email" name="facility" required 
+                    [placeholder]=" 'Please enter facility' | translate"
+                      [(ngModel)]="accountingCategory.facility" ></ion-input>
+                  <!-- </ion-item> -->
+                  <div *ngIf="editForm.controls?.facility?.dirty && editForm.controls?.facility?.invalid" class="ion-no-padding transparent"
+                      lines="none">
+                      <div class="errorMsg" *ngIf="editForm.controls?.facility?.errors.required">{{'FORM_ERROR.REQUIRED' | translate}}</div>
+                    </div>
+                    <div class="errorMsg" *ngIf="editForm.controls?.facility?.errors?.pattern">{{'FORM_ERROR.NUMBER_PATTERN' | translate}}</div>
+            </div>
+                </ion-col>
+            <ion-col size="6">
+                <digital-cs-select-layout-1 [show]="false" style="width:100% !important" [title]="'STATUS'" [data]="statusDropdownArr"
+                [valueId]="'id'" [valueDesc]="'value'" (onChange)="onChangeOfStatus($event)" [(ngModel)]="accountingCategory.status"
+                 name="status" [required]="true"></digital-cs-select-layout-1>
+            </ion-col>
+
+            <!-- [(selectedItem)]="accountingCategory.status" -->
+
+            </ion-row>
+            <ion-row>
+            <ion-col size="6" >
+                <digital-app-number-input #poAmountAmtArrNumView
+                 [show]="true" [required]="true" [(ngModel)]="accountingCategory.poAmount"
+                  name="poAmount" [(field)]="accountingCategory.poAmount"
+                [label]="'PO AMOUNT'" [placeholder]=" 'Please enter PO amount' "
+                [currCode]="'USD'" [doCurrencyFormatting]="true"></digital-app-number-input>
+            </ion-col>
+            <ion-col size="3" >
+                <app-date style="width:100%" 
+                [(ngModel)]="accountingCategory.poDate" name="poDate"
+                [required]="true" [title]="'PO DATE'"></app-date>
+            </ion-col>
+            <!-- [(selectedDate)]="accountingCategory.poDate"  -->
+            <ion-col size="3" >
+                <div>
+                    <digital-app-date style="width:100%" [(selectedDate)]="accountingCategory.lastShipmentdate" 
+                    [(ngModel)]="accountingCategory.lastShipmentdate" name="lastShipmentdate"
+                    [required]="true" [title]="'LAST SHIPMENT DATE'"></digital-app-date>
+                </div>
+ 
+            </ion-col>
+            </ion-row>
+            <!-- <ion-row>
+                <ion-col size="6" >
+                    <app-date style="width:100%" [(selectedDate)]="accountingCategory.lastShipmentdate" 
+                    [(ngModel)]="accountingCategory.lastShipmentdate" name="lastShipmentdate"
+                    [required]="true" [title]="'Last Shipment DATE'"></app-date>
+                </ion-col>
+                </ion-row> -->
+                <ion-row>
+                    <ion-col  size="12" align-self-end>
+                        <!-- [disabled]="!editForm.valid" -->
+                        <ion-button [disabled]="!editForm.valid" type="submit" (click)="savedummy()"
+                         class="ion-margin-top ion-text-capitalize button-default primaryColorCss" 
+                         color="secondary">
+                            <span *ngIf="isNew">
+                                Submit
+                            </span>
+                            <span *ngIf="!isNew">
+                                Update
+                            </span>
+                        </ion-button>
+                      </ion-col>
+                </ion-row>
+            </ion-grid>
+            </form>
+    </ion-card-content>
+</ion-card>
+
+</ion-content>
+
+
+
+
+

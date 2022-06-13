@@ -1,0 +1,102 @@
+ion-select {
+    
+    // color: #fff !important; white color makes selected label invisible
+    opacity: 1 !important;
+    text-transform: capitalize !important;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    padding-left: 3px;
+}
+.whitelabel{
+    color: white !important;
+}
+.redlabel{
+    color: red !important;
+}
+
+.blueBackground ion-select{
+    color: #fff !important;
+}
+.blueSelect{
+    max-width: 100%;
+    background: #0590D2;
+}
+.selectLabel{
+    font-size: 13px;
+    text-transform: uppercase;
+    font-size: 13px !important;
+    position: absolute;
+    background: #fff;
+    z-index: 9999;
+    top: -9px;
+    left: 10px;
+    padding: 0 10px;
+    /* max-width: 100%; */
+    white-space: nowrap;
+    color: #1a1d50;
+}
+.f14{
+    font-size: 13px;
+}
+.m0{
+    margin-bottom:0px !important;
+}
+.m25{
+    margin-bottom:25px !important
+}
+
+.roh{
+    padding:20px;
+    background-color: yellow;
+    color:blue;
+}
+ 
+
+.ng-select.custom ::ng-deep  .ng-select-container:hover{
+    // background-color: yellow;
+    border: 0px !important;
+    // background: red;
+    outline: none;
+    // -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+}
+// ng-select.ng-invalid.ng-touched .ng-select-container {
+//     border-color: #dc3545;
+//     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 3px yellow;
+// }
+.ng-select.custom ::ng-deep  .ng-select-container:focus{
+    // background-color: yellow;
+    border: 0px !important;
+    // background: red;
+    outline: none;
+    // -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+}
+
+.ng-select.custom ::ng-deep.ng-dropdown-panel{
+    z-index: 999999;
+}
+
+.ng-select.custom ::ng-deep .ng-dropdown-panel .scroll-host {
+    border-radius: 5px;
+    border: 1px solid;
+}
+// "{'min-width': '100% !important','display': 'inline-grid','margin-top': '10px'}"
+.ionic-selectable {
+    display: block;
+    max-width: 45%;
+    background-color: #f4f4f5;
+    border: solid 1px #006174;
+    height: 42px;
+    line-height: 13px;
+    font-size: 13px;
+    padding: 0 10px;
+
+}
+
+
+// placeholder not visible issue
+// solution
+// I got it. When using template-driven-form like ngModel name="documentType" that, the field default value is ""(empty string). And ng-select suppose that field is has a value and don't show placeholder. I convert my code to reactive form and set initial value to null , the issue solved.
+// https://github.com/ng-select/ng-select/issues/1063

@@ -1,0 +1,310 @@
+<!--  Theme Form - Form + Write Comment -->
+<!-- *ngIf="viewEntered" CULPRIT -->
+<ion-content><div *ngIf="data != null">
+    <!-- TOP SECTION -->
+      <ion-grid class="topPane" style="padding: 10px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;">
+          <ion-row>
+            <ion-col size="6" class="ion-text-left">
+              <!-- <h3>101</h3> -->
+              <!-- Service No -->              
+              <h3> {{data.serviceNo }}</h3>
+              {{ 'SERVICE_NO' | translate}}
+
+            </ion-col>
+            <ion-col size="6" class="ion-text-right">
+              <!-- <h3>Jeep compass / x2 </h3>   -->
+              <h3> {{data.assetMakeModel}}</h3>
+                {{ 'SWITCH_LOAN.ASSET_MAKE' | translate}}
+              <!-- Asset Make/Model -->
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    <!-- TOP SECTION ends here -->
+    <!-- [ngClass]="{'valid': steps.validStatus,
+    'invalid': !steps.validStatus}" -->
+    <div *ngIf="data != null" class="divParent">
+      <div
+        *ngFor="let steps of data.stepsArray;let i =index;"
+        class="divClass"
+        (click)="onStepClick(i)"
+        [ngClass]="{'valid': steps.validUpdatedStatus}"
+      >
+    <!-- test {{steps.validUpdatedStatus}}             -->
+       <div *ngIf="steps.validUpdatedStatus" style="font-size: 30px;
+       position: relative;
+       top: -7px;
+       right: 2px;">
+        <ion-icon name="checkmark-circle-outline" ></ion-icon>      
+      </div>
+      <div *ngIf="!steps.validUpdatedStatus">
+        {{ steps.title | translate }}      
+      </div>
+        <!-- {{ steps.title | translate }} -->
+        <!-- {{ steps.validStatus  }} -->
+  
+        <!-- <ion-icon [name]="steps.icon" ></ion-icon> -->
+  
+        <!-- <span class="stepLine"></span>          -->
+      </div>
+    </div>
+    <div class="borderLine"></div>
+  
+    <ion-slides
+      #wizardSlider
+      pager="false"
+      *ngIf="data != null"
+      class="slidesHeight"
+      (ionSlideDidChange)="ionSlideDidChange()"
+      (ionSlideReachStart)="ionSlideReachStart()"
+      (ionSlideReachEnd)="ionSlideReachEnd()"
+    >
+      <ion-slide *ngFor="let item of data.items" class="stepperDiv">
+        <!-- <ion-card class="ion-no-margin ion-padding no-box-shadow ion-text-left"> -->
+        <!-- <ion-img class="ion-float-start logo" [src]="item.logo"></ion-img> -->
+        <!-- <div class="clearfix"></div> -->
+        <!-- <ion-card-content class="ion-no-padding"> -->
+        <!-- <h1 class="text-size-xl text-color-accent font-bold ion-padding-top">{{item.title}}</h1>
+            <div class="clearfix"></div>
+            <p class="text-size-md text-color-secondary font-light ion-padding-top">{{item.description}}</p>
+           -->
+        <div *ngIf="item?.formData">
+          <form #editForm="ngForm">
+            <!-- test {{editForm.valid}} -->
+  
+            <div *ngFor="let formData of item.formData">
+              <div *ngIf="formData.identifier == 'date'">
+                <app-date
+                  style="width: 100%;"
+                  [(selectedDate)]="formData.value"
+                  [(ngModel)]="formData.value"
+                  name="formData.label"
+                  [required]="formData.required"
+                  [title]="formData.label"
+                ></app-date>
+              </div>
+              <div *ngIf="formData.identifier == 'dropdown'">
+                <!-- test - {{formData.dropdownArray | json}} -->
+                <h1>
+                  {{formData.label | translate}}
+                </h1>
+                <cs-select-layout-1
+                  style="width: 100% !important;"
+                  [title]="formData.label"
+                  [data]="formData.dropdownArray"
+                  [valueId]="formData.valueId"
+                  [valueDesc]="formData.valueDesc"
+                  [(ngModel)]="formData.value"
+                  [placeholder]="'NSR.DRIVER_SELECT_PLACEHOLDER'"
+                  [(selectedItem)]="formData.value"
+                  name="formData.label"
+                  [required]="formData.required"
+                  (onChange)="onChangeOfDropdown($event)"
+                  [show]="false"
+                >
+                </cs-select-layout-1>
+              </div>
+              <div *ngIf="formData.identifier == 'input'">
+                <ion-input [(ngModel)]="formData.value" name="formData.label" [required]="formData.required"></ion-input>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- No form (inside parent screen make Array of object inside "noFormData" variable )-->
+        <div *ngIf="item?.noFormData">
+          <div *ngFor="let data of item.noFormData">
+            <div *ngIf="data.identifier == 'select-driver'">
+              <!-- fees page -- >
+                  <!-- child selector ithe tak -->
+              <!-- <ion-card> -->
+              <cs-driver-selection
+                [data]="data"
+                (addDriverEmitter)="addDriver($event)"
+                (driverData)="driverData($event)"
+              ></cs-driver-selection>
+  
+              <!-- </ion-card> -->
+              <!-- <ion-button *ngIf="data.showAddDriverButton">Add new driver</ion-button> -->
+            </div>
+            <!-- NOTE.V IMP - if value assigned to ngModel is in STRING "1" - it will not show
+            converto to number 1 i.e use +variablename
+            -->
+            <div *ngIf="data.identifier == 'dropdown'">
+              <!-- test - {{formData.dropdownArray | json}} -->
+              <h1>
+                {{data.label | translate}}
+              </h1>
+              <cs-select-layout-1
+                style="width: 100% !important;"
+                [title]="data.label"
+                [data]="data.dropdownArray"
+                [valueId]="data.valueId"
+                [valueDesc]="data.valueDesc"
+                [(ngModel)]="data.value"
+                [(selectedItem)]="data.value"
+                name="data.label"
+                [required]="data.required"
+                (onChange)="onChangeOfDropdown($event)"
+                [show]="false"
+              >
+              </cs-select-layout-1>
+            </div>
+            <div *ngIf="data.identifier == 'undertaking'">
+              <!-- understanding page -- >
+                  <!-- child selector ithe tak -->
+              <cs-undertaking-form
+                [data]="data"
+                (understandingcheckBox)="understandingcheckBox($event);data.check = $event"
+              ></cs-undertaking-form>
+            </div>
+            <div *ngIf="data.identifier == 'otp' && data.showScreen ">
+              <app-otp-screen-layout (onValidate)="onOtp($event)"></app-otp-screen-layout>
+            </div>
+  
+            <div *ngIf="data.identifier == 'fees'">
+              <!-- fees page -- >
+                <!-- child selector ithe tak -->
+              <cs-fee-approval [data]="data" (feescheckBox)="feescheckBox($event)"></cs-fee-approval>
+            </div>
+            <div *ngIf="data.identifier == 'string'">
+              <!-- fees page -- >
+                <!-- child selector ithe tak -->
+              {{data.label | translate}}
+              <!-- <ion-button fill="clear" class="text-color-accent ion-text-capitalize ion-float-end nextDiv" (click)="submit($event)">
+                Submit
+              </ion-button> -->
+            </div>
+            <div *ngIf="data.identifier == 'add-driver'">
+              <cs-add-driver [data]="data" (confirmDriver)="confirmDriver(data)"></cs-add-driver>
+            </div>
+            <div *ngIf="data.identifier == 'token'">
+              <!-- fees page -- >
+                <!-- child selector ithe tak -->
+              <app-token [data]="data.popOverData"></app-token>
+            </div>
+            <div *ngIf="data.identifier == 'days'">
+             <!-- test {{data | json}} -->
+              <cs-days-selection [data]="data" (onSubmit)="onDaysSelect($event)"></cs-days-selection>
+            </div>
+            <div *ngIf="data.identifier == 'file'">
+              <div *ngFor="let fileData of data.fileArray; let z = index;">
+                <!-- {{fileData.value?.file}} -->
+                
+                <cs-file-upload
+                  [data]="fileData.data"
+                  [fullOuterdata] = "fileData"
+                  [(ngModel)]="fileData.value"
+                  (onFileSelect)="onFileSelect($event,fileData,z, data.fileArray)"
+                ></cs-file-upload>
+              </div>
+            </div>
+  
+            <div *ngIf="data.identifier == 'complaints'">
+              <cs-complaints [data]="data.data" (complaintsResponse)="complaintsResponse($event)"></cs-complaints>
+            </div>
+  
+            <div *ngIf="data.identifier == 'dropdownArray'">
+              <div *ngFor="let dropdownData of data.dropDownArray;let z = index">
+                <h1>
+                  {{dropdownData.label | translate}}
+                </h1>
+                <cs-select-layout-1
+                  [title]="dropdownData.label"
+                  [data]="dropdownData.dropdownArray"
+                  [valueId]="dropdownData.valueId"
+                  [valueDesc]="dropdownData.valueDesc"
+                  [(ngModel)]="dropdownData.value"
+                  [(selectedItem)]="dropdownData.value"
+                  name="dropdownData.label"
+                  [required]="dropdownData.required"
+                  (onChange)="onChangeOfDropdownArray($event, z, data.dropDownArray)"
+                  [show]="false"
+                >
+                </cs-select-layout-1>
+              </div>
+            </div>
+  
+            <div *ngIf="data.identifier == 'radioInput'">
+              <div *ngIf="data.radioButton">
+                <h1>
+                  {{data.radioButtonTitle | translate}}
+                </h1>
+                <!-- <cs-radio-button-layout-1
+                  [showTitle]="false"
+                  [(ngModel)]="data.radioButton.value"
+                  [(selectedItem)]="data.radioButton.value"
+                  name="data.radioButton.value"
+                  [required]="false"
+                  [data]="data.radioButton"
+                >
+                </cs-radio-button-layout-1> -->
+  
+                <ion-card
+                  *ngFor="let entry of data.radioButton"
+                  style="display: inline-block;"
+                  [ngClass]="{'radioActive': entry.value == data.radioButtonSelectedValue}"
+                  class="welcome-card ion-text-center button-default buy-sell-btn"
+                  (click)="onChangeOfMultipleRadio(entry)"
+                >
+                  <ion-card-content>
+                    <ion-label class="text-size-md font-regular entityLabel">
+                      {{entry.label | translate}}
+                    </ion-label>
+                    <!-- </div> -->
+                  </ion-card-content>
+                </ion-card>
+              </div>
+              <div *ngIf="data.input">
+                <h1>
+                  {{data.inputTitle | translate}}
+                </h1>
+                <div *ngFor="let inputdata of data.input;let z = index">
+                  <!-- test -- {{inputdata.value}} -->
+                  <ion-item class="transparent" input lines="none" style="margin-bottom:15px;">
+                    <ion-input style="    background-color: #f4f4f5;
+                    border: solid 1px #006174;
+                    padding-left: 8px !important;"
+                    (ionChange)="inputCheck($event, z, data.input)"
+                    [placeholder]="inputdata.placeholder"
+                    [(ngModel)]="inputdata.value"
+                    [required]="inputdata.required"
+                    [type]="inputdata.type"
+                  ></ion-input>
+                  </ion-item>
+                  <!-- <ion-label>{{inputdata.label}} </ion-label> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+    <!--Button section-->
+    <!-- test - {{enableNext}} -->
+    <div *ngIf="data != null" class="bottomDiv">
+      <ion-button fill="clear" class="text-color-accent ion-text-capitalize ion-float-start prevDiv" (click)="onPreviousFunc()" *ngIf="prev">
+        {{data.btnPrev | translate}}
+      </ion-button>
+      <ion-button
+        fill="clear"
+        [disabled]="!enableNext"
+        class="text-color-accent ion-text-capitalize ion-float-end nextDiv"
+        (click)="onNextFunc()"
+        *ngIf="next"
+      >
+        {{data.btnNext | translate}}
+      </ion-button>
+      <ion-button
+        fill="clear"
+        [disabled]="disbaleFinalButton()"
+        class="text-color-accent ion-text-capitalize ion-float-end nextDiv"
+        [ngClass]="{'successtDiv': disbaleFinalButton() == false}"
+        (click)="onFinishFunc()"
+        *ngIf="finish"
+      >
+        {{data.btnFinish | translate}}
+      </ion-button>
+    </div>  </div>   
+  </ion-content>
+  

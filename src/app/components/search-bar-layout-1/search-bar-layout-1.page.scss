@@ -1,0 +1,14 @@
+ion-card {
+  position: relative;
+  height: 250px;
+
+  ion-card-header {
+    position: absolute;
+    top: 0;
+  }
+
+  ion-card-content {
+    position: absolute;
+    bottom: 0;
+  }
+}

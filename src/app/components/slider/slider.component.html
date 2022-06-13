@@ -1,0 +1,28 @@
+<!-- <div class="topBackground"> delma code-->
+<!-- <ion-slides [options]="slidesOpts" #slider [initialSlide]="data.index" pager="true">
+  <ion-slide *ngFor="let item of data.items">
+    <div (click)="itemClicked(item)">
+      <h3> {{item.title}}</h3>
+      <p>{{ item.description}}</p>
+        <img [src]="item.image" />
+    </div>
+   
+  </ion-slide>
+</ion-slides> -->
+<!-- </div> -->
+
+<!-- cards -->
+<ion-slides [options]="slidesOpts" #slider [initialSlide]="data.index" pager="true">
+    <ion-slide *ngFor="let item of data.items">
+      <ion-card class="ion-no-margin background-size border-radius gradient-image offerSlide" (click)="itemClicked(item)" [ngStyle]="{'background-image': 'url(' + item.image + ')'}" >
+      <ion-card-content>
+      <!-- <ion-item class="ion-no-padding transparent" lines="none">
+      <ion-label>
+      <h3 class="ion-text-wrap text-size-xs text-color-light font-regular">{{item.title}}</h3>
+      <h2 class="ion-text-wrap text-size-xl text-color-light font-regular">{{item.description}}</h2>
+      </ion-label>
+      </ion-item> -->
+      </ion-card-content>
+      </ion-card>
+</ion-slide>
+</ion-slides>

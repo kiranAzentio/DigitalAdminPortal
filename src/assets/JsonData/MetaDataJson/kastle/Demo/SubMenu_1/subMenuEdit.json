@@ -1,0 +1,198 @@
+[
+  {
+    "tableMetaData": [
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "id",
+        "identifier": "hidden",
+        "fieldJsonMapping": "id",
+        "value": "",
+        "showDelete": true,
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "companyCode",
+        "identifier": "textbox",
+        "fieldJsonMapping": "companyCode",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "minlength",
+            "validator": 1,
+            "message": ""
+          },
+          {
+            "name": "maxlength",
+            "validator": 50,
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "baseCurrency",
+        "identifier": "dropdown",
+        "fieldJsonMapping": "baseCurrency",
+        "value": null,
+        "onPageLoadGetData": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "155",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "metdaData": [],
+        "idToShow": "label",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "installedDate",
+        "identifier": "date",
+        "fieldJsonMapping": "installedDate",
+        "value": "",
+        "onPageLoadGetData": true,
+        "showTime": false,
+        "maxDate": "",
+        "minDate": "",
+        "minDateValidFrom": "",
+        "maxDatevalidFrom": "",
+        "apiUrl": "companyId-dropdown",
+        "onChangeMetaData": [],
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "id",
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "status",
+        "identifier": "toggle",
+        "fieldJsonMapping": "status",
+        "value": "",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "not in use",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "A",
+        "uncheckedToogleId": "X",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      }
+    ],
+    "tableMetaDataFieldNameLang": [
+      {
+        "fieldJsonMapping": "id",
+        "label": "",
+        "placeholder": "",
+        "validations": ["", ""]
+      },
+      {
+        "fieldJsonMapping": "companyCode",
+        "label": "Company Code",
+        "placeholder": "Enter Company Code",
+        "validations": ["This field is required", "Patter is invalid", "Please Enter Minimum 1 characters", "maximum 50 characters only"],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "baseCurrency",
+        "label": "ISO Currency Code",
+        "placeholder": "select Base Currency",
+        "validations": ["This field is required", "Patter is invalid"],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "installedDate",
+        "label": "System Installed Date",
+        "placeholder": "Enter System Installed Date",
+        "validations": ["This field is required", "Patter is invalid"],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "status",
+        "label": "Status",
+        "placeholder": "Select Status",
+        "validations": ["This field is required", "Patter is invalid"],
+        "fieldArrayNestedDataNameLang": []
+      }
+    ]
+  }
+]

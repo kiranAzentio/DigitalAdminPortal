@@ -1,0 +1,155 @@
+<!-- entied needed -->
+<div *ngIf="false">
+</div>
+
+<!-- <ion-content>
+    <div>
+      <div style="background:linear-gradient(to right,  #0033A1 0%,#0099A8 100%);" class="ion-padding">
+        <ion-row>
+          <ion-col size="12">
+            <h3 class="whiteColor">Application Status</h3>
+          </ion-col>
+        </ion-row>
+    
+        <ion-row>
+          <ion-col size="3" style="border-right: 1px solid #4487b5;" class="ion-text-center">
+            <ion-item color="transparent" lines="none">
+              <ion-thumbnail slot="start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33.667" height="33.667" viewBox="0 0 33.667 33.667" style="margin-top:9px;"> 
+                  <path id="ic_add_to_photos_24px" d="M5.367,8.733H2V32.3a3.377,3.377,0,0,0,3.367,3.367H28.933V32.3H5.367ZM32.3,2H12.1A3.377,3.377,0,0,0,8.733,5.367v20.2A3.377,3.377,0,0,0,12.1,28.933H32.3a3.377,3.377,0,0,0,3.367-3.367V5.367A3.377,3.377,0,0,0,32.3,2ZM30.617,17.15H23.883v6.733H20.517V17.15H13.783V13.783h6.733V7.05h3.367v6.733h6.733Z" transform="translate(-2 -2)" fill="#fff"/>
+                </svg>
+                
+              </ion-thumbnail>
+              <ion-label>
+                <h2 class="whiteColor">{{responseFromApi.newCases}}</h2>
+                <h4 class="ion-text-wrap whiteColor">New Cases</h4>
+              </ion-label>
+            </ion-item>
+          </ion-col>
+    
+          <ion-col size="3" style="border-right: 1px solid #4487b5;" class="ion-text-center">
+            <ion-item color="transparent" lines="none">
+              <ion-thumbnail slot="start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33"  style="margin-top:9px;">
+                  <path id="ic_filter_9_plus_24px" d="M4,7H1V31a3.009,3.009,0,0,0,3,3H28V31H4ZM20.5,17.5v-6a3,3,0,0,0-3-3H16a3,3,0,0,0-3,3V13a3,3,0,0,0,3,3h1.5v1.5H13v3h4.5A3,3,0,0,0,20.5,17.5ZM16,13V11.5h1.5V13ZM31,1H10A3.009,3.009,0,0,0,7,4V25a3.009,3.009,0,0,0,3,3H31a3.009,3.009,0,0,0,3-3V4A3.009,3.009,0,0,0,31,1Zm0,12H28V10H25v3H22v3h3v3h3V16h3v9H10V4H31Z" transform="translate(-1 -1)" fill="#fff"/>
+                </svg>
+                
+              </ion-thumbnail>
+              <ion-label>
+                <h2 class="whiteColor">{{responseFromApi.wipCases}}</h2>
+                <h4 class="ion-text-wrap whiteColor">Work In Progress Cases</h4>
+              </ion-label>
+            </ion-item>
+          </ion-col>
+    
+          <ion-col size="3" style="border-right: 1px solid #4487b5;" class="ion-text-center">
+            <ion-item color="transparent" lines="none">
+              <ion-thumbnail slot="start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                  <g id="Group_21" data-name="Group 21" transform="translate(-845 -162)">
+                    <path id="Path_213" data-name="Path 213" d="M-830,134.417l-9.167,6.333-3.917-3.917" transform="translate(1660.378 -119.092) rotate(-11)" fill="none" stroke="#fff" stroke-width="3"/>
+                    <path id="ic_filter_9_plus_24px" d="M4,7H1V31a3.009,3.009,0,0,0,3,3H28V31H4ZM31,1H10A3.009,3.009,0,0,0,7,4V25a3.009,3.009,0,0,0,3,3H31a3.009,3.009,0,0,0,3-3V4A3.009,3.009,0,0,0,31,1Zm0,24H10V4H31Z" transform="translate(844 161)" fill="#fff"/>
+                  </g>
+                </svg>
+                
+              </ion-thumbnail>
+              <ion-label>
+                <h2 class="whiteColor">{{responseFromApi.pendingWithUW}}</h2>
+                <h4 class="ion-text-wrap whiteColor">Pending with Underwriter Approval</h4>
+              </ion-label>
+            </ion-item>
+          </ion-col>
+    
+          <ion-col size="3" class="ion-text-center">
+            <ion-item color="transparent" lines="none">
+              <ion-thumbnail slot="start">
+                <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+                  <g id="Group_21" data-name="Group 21" transform="translate(-845 -162)">
+                    <path id="Path_213" data-name="Path 213" d="M-830,134.417l-9.167,6.333-3.917-3.917" transform="translate(1660.378 -119.092) rotate(-11)" fill="none" stroke="#fff" stroke-width="3"/>
+                    <path id="ic_filter_9_plus_24px" d="M4,7H1V31a3.009,3.009,0,0,0,3,3H28V31H4ZM31,1H10A3.009,3.009,0,0,0,7,4V25a3.009,3.009,0,0,0,3,3H31a3.009,3.009,0,0,0,3-3V4A3.009,3.009,0,0,0,31,1Zm0,24H10V4H31Z" transform="translate(844 161)" fill="#fff"/>
+                  </g>
+                </svg>
+                
+              </ion-thumbnail>
+              <ion-label>
+                <h2 class="whiteColor">{{responseFromApi.offerAcceptance}}</h2>
+                <h4 class="ion-text-wrap whiteColor">Pending for Offer Acceptance</h4>
+              </ion-label>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-row class="ion-padding" style="background:#F3F3F3">
+        <ion-col size="3">
+          <ion-card class="whiteBackground">
+            <ion-item lines="none" class="whiteBackground">
+              <ion-thumbnail slot="start">
+              </ion-thumbnail>
+              <ion-label>
+                <h2 class="whiteColor">{{responseFromApi.declinedByPolicy}}</h2>
+                <h4 class="ion-text-wrap blackColor" >Declined Cases <br>by Policy Rules</h4>
+              </ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+    
+        <ion-col size="3">
+          <ion-card class="whiteBackground">
+            <ion-item lines="none" class="whiteBackground">
+              <ion-thumbnail slot="start">
+                <img src="assets/img/icon1.png"  style="width:33px; height:33px;" />
+              </ion-thumbnail>
+              <ion-label>
+                <h2 class="whiteColor">{{responseFromApi.declinedByCust}}</h2>
+                <h4 class="ion-text-wrap blackColor">Declined Cases <br>by Customers</h4>
+              </ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+    
+        <ion-col size="3">
+          <ion-card class="whiteBackground">
+            <ion-item lines="none" class="whiteBackground">
+                <ion-thumbnail slot="start">
+                    <img src="assets/img/icon2.png" style="width:33px; height:33px;" />
+                    
+                  </ion-thumbnail>
+              <ion-label>
+                <h2 class="whiteColor">KES {{responseFromApi.totDisbAmtThisMonth}}</h2>
+                <h4 class="ion-text-wrap blackColor">Total Amount Disbursed during the Month</h4>
+              </ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+    
+        <ion-col size="3">
+          <ion-card class="whiteBackground">
+            <ion-item lines="none" class="whiteBackground">
+                <ion-thumbnail slot="start">
+                    <img src="assets/img/icon2.png" style="width:33px; height:33px;" />
+                    
+                  </ion-thumbnail>
+              <ion-label>
+                <h2 class="whiteColor">{{responseFromApi.loanAcctThisMonth}}</h2>
+                <h4 class="ion-text-wrap blackColor">Loan Account Created during the Month</h4>
+              </ion-label>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    
+      <div class="graph whiteBackground">
+      <digital-app-skeleton *ngIf="showSkeleton"></digital-app-skeleton>
+        <ion-row *ngIf="responseFromApi">
+          <ion-col size="6">
+                  <h3> Applications Pending in Stages</h3>
+                    <canvas #pending></canvas>
+          </ion-col>
+          <ion-col size="6">
+                <h3>Application Processing Completed within Days</h3>
+                <canvas #contractAmt></canvas>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    </ion-content> --> 

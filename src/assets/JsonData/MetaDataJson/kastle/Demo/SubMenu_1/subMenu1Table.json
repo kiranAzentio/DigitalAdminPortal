@@ -1,0 +1,214 @@
+[
+  {
+    "tableMetaData": [
+      {
+        "field": "radioBoxText",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "radioBoxText"
+      },
+      {
+        "field": "actions1",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "actionsText"
+      },
+      {
+        "field": "companycode",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      },
+      {
+        "field": "installedDate",
+        "header": "",
+        "headerType": "date",
+        "bodyType": "dateText"
+      },
+      {
+        "field": "status",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "statusText"
+      },
+      {
+        "field": "baseCurrency",
+        "header": "",
+        "headerType": "text",
+        "bodyType": "text"
+      }
+    ],
+    "tableMetaDataFieldNameLang": [
+      {
+        "field": "companycode",
+        "header": "Colum 1"
+      },
+      {
+        "field": "actions1",
+        "header": "Actions"
+      },
+      {
+        "field": "installedDate",
+        "header": "Created Date"
+      },
+      {
+        "field": "status",
+        "header": "Status"
+      },
+      {
+        "field": "baseCurrency",
+        "header": "Currency"
+      }
+    ],
+    "filterData": [
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "companycode",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "date",
+        "value": null,
+        "tableMetaDataField": "installedDate",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "status",
+        "maxLength": "100"
+      },
+      {
+        "title": "",
+        "placeholder": "",
+        "type": "text",
+        "value": null,
+        "tableMetaDataField": "baseCurrency",
+        "maxLength": "100"
+      }
+    ],
+    "filterDataFieldNameLang": [
+      {
+        "tableMetaDataField": "companycode",
+        "title": "Column Name",
+        "placeholder": "Enter Colum Name"
+      },
+      {
+        "tableMetaDataField": "installedDate",
+        "title": "Date",
+        "placeholder": "Select Date"
+      },
+      {
+        "tableMetaDataField": "status",
+        "title": "Status",
+        "placeholder": "Enter Status"
+      },
+      {
+        "tableMetaDataField": "baseCurrency",
+        "title": "Currency",
+        "placeholder": "Enter Currency"
+      }
+    ],
+    "tableTitle": "This Is Sub Demo 1",
+    "commonLangConfiguration": {
+      "searchPlaceholder": "Global Search"
+    },
+    "tableConfigurationData": {
+      "showDownLoadFlag": true,
+      "showDownLoadPdf": true,
+      "showDownLoadExcel": true,
+      "showDownLoadCsv": true,
+      "showSearchBar": true,
+      "showCustomFilter": true,
+      "showSerialNumber": true,
+      "showPaginator": true,
+      "showSortIcon": true,
+      "showActionsAdd": true,
+      "showEdit": true,
+      "showDelete": true,
+      "showActions": true,
+      "downloadData": [],
+      "filteredTableData": [],
+      "rowsPerPageOptions": [10, 25, 50],
+      "rows": "5",
+      "dataKey": "id",
+      "apiUrlAdd": "screenconfig",
+      "apiUrlAddReqMetaData": {
+        "screenConfigId": 62,
+        "langId": null
+      },
+      "apiUrlEdit": "screenconfig",
+      "apiUrlEditReqMetaData": {
+        "screenConfigId": 63,
+        "langId": null
+      },
+      "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+      "apiUrlEditReqSavedData": [
+        {
+          "queryId": "208",
+          "transactionId": "1234"
+        },
+        {
+          "queryId": 0,
+          "transactionId": "123456"
+      }
+      ],
+      "apiUrlEditReqSavedDataMetaData": [
+        {
+          "fieldMapping": "id",
+          "value": "",
+          "reqKeyName": ":id"
+        }
+      ],
+      "apiSaveDataUrl": "querydata-save",
+      "apiSaveDataUrlReqData": {
+        "queryId": "209",
+        "queryId2": 0,
+        "transactionId": "123456"
+      },
+      "apiUpdateDataUrl": "querydata-update",
+      "apiUpdateDataUrlReqData": {
+        "queryId": "210",
+        "queryId2": 0,
+        "queryId3": 0,
+        "transactionId": "123456"
+      },
+      "apiDeleteDataUrl": "querydata-update",
+      "apiDeleteDataUrlReqData": {
+        "queryId": "211",
+        "transactionId": "123456"
+      },
+      "dependantGrid": false,
+      "dependantGridMetaData": null,
+      "dependantGridReqObj": null,
+      "dependantGridUrl": null,
+      "submitCustomDataManupulation": {
+        "singleLevel": [
+          {
+            "fieldName": "installedDate",
+            "dateFormatConversion": "date"
+          }
+        ],
+        "arrayLevel": []
+      }
+    },
+
+    "jsonTableData": [
+      {
+        "id": "test",
+        "srCode": "test",
+        "valueForInterface": "test",
+        "displayCode": "test",
+        "status": "Active",
+        "statusId": "1"
+      }
+    ]
+  }
+]

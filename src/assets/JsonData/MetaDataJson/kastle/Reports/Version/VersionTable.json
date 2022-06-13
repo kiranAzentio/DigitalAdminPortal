@@ -1,0 +1,183 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "releaseNo",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "releaseDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "typeOfRel",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            },
+            {
+                "field": "installedDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "comments",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": " Id"
+            },
+            {
+                "field": "releaseNo",
+                "header": "Release No"
+            },
+            {
+                "field": "releaseDate",
+                "header": "Release Date"
+            },
+            {
+                "field": "typeOfRel",
+                "header": "Type Of Release"
+            },
+            {
+                "field": "installedDate",
+                "header": "Installed Date"
+            },
+            {
+                "field": "comments",
+                "header": "Comments"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "releaseDate",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "typeOfRel",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "releaseDate",
+                "title": "Release Date",
+                "placeholder": "Enter Release Date"
+            },
+            {
+                "tableMetaDataField": "typeOfRel",
+                "title": "Type Of Release",
+                "placeholder": "Enter Type Of Release"
+            }
+        ],
+        "tableTitle": "DATABASE - list of Version",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "kastle/Reports/ErrorCodes/ErrorCodes_ADD": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "kastle/Reports/ErrorCodes/ErrorCodes_EDIT": "key-value-edit-screen",
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": 0,
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "errorCode": "EVC0010",
+                "errorDesc": "CIFID Not Found in ULS",
+                "errorComment": "",
+                "status": "Active",
+                "statusId": "1"
+            }
+        ]
+    }
+]

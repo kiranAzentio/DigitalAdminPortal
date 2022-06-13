@@ -1,0 +1,359 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "UserLogId",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "FirstName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "LastName",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "LoginTime",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "IpAddress",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "UserLogId",
+                "header": "User Log Id"
+            },
+            {
+                "field": "FirstName",
+                "header": "First Name"
+            },
+            {
+                "field": "LastName",
+                "header": "Last Name"
+            },
+            {
+                "field": "LoginTime",
+                "header": "Login Time"
+            },
+            {
+                "field": "IpAddress",
+                "header": "Ip Address"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "id",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "UserLogId",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "FirstName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "LastName",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "LoginTime",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "IpAddress",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "id",
+                "title": "ID",
+                "placeholder": "Enter ID"
+            },
+            {
+                "tableMetaDataField": "UserLogId",
+                "title": "User Log Id",
+                "placeholder": "Enter User Log Id"
+            },
+            {
+                "tableMetaDataField": "FirstName",
+                "title": "First Name",
+                "placeholder": "Enter First Name"
+            },
+            {
+                "tableMetaDataField": "LastName",
+                "title": "Last Name",
+                "placeholder": "Enter Last Name"
+            },
+            {
+                "tableMetaDataField": "LoginTime",
+                "title": "Login Time",
+                "placeholder": "Enter Login Time"
+            },
+            {
+                "tableMetaDataField": "IpAddress",
+                "title": "Ip Address",
+                "placeholder": "Enter Ip Address"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - ALL Users",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEdit": false,
+            "showDelete": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 27,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 28,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "81",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "82",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "83",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+        },
+        "jsonTableData": [
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "System",
+                "MiddleName": "",
+                "LastName": "Administrator",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "10.200.16.73"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "System",
+                "MiddleName": "",
+                "LastName": "Administrator",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "10.200.16.73"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "Smit",
+                "MiddleName": "",
+                "LastName": "Jass",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "192.168.0.106"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "System",
+                "MiddleName": "",
+                "LastName": "Administrator",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "192.168.0.106"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "Smit",
+                "MiddleName": "",
+                "LastName": "Jass",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "192.168.0.106"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "Smit",
+                "MiddleName": "",
+                "LastName": "Jass",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "192.168.0.106"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "Smit",
+                "MiddleName": "",
+                "LastName": "Jass",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "192.168.0.106"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "Smit",
+                "MiddleName": "",
+                "LastName": "Jass",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "192.168.0.106"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "Smit",
+                "MiddleName": "",
+                "LastName": "Jass",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "192.168.0.106"
+            },
+            {
+                "UserLogId": "",
+                "CifId": "",
+                "FamilyName": "",
+                "FirstName": "System",
+                "MiddleName": "",
+                "LastName": "Administrator",
+                "LoginTime": "2021-09-27",
+                "IpAddress": "10.200.16.73"
+            }
+        ]
+    }
+]

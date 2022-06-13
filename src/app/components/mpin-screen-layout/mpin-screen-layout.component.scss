@@ -1,0 +1,132 @@
+ion-grid,
+ion-row {
+  // height: 100%;
+
+  img {
+    width: var(--img-logo);
+    height: var(--img-logo);
+  }
+
+  form {
+    .item-has-focus,
+    .item-has-value {
+      ion-input {
+        border-bottom: 1px solid var(--cs-background-accent);
+      }
+    }
+
+    ion-item {
+      --inner-padding-end: 0;
+      // margin-bottom: 8px;
+
+      ion-input {
+        --background: var(--cs-background-primary) !important;
+        border-bottom: 1px solid var(--cs-background-border);
+      }
+
+      ion-icon {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        z-index: 999;
+      }
+
+      // ion-label {
+      //   margin: 5px 0 0 0 !important;
+      //   transform: none;
+      // }
+     
+    }
+
+ }
+}
+.number-labels{
+  font-size: 17px !important;
+     text-transform: uppercase  !important;
+     margin-bottom: 7px  !important;
+ }
+ .m0{
+   margin-top: 0px !important;
+ }
+ .native-input.sc-ion-input-md{
+  margin-top: 0px !important;
+ }
+ 
+    // .x{
+    // width: 23%;
+    // height: 40px;
+    // margin: 1%;
+    // --background:#e1e1e1;
+    // --padding-start:7px;
+    // }
+    .otpField{
+      display:inline-flex;
+      width: 100%
+      }
+      .x{
+        width:24%;
+        margin-right: 1%;
+        text-align:center;
+       // border: solid 1px #8c8c8c;
+        // border-radius: 20px;
+        float: left;
+      }
+      .x:last-child{
+        margin-right: 0%;
+      }
+      .otp{
+       
+        margin-bottom: 25px;
+        font-size: 13px;
+      }
+    
+      .mb5{
+          margin-bottom: 5px;
+        }
+        .mb10{
+          margin-bottom: 10px;
+        }
+        .errorMsg{
+          font-size: 12px;
+            color: red;
+            font-style: italic;
+        }
+        .mt50{
+          margin-top: 50px !important;
+        }
+        ion-grid,
+        ion-row {
+          // height: 100%;
+        
+          img {
+            width: var(--img-logo);
+            height: var(--img-logo);
+          }
+        
+          form {
+            .item-has-focus,
+            .item-has-value {
+              ion-input {
+                border-bottom: 0px solid var(--cs-background-accent) !important;
+              }
+            }
+        
+            ion-item {
+              --inner-padding-end: 0;
+             
+        
+              ion-input {
+                --background: var(--cs-background-primary) !important;
+                border-bottom: 0px solid var(--cs-background-border)  !important;
+              }
+        
+            
+            
+            }
+        
+          
+        
+         
+          }
+        }
+  

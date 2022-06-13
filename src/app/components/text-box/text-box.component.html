@@ -1,0 +1,21 @@
+<ion-label [position]="appConfig.labelPosition" class="blackColor" *ngIf="showTitle">
+  {{title | translate}}
+</ion-label>
+
+<!-- text -->
+<ion-input class="height38" *ngIf="inputType == 'text' || inputType == 'password'" class="blackColor" [ngClass]="{'readonly': readonly}"
+  [type]="inputType == undefined ? 'text' : inputType" [inputmode]="inputmode" [(ngModel)]="enteredText" [disabled]="disabled"
+  (ionBlur)="emitBlurValue()" [readonly]="readonly" (ionInput)="onInputVal($event.target.value)" [placeholder]="placeholder | translate"
+  [maxlength]="maxlength" [minlength]="minlength" appBlockCopyCutPaste [blockCopyPasteProcessFlag]="blockCopyPasteProcessFlag">
+</ion-input>
+<!-- number -->
+<ion-input class="height38" *ngIf="inputType == 'number' " integerOnly class="blackColor" [ngClass]="{'readonly': readonly}"
+  [inputmode]="inputmode" [(ngModel)]="enteredText" [disabled]="disabled" (ionBlur)="emitBlurValue()" [readonly]="readonly"
+  (ionInput)="onInputVal($event.target.value)" [placeholder]="placeholder | translate" [maxlength]="maxlength" [minlength]="minlength">
+</ion-input>
+<!-- {{inputType |translate}} -->
+<!-- textarea -->
+<!-- <ion-textarea *ngIf="inputType == 'textarea'" rows="6" cols="20" [placeholder]="placeholder | translate"></ion-textarea> -->
+
+<ion-textarea *ngIf="inputType == 'textarea' " rows="3" cols="20"  [(ngModel)]="enteredText" (ionBlur)="emitBlurValue()"  (ionInput)="onInputVal($event.target.value)" [placeholder]="placeholder | translate">
+</ion-textarea>

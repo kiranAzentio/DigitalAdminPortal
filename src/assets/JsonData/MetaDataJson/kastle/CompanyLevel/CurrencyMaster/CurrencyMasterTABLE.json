@@ -1,0 +1,261 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "shortDescription",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "alphanumericCode",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "dropdown",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "shortDescription",
+                "header": "Short Description"
+            },
+            {
+                "field": "alphanumericCode",
+                "header": "Alphanumeric Code"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "id",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "shortDescription",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "alphanumericCode",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "id",
+                "title": "ID",
+                "placeholder": "Enter ID"
+            },
+            {
+                "tableMetaDataField": "shortDescription",
+                "title": "Short Description",
+                "placeholder": "Enter Short Description"
+            },
+            {
+                "tableMetaDataField": "alphanumericCode",
+                "title": "Alphanumeric Code",
+                "placeholder": "Enter Alphanumeric Code"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - List of Currencies",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Currency",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 10,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 11,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "36",
+                    "transactionId": "1234"
+                },
+                {
+                    "queryId": 0,
+                    "transactionId": "123456"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "33",
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "34",
+                "queryId2": 0,
+                "queryId3": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "122",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null
+           
+        },
+        "jsonTableData": [
+            {
+                "shortDescription": "Saudi Riyal",
+                "alphanumericCode": "SAR",
+                "createdDate": "2021-09-27",
+                "status": "Inactive",
+                "statusId": "2"
+            },
+            {
+                "shortDescription": "US Doller",
+                "alphanumericCode": "USD",
+                "createdDate": "2021-09-27",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "shortDescription": "Indian Rupee",
+                "alphanumericCode": "INR",
+                "createdDate": "2021-09-20",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "shortDescription": "Naira",
+                "alphanumericCode": "NGN",
+                "createdDate": "2021-09-20",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "shortDescription": "Kenyan Shilling",
+                "alphanumericCode": "KES",
+                "createdDate": "2021-09-20",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "shortDescription": "Bahraini Dinar",
+                "alphanumericCode": "BHD",
+                "createdDate": "2021-09-27",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "shortDescription": "UAE Dirham",
+                "alphanumericCode": "AED",
+                "createdDate": "2021-09-20",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "shortDescription": "Ghana Cedim",
+                "alphanumericCode": "GHS",
+                "createdDate": "2021-9-20",
+                "status": "Active",
+                "statusId": "1"
+            },
+            {
+                "shortDescription": "Philippine Peso",
+                "alphanumericCode": "PHP",
+                "createdDate": "2021-09-20",
+                "status": "Active",
+                "statusId": "1"
+            }
+        ]
+    }
+]

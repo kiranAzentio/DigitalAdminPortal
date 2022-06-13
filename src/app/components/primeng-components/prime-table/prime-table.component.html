@@ -1,0 +1,356 @@
+<!-- <ion-fab [vertical]=" 'bottom'" horizontal="end" slot="fixed"
+    *ngIf="showActionsAdd">
+    <ion-fab-button (click)="add()" class="" color="secondary">
+        <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+</ion-fab> -->
+<div>
+    <!-- <ion-card class="ion-margin"> -->
+    <!-- <ion-card-header> -->
+    <ion-grid>
+        <ion-row *ngIf="showTableName">
+            <ion-col size-xl="8" size-xs="12">
+                <!-- <ion-card-title> -->
+                <span class="cc_title">{{tableTitle}} </span>
+                <span *ngIf="showActionsAdd">
+                    <ion-button (click)="add()" class="addButton">
+                        <ion-icon slot="start" name="add"></ion-icon>
+                        Add
+                    </ion-button>
+                    <span *ngIf="appConfigService.getPlatformMobile()" style="font-size: 25px;
+                position: relative;
+                top: 8px;">
+                        &nbsp;
+                        <ion-icon *ngIf="showDownLoadCsv" slot="start" name="download-outline" (click)="table.exportCSV()" color="primary"></ion-icon>
+                    </span>
+                </span>
+                <!-- </ion-card-title> -->
+            </ion-col>
+            <ion-col size-xl="4" size-xs="12">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xl="8" size-md="12" class="ion-no-padding">
+                            <!-- <ion-col size-xl="12" size="12" size-md="6" class="ion-no-padding"> -->
+                            <div *ngIf="showSearchBar">
+                                <digital-text-box [showTitle]="false" [inputType]="'text'" [title]="" [placeholder]="searchPlaceholder" [(ngModel)]="searchPlaceholderValue"
+                                    [(enteredText)]="searchPlaceholderValue" [required]="false" name="searchfilter" [maxlength]="100"
+                                    (onInput)="globalInput($event)">
+                                </digital-text-box>
+                            </div>
+
+                        </ion-col>
+                        <ion-col size-xl="4" size-md="6" class="ion-no-padding" *ngIf="!appConfigService.getPlatformMobile() && showDownLoadCsv">
+                            <ion-button *ngIf="downloadData.length > 0" (click)="table.exportCSV()">
+                                <ion-icon slot="start" name="download-outline"></ion-icon>
+                                Export 
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-col>
+        </ion-row>
+
+        <p-accordion *ngIf="showCustomFilter">
+            <p-accordionTab [header]="'TABLE_SEARCH' | translate" [selected]="!appConfigService.getPlatformMobile()">
+                <ion-row>
+                    <ion-col *ngFor="let customfilter of customFilterData ;let c = index;" size-xs="6" size-md="2">
+                        <ion-label color="primary cc_label"> {{customfilter.title }}</ion-label>
+                        <div *ngIf="customfilter.type == 'text' " class="cc_marginTop5px">
+                            <digital-text-box [showTitle]="false" [inputType]="customfilter.type" [maxlength]="customfilter.maxlength == undefined ? '30' : customfilter.maxlength"
+                                [title]="customfilter.title" [placeholder]="customfilter.placeholder != undefined ? customfilter.placeholder : 'ENTER_TEXT_PLACEHOLDER' | translate"
+                                [(ngModel)]="customfilter.value" [(enteredText)]="customfilter.value" [required]="false" name="customfilter.title"
+                                [maxlength]="customfilter.maxLength" (onInput)="customInputChange($event,customfilter)">
+                            </digital-text-box>
+                        </div>
+                        <div *ngIf="customfilter.type == 'number' " class="cc_marginTop5px">
+                            <digital-text-box [showTitle]="false" [inputType]="customfilter.type" [maxlength]="customfilter.maxlength == undefined ? '30' : customfilter.maxlength"
+                                [title]="customfilter.title" [placeholder]="customfilter.placeholder != undefined ? customfilter.placeholder : 'ENTER_TEXT_PLACEHOLDER' | translate"
+                                [(ngModel)]="customfilter.value" [(enteredText)]="customfilter.value" [required]="false" name="customfilter.title"
+                                [maxlength]="customfilter.maxLength" (onInput)="customInputChange($event,customfilter)">
+                            </digital-text-box>
+                        </div>
+                        <div *ngIf="customfilter.type == 'currency' " class="cc_marginTop5px">
+                            <digital-text-box [showTitle]="false" [inputType]="customfilter.type" [maxlength]="customfilter.maxlength == undefined ? '30' : customfilter.maxlength"
+                                [title]="customfilter.title" [placeholder]="customfilter.placeholder != undefined ? customfilter.placeholder : 'ENTER_TEXT_PLACEHOLDER' | translate"
+                                [(ngModel)]="customfilter.value" [(enteredText)]="customfilter.value" [required]="false" name="customfilter.title"
+                                [maxlength]="customfilter.maxLength" (onInput)="customInputChange($event,customfilter)">
+                            </digital-text-box>
+                        </div>
+                        <div *ngIf="customfilter.type == 'date' " class="cc_marginTop5px">
+                            <digital-app-date style="width:100%; " [(selectedDate)]="customfilter.value" [(ngModel)]="customfilter.value" name="customfilter.title"
+                                [minDate]="customfilter.minDate == '' ? null : customfilter.minDate" [maxDate]="customfilter.maxDate == '' ? null : customfilter.maxDate"
+                                [required]="false" [title]="customfilter.title" [placeholder]="customfilter.placeholder" (selectedDateChange)="customselectedDateChange($event,customfilter)">
+                            </digital-app-date>
+                        </div>
+                        <div *ngIf="customfilter.type == 'dropdown' " class="cc_marginTop5px">
+                            <digital-cs-select-layout-1 #dropdownref [readonly]="false" [show]="false" style="width:100% !important" [title]="customfilter.label">
+                            </digital-cs-select-layout-1>
+                            <!-- <digital-cs-select-layout-1 #dropdownref [readonly]="false" [show]="false" style="width:100% !important" [title]="customfilter.label"
+                                [metaData]="customfilter.metdaData" [onPageLoadGetData]="customfilter.onPageLoadGetData" [formControlNameLabel]="customfilter.fieldJsonMapping"
+                                [apiUrl]="customfilter.apiUrl" [parentFormData]="dynamicForm.value " [placeholder]="customfilter.placeholder" [valueId]="customfilter.idToShow"
+                                [valueDesc]="customfilter.descriptionToShow" (onChange)="dropdownChange($event,customfilter, customfilter.fieldJsonMapping)" [formControlName]="customfilter.fieldJsonMapping"
+                                [value]="customfilter.value" [readonly]="customfilter.readonly" [apiUrl]="customfilter.apiUrl" [ConvertStringToInteger]="customfilter.ConvertStringToInteger"
+                                [metdaDataReq]="customfilter.metdaDataReq" [createMataDataReqOnCondition]="customfilter.createMataDataReqOnCondition">
+                               </digital-cs-select-layout-1> -->
+                        </div>
+
+                    </ion-col>
+                </ion-row>
+               
+            </p-accordionTab>
+        </p-accordion>
+      
+    </ion-grid>
+    <!-- </ion-card-header> -->
+
+    <!-- <ion-card-content> -->
+    <!-- {{tableSelectedValue | json}} -->
+    <!-- {{rows |json}} -->
+    <p-table #dt *ngIf="tableData != undefined" [columns]="tableMetaData" [value]="tableData" [(selection)]="tableSelectedValue"
+        [dataKey]="dataKey" styleClass="ui-table-customers" [rowHover]="true" [rows]="5" [showCurrentPageReport]="true" [rowsPerPageOptions]="rowsPerPageOptions"
+        [loading]="loading" [paginator]="paginator" [currentPageReportTemplate]="currentPageReportTemplate" [filterDelay]="0"
+        [globalFilterFields]="tableGlobalFilterFields" (onRowSelect)="onRowSelect($event)" (onRowUnselect)="onRowUnselect($event)"
+        [responsive]="true">
+        <!-- <ng-template pTemplate="caption">
+                <h1>temp1</h1>
+            </ng-template> -->
+        <ng-template pTemplate="caption" *ngIf="false">
+            <!-- <h1>temp2</h1> -->
+            <div class="table-header">
+                <div *ngIf="showTableName">
+                    <ion-row>
+                        <ion-col size="6">
+                            {{tableTitle}}
+
+                        </ion-col>
+
+                        <ion-col size="6">
+                            <div style="margin-top: 7%" class="ui-table-globalfilter-container" *ngIf="showSearchBar">
+                                <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" /> &nbsp; &nbsp;
+
+                                <button *ngIf="downloadData.length > 0" style="padding-left: 5%" type="button" pButton pRipple icon="pi pi-file-excel" (click)="exportExcel()"
+                                    class="p-button-success p-mr-2" pTooltip="XLS" tooltipPosition="bottom"></button>
+                            </div>
+
+
+                        </ion-col>
+
+                    </ion-row>
+                </div>
+                <div *ngIf="showActionsAdd">
+                    <ion-button color="secondary" (click)="add()" *ngIf="!appConfigService.getPlatformMobile()">Add</ion-button>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header" let-columns>
+            <!-- <h1>temp3</h1> -->
+            <tr *ngIf="tableData.length > 0">
+                <th style="width: 3rem" *ngIf="showcheckbox"></th>
+                <th [ngClass]="{'idClass':col.field == 'id', 'cap':col.bodyType== 'currencyText', 'radioTd':col.bodyType == 'radioBoxText', 'actionTd':col.bodyType == 'actionsText', 'dateTd':col.bodyType == 'dateText'}"
+                    *ngFor="let col of columns" [pSortableColumn]="col.field" [ngStyle]="{'width':col.width}">
+                    {{col.header}}
+
+                    <p-sortIcon *ngIf="showSortIcon" [field]="col.field"></p-sortIcon>
+                </th>
+
+            </tr>
+            <!-- filtering (kept false)-->
+            <tr *ngIf="false">
+                <th *ngIf="showcheckbox">
+                    <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+                </th>
+                <th *ngFor="let col of columns">
+                    <span [ngSwitch]="col.headerType">
+                        <!-- add serial number space here -->
+                        <ng-template [ngSwitchCase]="'text'">
+                            <input pInputText type="text" (input)="dt.filter($event.target.value, col.field, 'startsWith')" placeholder="Search by Name"
+                                class="ui-column-filter">
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'nestedText'">
+                            <input pInputText type="text" (input)="dt.filter($event.target.value, col.field.name, 'startsWith')" placeholder="Search by Name"
+                                class="ui-column-filter">
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'multiselect' ">
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'dropdown' ">
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'date' ">
+                        </ng-template>
+                        <ng-template *ngSwitchDefault>
+                            default ***
+                            <input pInputText type="text" (input)="dt.filter($event.target.value, col.field, 'startsWith')" placeholder="Search by Name"
+                                class="ui-column-filter">
+                        </ng-template>
+                    </span>
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-rowData let-columns="columns" let-i="rowIndex">
+            <!-- <h1>temp4</h1> -->
+            <tr class="ui-selectable-row" *ngIf="tableData.length > 0">
+                <td *ngIf="showcheckbox">
+                    <p-tableCheckbox [value]="rowData"></p-tableCheckbox>
+                </td>
+
+                <td *ngFor="let col of columns" [ngClass]="{'idClass':col.field == 'id','cap':col.bodyType == 'currencyText', 'radioTd':col.bodyType == 'radioBoxText', 'actionTd':col.bodyType == 'actionsText',  'dateTd':col.bodyType == 'dateText'}">
+                    <span [ngSwitch]="col.bodyType" class="mobileRowParent">
+                        <!-- RADIOBOX -->
+                        <ng-template [ngSwitchCase]=" 'radioBoxText' ">
+                            <p-tableRadioButton [value]="rowData" [disabled]="!rowData[col.field]">
+                            </p-tableRadioButton>
+                        </ng-template>
+                        <!-- CHECKBOX -->
+                        <ng-template [ngSwitchCase]=" 'checkBoxText' ">
+                            <p-tableCheckbox [value]="rowData" [disabled]="!rowData[col.field]">
+                            </p-tableCheckbox>
+                        </ng-template>
+                        <!-- STRING -->
+                        <ng-template [ngSwitchCase]=" 'text' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <span *ngIf="rowData[col.field] != null && rowData[col.field] != '' ">
+                                {{rowData[col.field]}}
+                            </span>
+                            <span *ngIf="rowData[col.field] == null || rowData[col.field] == '' " class="centreClass1">
+                                -
+                            </span>
+                        </ng-template>
+                        <!-- STRING LINK-->
+                        <ng-template [ngSwitchCase]=" 'textLink' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <span class="linkClass" (click)="onLinkClick($event,rowData)" *ngIf="rowData[col.field] != null && rowData[col.field] != '' ">
+                                {{rowData[col.field]}}
+                            </span>
+                            <span *ngIf="rowData[col.field] == null || rowData[col.field] == '' " class="centreClass1">
+                                -
+                            </span>
+                        </ng-template>
+                        <!-- DATE -->
+                        <ng-template [ngSwitchCase]=" 'dateText' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <span *ngIf="rowData[col.field] != null && rowData[col.field] != '' ">
+                                {{ rowData[col.field] | date: appConfigService.getDateTypeFormat() }}
+                            </span>
+                            <span *ngIf="rowData[col.field] == null || rowData[col.field] == '' " class="centreClass1">
+                                -
+                            </span>
+                        </ng-template>
+                        <!-- CURRENCY -->
+                        <ng-template [ngSwitchCase]=" 'currencyText' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <span *ngIf="rowData[col.field] != null && rowData[col.field] != '' ">
+                                {{ rowData[col.field].currencyValue | customcurrency: rowData[col.field].currencyLabel :appConfigService.getCurrencyPipeDisplay():appConfigService.getCurrencyPipeLimit()}}
+                            </span>
+                            <span *ngIf="rowData[col.field].currencyValue == null || rowData[col.field].currencyValue == '' " class="centreClass1">
+                                -
+                            </span>
+                        </ng-template>
+                        <!-- STATUS -->
+                        <ng-template [ngSwitchCase]="'statusText' ">
+                            <!-- <h1>{{rowData[col.field] === 'A' ? 'Active' : 'Inactive' }}</h1> -->
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <div class="statusMobile" [class]="'customer-badge status-' + rowData[col.field]" *ngIf="rowData[col.field] != null && rowData[col.field] != '' ">
+                                <!-- {{rowData[col.field] === 'A' ? 'Active' : 'Inactive' }}
+                                            {{rowData[col.field] === 'X' ? 'Inactive' : 'Active' }} -->
+                                <!-- <div *ngIf="rowData[col.field] === 'A'"> {{rowData[col.field] === 'A' ? 'Active' : 'Inactive' | titlecase }}</div>
+                                        <div *ngIf="rowData[col.field] === 'X' "> {{rowData[col.field] === 'X' ? 'Inactive' : 'Active' | titlecase }}</div>
+                                        <div *ngIf="rowData[col.field] != 'A' && rowData[col.field] != 'X' ">{{rowData[col.field] | titlecase}} </div> -->
+                                <div>{{rowData[col.field] | titlecase }}</div>
+                            </div>
+                            <span *ngIf="rowData[col.field] == null || rowData[col.field] == '' " class="centreClass1">
+                                -
+                            </span>
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'flagText' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <span [class]="'flag flag-' + rowData[col.field].code"></span>
+                            <span style="vertical-align: middle; margin-left: .5em">{{rowData[col.field].name}}</span>
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'imgText' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <img [alt]="rowData[col.field].name" src="assets/showcase/images/demo/avatar/&#123;&#123;rowData[col.field].image&#125;&#125;"
+                                width="32" style="vertical-align: middle" />
+                            <span style="vertical-align: middle; margin-left: .5em">{{rowData[col.field].name}}</span>
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'progressbar' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <p-progressBar [value]="rowData[col.field]" [showValue]="false"></p-progressBar>
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'viewFile' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+                            <span style="cursor: pointer;    color: blue;
+                                    text-decoration: underline;
+                                    font-weight: 500;
+                                    cursor: pointer;
+                                    font-style: oblique;" (click)="viewFileScreen(rowData[col.field])">View File</span>
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'fileText' ">
+                            <span class="ui-column-title">{{col.header}}</span>
+
+                            <div style="display: inline-flex;">
+                                <!-- DELETE -->
+                                <div *ngIf="rowData[col.field].actionsView" (click)="onFileViewClk(rowData,rowData[col.field])" style="
+                                        margin-right: 10px;">
+                                    <!-- VIEW -->
+                                    <div class="backInputClass backInputClassView">
+                                        <span class="uploadBtnText">
+                                            VIEW
+                                        </span>
+                                    </div>
+                                </div>
+                                <div *ngIf="rowData[col.field].actionsUpload;let z = index;">
+                                    <div class="inputWrapper">
+                                        <div class="backInputClass">
+                                            <span class="uploadBtnText">
+                                                UPLOAD
+                                            </span>
+                                        </div>
+                                        <input class="inputActual" #fileView type="file" *ngIf="rowData[col.field].showFileInput" accept="image/jpeg,image/png,application/pdf"
+                                            (change)="onInputFileUpload($event,rowData,rowData[col.field],z)">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div *ngIf="rowData[col.field].fileName != null" style="color:blue;margin-top:10px">
+                                {{rowData[col.field].fileName}}
+                            </div>
+
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'moreDetailsText' ">
+
+                            <ion-button (click)="moreDetailsClk(rowData)">More details</ion-button>
+
+                        </ng-template>
+
+                        <ng-template [ngSwitchCase]="'moreDetailsText2' ">
+                            <ion-button (click)="moreDetailsClk(rowData)">Track Journey</ion-button>
+
+                            <ion-button (click)="moreDetailsClkTwo(rowData)">View Workflow</ion-button>
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'cancelApplication' ">
+                            <ion-button (click)="cancelApplication(rowData)" *ngIf="rowData[col.field]">Cancel Application</ion-button>
+                        </ng-template>
+                        <ng-template [ngSwitchCase]="'actionsText' " width="80px">
+                            <button *ngIf="rowData[col.field].showEdit" pButton type="button" class="p-button-secondary edit" icon="pi pi-pencil" (click)="edit(rowData)"></button>
+                            &nbsp;
+                            <button *ngIf="rowData[col.field].showDelete" pButton type="button" class="p-button-secondary delete" icon="pi pi-trash"
+                                (click)="delete(rowData)"></button>
+                        </ng-template>
+
+                        <span *ngSwitchDefault>
+                            DEF*** {{rowData[col.field]}}
+                        </span>
+                    </span>
+
+                </td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <!-- <h1>temp5</h1> -->
+            <tr *ngIf="!showCustomFilter">
+                <td colspan="12">{{noRecordsFound}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+    <!-- </ion-card-content> -->
+    <!-- </ion-card> -->
+</div>

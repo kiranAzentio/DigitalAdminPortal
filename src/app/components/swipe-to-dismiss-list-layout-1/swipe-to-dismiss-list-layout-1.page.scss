@@ -1,0 +1,54 @@
+/* Style component 1
+========================================================*/
+
+ion-list-header {
+  overflow: visible;
+
+  ion-button {
+    align-self: flex-end;
+  }
+}
+
+ion-item {
+  --background: var(--cs-background-primary);
+}
+
+ion-item-options {
+  border-bottom: 1px solid var(--cs-background-border) !important;
+}
+
+/* Style component 2
+========================================================*/
+
+ion-item {
+  --background: var(--cs-background-primary);
+}
+
+ion-item-options {
+  border-bottom: 1px solid var(--cs-background-border) !important;
+}
+
+.listStyle{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  border-radius: 4px;
+  margin:10px 0;
+  border:solid 1px #ececec;
+}
+
+.list-md-lines-full .item, .list-md .item-lines-full {
+  --border-width: 0 0 0px 0;
+}
+
+.item-options-end ion-item-option{
+  margin-bottom: -2px;
+}
+
+
+
+/*
+ .item-options-end ion-item-option:last-child{
+   margin-bottom: 9px;
+ }
+ */
+
+

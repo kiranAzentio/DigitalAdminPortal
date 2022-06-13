@@ -1,0 +1,218 @@
+[
+  {
+    "tableMetaData": [
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "id",
+        "identifier": "textbox",
+        "fieldJsonMapping": "id",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "firstName",
+        "identifier": "textbox",
+        "fieldJsonMapping": "firstName",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "wrongPassword",
+        "identifier": "textbox",
+        "fieldJsonMapping": "wrongPassword",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "wrongOtp",
+        "identifier": "textbox",
+        "fieldJsonMapping": "wrongOtp",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "input",
+        "label": "",
+        "placeholder": "",
+        "inputType": "text",
+        "name": "timestamp",
+        "identifier": "textbox",
+        "fieldJsonMapping": "timestamp",
+        "value": "",
+        "fieldArrayNestedData": [],
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": ""
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      },
+      {
+        "type": "toggle",
+        "label": " ",
+        "placeholder": "",
+        "inputType": "toggle",
+        "name": "status",
+        "identifier": "toggle",
+        "fieldJsonMapping": "status",
+        "value": "A",
+        "onPageLoadGetData": true,
+        "ShowToggle": true,
+        "apiUrl": "querydata-by-queryid-metadata",
+        "metdaDataReq": {
+          "queryId": "5",
+          "transactionId": "1234"
+        },
+        "onChangeMetaData": [],
+        "checkedToogleId": "A",
+        "uncheckedToogleId": "X",
+        "metdaData": [],
+        "idToShow": "id",
+        "descriptionToShow": "label",
+        "validations": [
+          {
+            "name": "required",
+            "validator": "required",
+            "message": "Name Required"
+          },
+          {
+            "name": "not in use",
+            "validator": "not in use",
+            "message": ""
+          }
+        ]
+      }
+    ],
+    "tableMetaDataFieldNameLang": [
+      {
+        "fieldJsonMapping": "id",
+        "label": "Id",
+        "placeholder": "Enter Id",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "firstName",
+        "label": "First Name",
+        "placeholder": "Enter First Name",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "wrongPassword",
+        "label": "Wrong Password",
+        "placeholder": "Enter Wrong Password",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "wrongOtp",
+        "label": "Wrong OTP",
+        "placeholder": "Enter Wrong OTP",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "timestamp",
+        "label": "Timestamp",
+        "placeholder": "Enter Timestamp",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      },
+      {
+        "fieldJsonMapping": "status",
+        "label": "Status",
+        "placeholder": "Select Status",
+        "validations": [
+          "This field is required",
+          "Patter is invalid"
+        ],
+        "fieldArrayNestedDataNameLang": []
+      }
+    ]
+  }
+]

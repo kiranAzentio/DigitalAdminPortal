@@ -1,0 +1,493 @@
+[
+    {
+        "tableMetaData": [
+            {
+                "field": "radioBoxText",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "radioBoxText"
+            },
+            {
+                "field": "actions",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "actionsText"
+            },
+            {
+                "field": "id",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            { "field": "companyId", "header": "", "headerType": "text", "bodyType": "text"},
+            {
+                "field": "promotionCode",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "startDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "endDate",
+                "header": "",
+                "headerType": "date",
+                "bodyType": "dateText"
+            },
+            {
+                "field": "type",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "priority",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "status",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "statusText"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "id",
+                "header": "Id"
+            },
+            { "field": "companyId", "header":"Company Name"},
+            {
+                "field": "promotionCode",
+                "header": "Promotion Code"
+            },
+            {
+                "field": "startDate",
+                "header": "Start Date"
+            },
+            {
+                "field": "endDate",
+                "header": "End Date"
+            },
+            {
+                "field": "description",
+                "header": "Description"
+            },
+            {
+                "field": "type",
+                "header": "Type"
+            },
+            {
+                "field": "priority",
+                "header": "Priority"
+            },
+            {
+                "field": "actions",
+                "header": "Actions"
+            },
+            {
+                "field": "status",
+                "header": "Status"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "promotionCode",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "startDate",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "date",
+                "value": null,
+                "tableMetaDataField": "endDate",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "type",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "priority",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "status",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "promotionCode",
+                "title": "Promotion Code",
+                "placeholder": "Enter Promotion Code"
+            },
+            {
+                "tableMetaDataField": "startDate",
+                "title": "Start Date",
+                "placeholder": "Enter Start Date"
+            },
+            {
+                "tableMetaDataField": "endDate",
+                "title": "End Date",
+                "placeholder": "Enter End Date"
+            },
+            {
+                "tableMetaDataField": "type",
+                "title": "Type",
+                "placeholder": "Enter Type"
+            },
+            {
+                "tableMetaDataField": "priority",
+                "title": "Priority",
+                "placeholder": "Enter Priority"
+            },
+            {
+                "tableMetaDataField": "status",
+                "title": "Status",
+                "placeholder": "Enter Status"
+            }
+        ],
+        "tableTitle": "DATABASE - Promotions List",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "changeModalTitle": true,
+            "modalTitle":"Promotions",
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": true,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 36,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 37,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "querydata-by-queryid-multiple-metadata",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "110",
+                    "transactionId": "1234"
+                },
+                {
+                    "queryId": "112",
+                    "transactionId": "123456",
+                    "arrayName": "companyDetails"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "querydata-save",
+            "apiSaveDataUrlReqData": {
+                "queryId": "113",
+                "queryId2": "114",
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "querydata-update",
+            "apiUpdateDataUrlReqData": {
+                "queryId": "115",
+                "queryId2": "116",
+                "queryId3": "114",
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "querydata-update",
+            "apiDeleteDataUrlReqData": {
+                "queryId": "117",
+                "transactionId": "123456"
+            },
+            "dependantGrid": false,
+            "dependantGridMetaData": null,
+            "dependantGridReqObj": null,
+            "dependantGridUrl": null,
+            "submitCustomValidation": true,
+            "submitCustomValidationMetaData": {
+                "singleLevel": [],
+                "arrayLevel": [
+                    {
+                        "duplicateCheck": true,
+                        "arrayFieldJsonMapping": "companyDetails",
+                        "fieldJsonMapping": "language"
+                    }
+                ]
+            },
+            "submitCustomDataManupulation":{
+                "singleLevel": [ 
+                    {
+                        "fieldName":"startDate",
+                        "dateFormatConversion": "date"
+                    },
+                    {
+                        "fieldName":"endDate",
+                        "dateFormatConversion": "dateTime"
+                    }
+                ],
+                "arrayLevel": []
+            }
+        },
+        "jsonTableData": [
+            {
+                "promotionCode": "test",
+                "startDate": "2021-09-20",
+                "endDate": "2021-09-20",
+                "description": "test",
+                "type": "test",
+                "priority": "test"
+            }
+        ]
+    },
+    {
+        "tableMetaData": [
+            {
+                "field": "heading",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "group",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "description",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "text"
+            },
+            {
+                "field": "url",
+                "header": "",
+                "headerType": "text",
+                "bodyType": "textLink"
+            }
+        ],
+        "tableMetaDataFieldNameLang": [
+            {
+                "field": "heading",
+                "header": "Heading"
+            },
+            {
+                "field": "group",
+                "header": " Group"
+            },
+            {
+                "field": "description",
+                "header": "Description"
+            },
+            {
+                "field": "url",
+                "header": "URL"
+            }
+        ],
+        "filterData": [
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "heading",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "group",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "description",
+                "maxLength": "100"
+            },
+            {
+                "title": "",
+                "placeholder": "",
+                "type": "text",
+                "value": null,
+                "tableMetaDataField": "url",
+                "maxLength": "100"
+            }
+        ],
+        "filterDataFieldNameLang": [
+            {
+                "tableMetaDataField": "heading",
+                "title": "Heading",
+                "placeholder": "Enter Heading"
+            },
+            {
+                "tableMetaDataField": "group",
+                "title": " Group",
+                "placeholder": "Enter Group"
+            },
+            {
+                "tableMetaDataField": "description",
+                "title": "Description",
+                "placeholder": "Enter Description"
+            },
+            {
+                "tableMetaDataField": "url",
+                "title": "URL",
+                "placeholder": "Enter URL"
+            }
+        ],
+        "tableTitle": "DATABASE - Promotions Details",
+        "commonLangConfiguration": {
+            "searchPlaceholder": "Global Search"
+        },
+        "tableConfigurationData": {
+            "showDownLoadFlag": true,
+            "showDownLoadPdf": true,
+            "showDownLoadExcel": true,
+            "showDownLoadCsv": true,
+            "showSearchBar": true,
+            "showCustomFilter": true,
+            "showSerialNumber": true,
+            "showPaginator": true,
+            "showSortIcon": true,
+            "showActionsAdd": false,
+            "showEditNOTINUSE": true,
+            "showDeleteNOTINUSE": true,
+            "showActions": true,
+            "downloadData": [],
+            "filteredTableData": [],
+            "rowsPerPageOptions": [
+                10,
+                25,
+                50
+            ],
+            "rows": "5",
+            "dataKey": "id",
+            "apiUrlAdd_DELETE_IT_LATER": "key-value-screen",
+            "apiUrlAdd": "screenconfig",
+            "apiUrlAddReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEdit": "screenconfig",
+            "apiUrlEditReqMetaData": {
+                "screenConfigId": 0,
+                "langId": null
+            },
+            "apiUrlEditSavedData": "key-value-edit-screen-saved-data",
+            "apiUrlEditReqSavedData": [
+                {
+                    "queryId": "not in use",
+                    "transactionId": "1234"
+                }
+            ],
+            "apiUrlEditReqSavedDataMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "apiSaveDataUrl": "SAVE_URL_COMES_HERE",
+            "apiSaveDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiUpdateDataUrl": "UPDATE_URL_COMES_HERE",
+            "apiUpdateDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "apiDeleteDataUrl": "DELETE_URL_COMES_HERE",
+            "apiDeleteDataUrlReqData": {
+                "queryId": 0,
+                "queryId2": 0,
+                "transactionId": "123456"
+            },
+            "dependantGrid": true,
+            "dependantGridMetaData": [
+                {
+                    "fieldMapping": "id",
+                    "value": "",
+                    "reqKeyName": ":id"
+                }
+            ],
+            "dependantGridReqObj": {
+                "queryId": "109",
+                "transactionId": "1234"
+            },
+            "dependantGridUrl": "querydata-by-queryid-metadata",
+            "submitCustomValidation": false,
+            "submitCustomValidationMetaData": null
+        },
+        "jsonTableData": [
+            {
+                "heading": "test",
+                "group": "Test",
+                "description": "test",
+                "url": "test"
+            }
+        ]
+    }
+]

@@ -1,0 +1,340 @@
+<form [formGroup]="dynamicForm" novalidate *ngIf="dynamicForm">
+	<ion-grid>
+		<ion-row>
+				<!-- {{fields | json}} -->
+			<ng-container *ngFor="let controls of fields">
+				
+				<!-- <ion-col size-xl="6" size-lg="6" size-sm="12" size-xs="12"  *ngIf="controls.identifier != 'hidden'"> -->
+				<ion-col [attr.size]="controls.identifier == 'array' ? 12 : xl"  *ngIf="controls.identifier != 'hidden'">
+					<div [ngSwitch]="controls.identifier">
+						<div *ngSwitchCase="'textbox'">
+							<ion-label>{{ controls.label }}
+								<span style="color: Red;" *ngIf="controls.validations[0].validator == 'required'">*</span>
+								<span style="color: black;" *ngIf="controls.validations[0].validator == 'not in use'">(optional)</span>
+							</ion-label>
+							<br>
+							<!-- {{controls.maxlength}} -->
+							<digital-text-box [showTitle]="false" [inputType]="'text'" [formControlName]="controls.fieldJsonMapping" [customValidation]="false"
+							 [emailValidation]="false" [placeholder]="controls.placeholder" [readonly]="controls.readonly" (ionBlur)="CheckUniqueKey(controls.fieldJsonMapping)">
+							</digital-text-box>
+							<!-- 
+							test1 - {{dynamicForm.controls[controls.fieldJsonMapping].value | json}}
+							<div>{{ dynamicForm.controls[controls.fieldJsonMapping].errors | json }}</div> -->
+							<!-- pattern- {{dynamicForm.controls[controls.fieldJsonMapping].errors[validation.name] | json}} -->
+							<ng-container *ngFor="let validation of controls.validations">
+								<!-- <span *ngIf="dynamicForm.controls[controls.fieldJsonMapping].touched && dynamicForm.controls[controls.fieldJsonMapping].errors"> -->
+								<span *ngIf="isFormSubmitted && dynamicForm.controls[controls.fieldJsonMapping].errors">
+									<p style="color: Red;" *ngIf="isFormSubmitted && dynamicForm.controls[controls.fieldJsonMapping].errors[validation.name]">
+										{{ validation.message }}
+
+									</p>
+								</span>
+
+								<!-- <span *ngIf="dynamicForm.controls[controls.fieldJsonMapping].errors && (dynamicForm.controls[controls.fieldJsonMapping].touched || dynamicForm.controls[controls.fieldJsonMapping].dirty)">
+									<div *ngIf="dynamicForm.controls[controls.fieldJsonMapping].errors?.required">
+										<p style="color: Red;" >
+											this filed is mendatory
+										</p>
+									</div>
+									<div *ngIf="dynamicForm.controls[controls.fieldJsonMapping].errors?.pattern">
+										<p style="color: Red;" >
+											please provide valid details
+										</p>
+									</div>
+								</span> -->
+
+							</ng-container>
+						</div>
+
+						<div *ngSwitchCase="'currency'">
+							<ion-label> {{ controls.label }}
+								<span style="color: Red;" *ngIf="controls.validations[0].validator == 'required'">*</span>
+								<span style="color: black;" *ngIf="controls.validations[0].validator == 'not in use'">(optional)</span>
+							</ion-label>
+
+							<input class="form-control" type="text" appCurrencyMask [formControlName]="controls.fieldJsonMapping" id="currency-number"
+							/>
+						</div>
+						<!-- DROPDOWN -->
+						<div *ngSwitchCase="'dropdown'">
+							<!-- [data]="controls.dataArray" -->
+							<!-- <br/>
+							{{controls.ConvertStringToInteger}} -->
+							<ion-label>{{ controls.label }}
+								<span style="color: Red;" *ngIf="controls.validations[0].validator == 'required'">*</span>
+								<span style="color: black;" *ngIf="controls.validations[0].validator == 'not in use'">(optional)</span>
+							</ion-label>
+							<digital-cs-select-layout-1 #dropdownref [readonly]="false" [show]="false" style="width:100% !important" [title]="controls.label"
+							 [metaData]="controls.metdaData" [onPageLoadGetData]="controls.onPageLoadGetData" [formControlNameLabel]="controls.fieldJsonMapping"
+							 [apiUrl]="controls.apiUrl" [parentFormData]="dynamicForm.value " [placeholder]="controls.placeholder" [valueId]="controls.idToShow"
+							 [valueDesc]="controls.descriptionToShow" (onChange)="dropdownChange($event,controls, controls.fieldJsonMapping)" [formControlName]="controls.fieldJsonMapping"
+							 [value]="controls.value" [readonly]="controls.readonly" [apiUrl]="controls.apiUrl" [ConvertStringToInteger]="controls.ConvertStringToInteger"
+							 [metdaDataReq]="controls.metdaDataReq" [createMataDataReqOnCondition]="controls.createMataDataReqOnCondition">
+							</digital-cs-select-layout-1>
+
+							<ng-container *ngFor="let validation of controls.validations">
+								<!-- <span *ngIf="dynamicForm.controls[controls.fieldJsonMapping].touched && dynamicForm.controls[controls.fieldJsonMapping].errors"> -->
+								<span *ngIf="isFormSubmitted && dynamicForm.controls[controls.fieldJsonMapping].errors">
+									<p style="color: Red;" *ngIf="isFormSubmitted && dynamicForm.controls[controls.fieldJsonMapping].errors[validation.name]">
+										{{ validation.message }}
+									</p>
+								</span>
+							</ng-container>
+						</div>
+						<!-- RADIO -->
+						<div *ngSwitchCase="'radio'">
+							<ion-label>{{ controls.label }}
+								<span style="color: Red;" *ngIf="controls.validations[0].validator == 'required'">*</span>
+								<span style="color: black;" *ngIf="controls.validations[0].validator == 'not in use'">(optional)</span>
+							</ion-label>
+							<digital-cs-radio-button-layout-1 #RadioRef [title]="controls.label" [metaData]="controls.metdaData" [onPageLoadGetData]="controls.onPageLoadGetData"
+							 [valueVaraible]="controls.value" [apiUrl]="controls.apiUrl" [parentFormData]="dynamicForm.value" [valueId]="controls.idToShow"
+							 [valueDesc]="controls.descriptionToShow" (onItemClick)="radioActionFunc($event,controls)" [toggle]="controls.ShowToggle"
+							 [formControlName]="controls.fieldJsonMapping" [required]="true">
+							</digital-cs-radio-button-layout-1>
+						</div>
+						<!-- TOOGLE -->
+						<div *ngSwitchCase="'toggle'">
+							<ion-label>{{ controls.label }}
+								<span style="color: Red;" *ngIf="controls.validations[0].validator == 'required'">*</span>
+								<span style="color: black;" *ngIf="controls.validations[0].validator == 'not in use'">(optional)</span>
+							</ion-label>
+							<digital-cs-radio-button-layout-1 #RadioRef1 [title]="controls.label" [metaData]="controls.metdaData" [onPageLoadGetData]="controls.onPageLoadGetData"
+							 [valueVaraible]="controls.value" [checkedToogleId]="controls.checkedToogleId" [uncheckedToogleId]="controls.uncheckedToogleId"
+							 [apiUrl]="controls.apiUrl" [parentFormData]="dynamicForm.value" [valueId]="controls.idToShow" [valueDesc]="controls.descriptionToShow"
+							 (onItemClick)="ToggleActionFunc($event,controls,fields)" [toggle]="controls.ShowToggle" [formControlName]="controls.fieldJsonMapping"
+							 [formControlNameLabel]="controls.fieldJsonMapping" [required]="true">
+							</digital-cs-radio-button-layout-1>
+						</div>
+						<!-- DATE -->
+						<div *ngSwitchCase="'date'">
+							<ion-label>{{ controls.label }}
+								<span style="color: Red;" *ngIf="controls.validations[0].validator == 'required'">*</span>
+								<span style="color: black;" *ngIf="controls.validations[0].validator == 'not in use'">(optional)</span>
+							</ion-label>
+							<digital-app-date style="width:100%; " #dateRef [formControlNameLabel]="controls.fieldJsonMapping" [formControlName]="controls.fieldJsonMapping"
+							 [onPageLoadGetData]="controls.onPageLoadGetData" [minDate]="controls.minDate == '' ? null : controls.minDate" [maxDate]="controls.maxDate == '' ? null : controls.maxDate"
+							 [title]="controls.title" [showTime]="controls.showTime" [placeholder]="controls.placeholder" [dynamicForm]="dynamicForm"
+							 (selectedDateChange)="customselectedDateChange($event,controls,fields)" [ngClass]="(controls.fieldJsonMapping=='synchon')?'hideCalender':''">
+							</digital-app-date>
+						</div>
+						<!-- FILE UPLOAD -->
+						<div *ngSwitchCase="'file'">
+							<ion-label>{{ controls.label }}
+								<span style="color: Red;" *ngIf="controls.validations[0].validator == 'required'">*</span>
+								<span style="color: black;" *ngIf="controls.validations[0].validator == 'not in use'">(optional)</span>
+							</ion-label>
+							<!-- controls.accetpFileType - {{controls.accetpFileType}} -->
+							<!-- <br/> -->
+							<!-- controls.title - {{controls.title}} -->
+							<!-- <br/> -->
+							<!-- control name-{{controls.fieldJsonMapping}} -->
+							<!-- control value -{{dynamicForm.value[controls.fieldJsonMapping] |json}} -->
+							<!-- {{dynamicForm.controls[controls.fieldJsonMapping].errors | json}} -->
+							
+							<div *ngIf="dynamicForm.value[controls.fieldJsonMapping] != null" (click)="viewFile(dynamicForm.value[controls.fieldJsonMapping])" class="viewFile">
+								<ion-icon slot="start" color="primary" name="reader-outline"></ion-icon>
+								<ion-label class="ion-no-margin ion-padding-start blackColor">View File</ion-label>
+							</div>
+							<input type="file" class="inputActual" name="filename" #fileInput formControlNameLabel="controls.fieldJsonMapping" [accept]="controls.accetpFileType"
+							 (change)="onInputFileUploadNew($event,controls,fields, null, null)">
+							<ng-container *ngFor="let validation of controls.validations">
+								<!-- <span *ngIf="dynamicForm.controls[controls.fieldJsonMapping].touched && dynamicForm.controls[controls.fieldJsonMapping].errors"> -->
+								<span *ngIf="isFormSubmitted && dynamicForm.controls[controls.fieldJsonMapping].errors">
+									<p style="color: Red;" *ngIf="isFormSubmitted && dynamicForm.controls[controls.fieldJsonMapping].errors[validation.name]">
+										{{ validation.message }}
+									</p>
+								</span>
+							</ng-container>
+						</div>
+						<ng-container *ngSwitchCase="'array'">
+							<ion-row>
+								<div style="background: #fff; box-shadow: 0px 0px 15px 0 #e7e7e7;border-radius: 5px;
+									padding: 10px; width: 100%;">
+									<!-- <ion-card> -->
+									<!-- <ion-card-content style="background: #f8f9fa;"> -->
+									<ion-item lines="none" class="ion-no-padding" color="transparent">
+										<ion-text color="primary">
+											<strong>{{controls.formArrayTitle}} </strong>
+										</ion-text>
+
+										<ion-button color="primary" slot="end" *ngIf="controls.showAddNestedFormButton" (click)="addNestedParentForm(controls, dynamicForm.controls[controls.fieldJsonMapping])">
+											<ion-icon name="add"></ion-icon> {{ controls.showAddNestedFormButtonLabel }}
+										</ion-button>
+
+										<!-- <ion-icon name="layers-outline" slot="end" size="large"></ion-icon> -->
+									</ion-item>
+									<div formArrayName="{{ controls.fieldJsonMapping }}">
+
+										<ion-row *ngFor="let nestedArray of dynamicForm.controls[controls.fieldJsonMapping].controls; index as i" [formGroupName]="i"
+										 class="ion-no-padding align-items-end">
+											<!-- class="ion-margin-top" -->
+											<ion-col size="11">
+												<ion-row>
+													<!-- [size-md]="nestedjson.identifier == 'hidden' ? 0 : 5" [size-sm]="nestedjson.identifier == 'hidden' ? 0 : 12" size="12" -->
+													<ng-container *ngFor="let nestedjson of controls.fieldArrayNestedData;let n = index;">
+														<!-- <ion-col [size-md]="6" [size-sm]="12" *ngIf="nestedjson.identifier != 'hidden'"> -->
+														<ion-col size-md="6" size-xs="12" *ngIf="nestedjson.identifier != 'hidden'">
+															<ng-container>
+																<div [ngSwitch]="nestedjson.identifier">
+																	<!-- hidden -->
+																	<!-- <div *ngSwitchCase="'hidden'">
+													  <input type='submit' style="opacity: 0;width: 0;" [formControlName]="nestedjson.fieldJsonMapping">
+													</div> -->
+																	<div *ngSwitchCase="'textbox'">
+																		<ion-label>{{ nestedjson.label }}
+																			<span style="color: Red;" *ngIf="nestedjson.validations[0].validator == 'required'">*</span>
+																			<span style="color: black;" *ngIf="nestedjson.validations[0].validator == 'not in use'">(optional)</span>
+																		</ion-label>
+																		<digital-text-box [showTitle]="false" [inputType]="'text'" [maxlength]="50" [formControlName]="nestedjson.fieldJsonMapping"
+																		 [customValidation]="false" [emailValidation]="false" [placeholder]="nestedjson.placeholder">
+																		</digital-text-box>
+
+																		<!-- test2 - {{dynamicForm.controls[controls.fieldJsonMapping].value | json}}
+																		<div>{{ dynamicForm.controls[controls.fieldJsonMapping].errors | json }}</div> -->
+
+																		<ng-container *ngFor="let validation of nestedjson.validations">
+																			<span *ngIf="isFormSubmitted && nestedArray.controls[nestedjson.fieldJsonMapping].errors">
+																				<p style="color: Red;" *ngIf="isFormSubmitted && nestedArray.controls[nestedjson.fieldJsonMapping].errors[validation.name]">
+																					{{ validation.message }}
+																				</p>
+																			</span>
+																		</ng-container>
+																	</div>
+																	<!-- textarea -->
+																	<div *ngSwitchCase="'textarea'">
+																	<!-- {{nestedjson | json}} -->
+																		<ion-label>
+																			{{ nestedjson.label }}
+																			<span style="color: Red;" *ngIf="nestedjson.validations[0].validator == 'required'">*</span>
+																			<span style="color: black;" *ngIf="nestedjson.validations[0].validator == 'not in use'">(optional)</span>
+																		</ion-label>
+																		<!-- <ion-textarea rows="6" cols="20" [formControlName]="nestedjson.fieldJsonMapping" [placeholder]="nestedjson.placeholder"></ion-textarea> -->
+																		<digital-text-box [showTitle]="false" [inputType]="'textarea'" [maxlength]="50" [formControlName]="nestedjson.fieldJsonMapping"
+																		 [customValidation]="false" [emailValidation]="false" [placeholder]="nestedjson.placeholder">
+																		</digital-text-box>
+																		<ng-container *ngFor="let validation of nestedjson.validations">
+																			<span *ngIf="isFormSubmitted && nestedArray.controls[nestedjson.fieldJsonMapping].errors">
+																				<p style="color: Red;" *ngIf="isFormSubmitted && nestedArray.controls[nestedjson.fieldJsonMapping].errors[validation.name]">
+																					{{ validation.message }}
+																				</p>
+																			</span>
+																		</ng-container>
+																	</div>
+																	<!-- DROPDOWN -->
+																	<div *ngSwitchCase="'dropdown'">
+																		<!-- [data]="controls.dataArray" -->
+																		<!-- <br/> 
+																		{{nestedjson.ConvertStringToInteger}} -->
+																		<ion-label>{{ nestedjson.label }}
+																			<span style="color: Red;" *ngIf="nestedjson.validations[0].validator == 'required'">*</span>
+																			<span style="color: black;" *ngIf="nestedjson.validations[0].validator == 'not in use'">(optional)</span>
+																		</ion-label>
+																		<digital-cs-select-layout-1 [readonly]="false" [show]="false" style="width:100% !important" [title]="nestedjson.label" [metaData]="nestedjson.metdaData"
+																		 [onPageLoadGetData]="nestedjson.onPageLoadGetData" [formControlNameLabel]="nestedjson.fieldJsonMapping"
+																		 [apiUrl]="nestedjson.apiUrl" [parentFormData]="dynamicForm.value " [placeholder]="nestedjson.placeholder"
+																		 [valueId]="nestedjson.idToShow" [valueDesc]="nestedjson.descriptionToShow" (onChange)="nestedDropdownChange($event,nestedjson)"
+																		 [formControlName]="nestedjson.fieldJsonMapping" [required]="true" [readonly]="controls.readOnlyByArrayIndex.length < 1 ? false : controls.readOnlyByArrayIndex[0][nestedjson.fieldJsonMapping].includes(i)"
+																		 [apiUrl]="nestedjson.apiUrl" [ConvertStringToInteger]="nestedjson.ConvertStringToInteger" [metdaDataReq]="nestedjson.metdaDataReq">
+																		</digital-cs-select-layout-1>
+																		<ng-container *ngFor="let validation of nestedjson.validations">
+																			<span *ngIf="isFormSubmitted && nestedArray.controls[nestedjson.fieldJsonMapping].errors">
+																				<p style="color: Red;" *ngIf="isFormSubmitted && nestedArray.controls[nestedjson.fieldJsonMapping].errors[validation.name]">
+																					{{ validation.message }}
+																				</p>
+																			</span>
+																		</ng-container>
+																	</div>
+																	<!-- DATE -->
+																	<div *ngSwitchCase="'date'">
+																		<ion-label>{{ nestedjson.label }}
+																			<span style="color: Red;" *ngIf="nestedjson.validations[0].validator == 'required'">*</span>
+																			<span style="color: black;" *ngIf="nestedjson.validations[0].validator == 'not in use'">(optional)</span>
+																		</ion-label>
+																		<digital-app-date style="width:100%; " #dateRef [formControlNameLabel]="nestedjson.fieldJsonMapping" [formControlName]="nestedjson.fieldJsonMapping"
+																		 [minDate]="nestedjson.minDate == '' ? null : nestedjson.minDate" [maxDate]="nestedjson.maxDate == '' ? null : nestedjson.maxDate"
+																		 [title]="nestedjson.title" [placeholder]="nestedjson.placeholder" (selectedDateChange)="formArrayselectedDateChange($event,nestedjson)">
+																		</digital-app-date>
+																		<ng-container *ngFor="let validation of nestedjson.validations">
+																			<span *ngIf="isFormSubmitted && nestedArray.controls[nestedjson.fieldJsonMapping].errors">
+																				<p style="color: Red;" *ngIf="isFormSubmitted && nestedArray.controls[nestedjson.fieldJsonMapping].errors[validation.name]">
+																					{{ validation.message }}
+																				</p>
+																			</span>
+																		</ng-container>
+																	</div>
+
+																	<!-- FILE UPLOAD -->
+																	<div *ngSwitchCase="'file'">
+																		<ion-label>{{ nestedjson.label }}
+																			<span style="color: Red;" *ngIf="nestedjson.validations[0].validator == 'required'">*</span>
+																			<span style="color: black;" *ngIf="nestedjson.validations[0].validator == 'not in use'">(optional)</span>
+																		</ion-label>
+																		<!-- nestedjson.accetpFileType - {{nestedjson.accetpFileType}} -->
+																		<!-- <br/> -->
+																		<!-- nestedjson.title - {{nestedjson.title}} -->
+																		<!-- <br/> -->
+																		<!-- nestedjson name-{{nestedjson.fieldJsonMapping}} -->
+																		<!-- control value -{{dynamicForm.value[nestedjson.fieldJsonMapping] |json}} -->
+																		<!-- {{dynamicForm.controls[nestedjson.fieldJsonMapping].errors | json}} -->
+																		<input type="file" class="inputActual" name="filename" #fileInput formControlNameLabel="nestedjson.fieldJsonMapping" [accept]="nestedjson.accetpFileType"
+																		 (change)="onInputFileUploadNew($event,nestedjson,fields, i, controls)">
+																		<div *ngIf="dynamicForm.value[nestedjson.fieldJsonMapping] != null" (click)="viewFile(dynamicForm.value[nestedjson.fieldJsonMapping])" class="viewFile">
+																			<ion-icon slot="start" color="primary" name="reader-outline"></ion-icon>
+																			<ion-label class="ion-no-margin ion-padding-start blackColor">View file</ion-label>
+																		</div>
+																		<ng-container *ngFor="let validation of nestedjson.validations">
+																			<!-- <span *ngIf="dynamicForm.controls[nestedjson.fieldJsonMapping].touched && dynamicForm.controls[nestedjson.fieldJsonMapping].errors"> -->
+																			<span *ngIf="isFormSubmitted && dynamicForm.controls[nestedjson.fieldJsonMapping].errors">
+																				<p style="color: Red;" *ngIf="isFormSubmitted && dynamicForm.controls[nestedjson.fieldJsonMapping].errors[validation.name]">
+																					{{ validation.message }}
+																				</p>
+																			</span>
+																		</ng-container>
+																	</div>
+																</div>
+															</ng-container>
+														</ion-col>
+													</ng-container>
+												</ion-row>
+											</ion-col>
+											<!-- DELETE -->
+											<ion-col size="1" *ngIf="controls.showDeleteNestedFormButton">
+												<!-- below condition to hide delete icon based on index logic -->
+												<ion-icon *ngIf="!controls.hideDeleteIconByArrayIndex.includes(i)" color="danger" name="trash-outline" size="large" (click)="deleteNestedForm(i, controls, dynamicForm.controls[controls.fieldJsonMapping])"
+												 style="padding-bottom:6px;cursor: pointer;"></ion-icon>
+											</ion-col>
+										</ion-row>
+									</div>
+									<!-- </ion-card-content> -->
+									<!-- </ion-card> -->
+								</div>
+							</ion-row>
+						</ng-container>
+					</div>
+				</ion-col>
+
+			</ng-container>
+
+		</ion-row>
+	</ion-grid>
+	<ion-row>
+		<ion-col size="12" class="ion-text-right">
+			<ion-button (click)="onCancel()" color="primary" fill="clear" class="btnSub">
+				<!-- <ion-icon name="close-circle-outline"></ion-icon> -->
+				<!-- &nbsp; -->
+				Cancel
+			</ion-button>
+			<ion-button type="submit" color="primary" (click)="onSubmit($event)" class="btnSub">
+				<ion-icon name="save-outline"></ion-icon> &nbsp; {{ buttonName2 }}
+			</ion-button>
+		</ion-col>
+	</ion-row>
+	<div style="text-align: center;">
+		<!-- fields - {{fields | json}} <br> -->
+		<!-- <pre>
+		  {{ dynamicForm.value | json }}
+		</pre> {{dynamicForm.valid}} -->
+
+	</div>
+</form>

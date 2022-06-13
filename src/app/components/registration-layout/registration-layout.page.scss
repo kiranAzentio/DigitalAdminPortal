@@ -1,0 +1,86 @@
+
+
+.logHeaderText{
+  font-size: 28px;
+  color: #ffffff;
+  position: absolute;
+  left: 20px;
+  top: 160px;
+  }
+  .forgotAnchor{
+  position: absolute;
+  right: 15px;
+  bottom: 55px;
+  font-size: 13px;
+}
+.errorMsg{
+  font-size: 12px;
+    color: red;
+    font-style: italic;
+}
+.logImg{
+  background: url("/assets/imgs/background/2.jpg") no-repeat center center / cover;
+  
+}
+
+
+:host {
+  --img-logo: 72px;
+  --facebook-button-background-color: #3D599D;
+  --facebook-button-text-color: var(--cs-text-light);
+}
+
+ion-grid,
+ion-row {
+  // height: 100%;
+
+  img {
+    width: var(--img-logo);
+    height: var(--img-logo);
+  }
+
+  form {
+    .item-has-focus,
+    .item-has-value {
+      ion-input {
+        border-bottom: 0px solid var(--cs-background-accent) !important;
+      }
+    }
+
+    ion-item {
+      --inner-padding-end: 0;
+      margin-bottom: 15px;
+     
+
+      ion-input {
+        --background: var(--cs-background-primary) !important;
+        border-bottom: 0px solid var(--cs-background-border) !important;
+      }
+
+      
+     
+    }
+
+   
+
+   
+  }
+}
+.entityLabel{
+  position: relative;
+  top: -6px;
+}
+.item-native{
+  padding-left:0 !important; 
+}
+.terms{
+  top: -3px;
+  position: relative;
+}
+.bgColor{
+  background-color: #1a1d50;
+}
+.card-content-ios{
+  padding-left:0px !important;
+  padding-right:0px !important;
+}

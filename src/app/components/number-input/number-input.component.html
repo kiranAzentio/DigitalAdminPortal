@@ -1,0 +1,33 @@
+<!-- <div class="boxWrapper"> -->
+<div class="blackColor">
+    <div *ngIf="!appConfig.getPlatformMobile()">{{label | translate}}</div>
+    <ion-label *ngIf="show && appConfig.getPlatformMobile()"
+        class="text-size-xxs text-color-secondary font-regular number-labels" [position]="appConfig.labelPosition">
+        {{label | translate}} </ion-label>
+    <!-- <ion-item lines=none> -->
+        <!-- <ion-label *ngIf="show"  class="text-size-xxs text-color-secondary font-regular number-labels"
+ [position]="appConfig.labelPosition">{{label | translate}} </ion-label> -->
+ <!-- [formControl]="control" -->
+ <div *ngIf="!showInlineCurrencySymbol" 
+ class="currencyClass"
+ [ngStyle]="{'width' : currencyWidth != null ? currencyWidth : '20%' }"
+ >
+     {{currCode}}
+ </div>
+ <!-- class="ion-text-right" -->
+        <ion-input class="blackColor" [ngClass]="{'readonly': readonly,
+        
+    'width90':!showInlineCurrencySymbol}" 
+ [ngStyle]="{'width' : currencyInputWidth != null ? currencyInputWidth : '80%' }"
+ class="ion-text-right"
+ style="padding-right: 15px !important;"
+     inputmode="numeric"
+            [(ngModel)]="currField" [disabled]="disabled" 
+            (ionBlur)="emitValue()" [readonly]="readonly"
+            (ionInput)="formatCurrency($event.target.value,undefined,'manual')" 
+            [placeholder]="placeholder | translate">
+        </ion-input>
+    <!-- </ion-item> -->
+</div>
+
+<!-- [ngClass]="{'m0': !show}" -->

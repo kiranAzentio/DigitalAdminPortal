@@ -1,0 +1,276 @@
+
+//primeng table css
+.ui-table table{
+    table-layout: auto !important;
+}
+:host ::ng-deep .ui-table-customers {
+    // height: 100vh;;
+    //box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+ .ui-sortable-column .ui-sortable-column-icon {
+        color: #fff;
+    }
+  p-sorticon {
+        vertical-align: middle;
+        font-size: 8px !important;
+    }
+   
+
+    .ui-paginator {
+        .ui-dropdown {
+            float: left;
+        }
+    
+        .ui-paginator-current {
+            float: right;
+        }
+    }
+
+    .ui-progressbar {
+        height: 8px;
+        background-color: #D8DADC;
+    
+        .ui-progressbar-value {
+            background-color: #00ACAD;
+        }
+    }
+
+    .ui-column-filter {
+        display: block;
+    
+        input {
+            width: 100%;
+        }
+    }
+
+    .ui-table-globalfilter-container {
+        float: right;
+        position: relative;
+    float: right;
+    top: -28px;
+    
+        input {
+            width: 200px;
+        }
+    }
+
+    .ui-datepicker {
+        min-width: 25em;
+    
+        td {
+            font-weight: 400;
+        }
+    }
+
+    .ui-table-caption {
+        border: 0 none;
+        padding: 0 35px 0 25px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .ui-paginator {
+        border: 0 none;
+        padding: 1em 0;
+    }
+    .table-header{
+        background: #fff;
+        padding:7px 29px 30px 10px;
+    }
+    .ui-table-wrapper{
+        background: #f4f4f4;
+        padding: 0px 35px 30px 25px;
+    }
+    .ui-table-thead > tr > th {
+        border: 0 none;
+
+        &.ui-filter-column {
+            border-top: 1px solid #c8c8c8;
+        }
+    }
+
+    .ui-table-tbody > tr > td {
+        border: 0 none;
+        cursor: auto;
+        word-break: break-all;
+        font-size: 13px;
+    }
+
+    .ui-dropdown-label:not(.ui-placeholder) {
+        text-transform: uppercase;
+    }
+
+    .ui-table-tbody > tr > td .ui-column-title {
+        display: none;
+    }
+
+    .ui-table-thead > tr > th {
+        padding: 0.571em 0.857em;
+        font-weight: 400;
+        color: #f8f9fa;
+        background-color: var(--ion-color-medium);
+        font-size: 0.95em;
+    }
+}
+
+
+.inputWrapper{
+    width: 110px;
+    height: 42px;
+// background: red;    
+}
+
+.backInputClass{
+    display: grid;
+    place-items: center;
+    height: 28px;
+    width: 100%;
+    top: 9px;
+    // background: yellow;
+    background:#0033a1;
+    color: white !important;
+    position: relative;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+.backInputClassView{
+  
+    // width: 100px !important;
+    width: 65px !important;
+   
+}
+.inputActual{
+    width: 100%;
+    background: transparent;
+    z-index: 1000;
+    position: relative;
+    top: -18px;
+    opacity: 0;
+}
+.cap{
+    text-align: right !important;
+}
+.radioTd{
+    width: 50px;
+}
+.actionTd{
+    width: 100px;
+}
+.dateTd{
+    width:200px;
+}
+.plainClass{
+    --backgroud: white;
+}
+
+// kajal css
+.cc_NoPaddingRight{
+    padding-right: 0px
+}
+
+.cc_bold
+{
+    font-weight: bold;
+}
+.cc_marginTop5px
+{
+    margin-top: 5px
+}
+::ng-deep .ui-table-caption.ui-widget-header.ng-star-inserted
+{
+    background-color: #ffffff;
+}
+:host ::ng-deep .ui-table-customers
+{
+    .ui-table-wrapper
+    {
+        background: #ffffff;
+        padding: 0px;
+        margin: 0px 4px;
+        border: 1px solid #e7e7eb;
+    }
+    .ui-paginator {
+        background-color: #fff;
+  //  margin: 0px 10px;
+    }
+}
+
+.ui-dropdown-label-container span {
+    border: 1px solid #9b9b9b !important;
+    margin: -1px 1px 0px 1px;
+}
+
+// 
+@media (max-width: 767px){
+    :host ::ng-deep .ui-table-customers {
+        .ui-table-thead > tr > th {
+            border: 0 none;
+            // text-align: left;
+            text-align: left;
+    
+            &.ui-filter-column {
+                border-top: 1px solid #c8c8c8;
+            }
+    
+            &:first-child {
+                // width: 5em;
+                text-align: left;
+            }
+    
+            // &:last-child {
+                // width: 8em;
+                // text-align: center;
+            // }
+        }
+    
+        .ui-table-tbody > tr > td {
+            border: 0 none;
+            cursor: auto;
+            text-align: left;
+    
+            &:first-child {
+                // width: 3em;
+                text-align: left;
+            }
+           
+        }
+
+        .ui-table-tbody > tr > td .ui-column-title {
+            display: inline-block;
+            color: #0088a9;
+            width: 50%;
+        }
+
+        .ui-paginator {
+        
+            .ui-paginator-current {
+                font-size: 11px;
+                display: block;
+                float: initial;
+            }
+            .ui-paginator-pages{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .statusMobile{
+        text-align: left !important;
+        display:inline;
+    }
+    .mobileRowParent{
+        width: 100%;;
+    }
+    .cc_title{
+        font-size: 15px;
+    }
+    .addButton{
+        font-size: 13px;
+        top: -1px;
+            position: relative;
+            height: 35px;
+    }
+}
+.idClass{
+    width:100px;
+}
